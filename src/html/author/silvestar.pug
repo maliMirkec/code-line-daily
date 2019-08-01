@@ -6,6 +6,8 @@ block variables
 block content
   include:markdown-it(html) silvestar.md
 
+  h3= "Latest lines"
+
   ul.loc
     each listValue, listIndex in list.reverse()
       if(listValue.author === pageTitle)

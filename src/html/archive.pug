@@ -1,0 +1,16 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Archive"
+
+block content
+  h2= siteDesc
+  ul.loc
+    each listValue, listIndex in list.reverse()
+      li.loc__item
+        h3.loc__line= listValue.line
+        span.loc__info.loc__info--alpha.loc__info--beta.loc__info--gamma= listValue.language
+        span.loc__info.loc__info--alpha.loc__info--beta.loc__info--delta #{formatDate(listValue.date)}
+        .loc__details
+          span.loc__info.loc__info--epsilon.loc__info--zeta= listValue.note
+          a(href="/author/silvestar.html").loc__info.loc__info--epsilon.loc__info--eta= "By: " + listValue.author

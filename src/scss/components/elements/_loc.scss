@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.loc__item--alpha {
+  margin-top: rem(100px);
+}
+
 .loc__line {
   align-items: center;
   background-color: $color-alpha;

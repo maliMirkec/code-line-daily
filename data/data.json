@@ -1,0 +1,17 @@
+{
+  "list": [{
+    "line": "all: unset",
+    "note": "Resets all properties to default.",
+    "language": "CSS",
+    "link": "#",
+    "author": "Silvestar",
+    "date": "2019-08-01"
+  }, {
+    "line": "overflow: initial",
+    "note": "Sets overflow to default state.",
+    "language": "CSS",
+    "link": "#",
+    "author": "Silvestar",
+    "date": "2019-08-02"
+  }]
+}

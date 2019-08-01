@@ -1,0 +1,12 @@
+footer.hf
+  a.hf__inner(href=siteURL)
+    span.hf__logo
+      img(src="/gfx/svg/cld.svg", alt="Code Line Daily Icon", inline="true")
+    h1.hf__title #{siteName}
+  ul.hf__inner
+    each menuValue, menuIndex in menu
+      li(class=currentClass)
+        a(href=menuValue.href)
+          span= menuValue.title
+.sig
+  p Powered by #[a.sig__link(href="https://starter.silvestar.codes") #[img.sig__icon(src="/gfx/svg/starter-project.svg", alt="Starter Project Icon", inline="true")] Starter Project].

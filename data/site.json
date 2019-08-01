@@ -1,0 +1,22 @@
+{
+  "siteName": "Code Line Daily",
+  "siteDesc": "A line of code of the day.",
+  "siteURL": "https://cld.silvestar.codes",
+  "menu": [{
+      "title": "Home",
+      "href": "/"
+    },
+    {
+      "title": "Contribute",
+      "href": "/contribute.html"
+    },
+    {
+      "title": "About",
+      "href": "/about.html"
+    },
+    {
+      "title": "Contact",
+      "href": "mailto:me@silvestar.codes?Subject=Contact[LOC]"
+    }
+  ]
+}

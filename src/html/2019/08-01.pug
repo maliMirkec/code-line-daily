@@ -1,0 +1,19 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "About"
+
+block content
+  :markdown-it(html)
+    ---
+    test: Test
+    ---
+    ## 2019-08-01
+
+    ```
+    background-color: Salmon;
+    ```
+
+    by [Silvestar]
+
+    [Silvestar]: /author/silvestar.html

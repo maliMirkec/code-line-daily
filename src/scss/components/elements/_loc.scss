@@ -1,0 +1,87 @@
+.loc {
+  margin: 0;
+  padding: 0;
+}
+
+.loc__item {
+  margin-bottom: rem(100px);
+  position: relative;
+}
+
+.loc__line {
+  align-items: center;
+  background-color: $color-alpha;
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.loc__info {
+  display: inline-block;
+  font-size: ms(-1);
+  font-weight: bold;
+  padding: rem(3px) rem(10px) rem(5rem);
+}
+
+.loc__info--alpha {
+  position: absolute;
+}
+
+.loc__info--beta {
+  background-color: $color-beta;
+  border-left: rem(3px) solid lighten($color-alpha, 10%);
+  color: $color-gamma;
+}
+
+.loc__info--gamma {
+  left: 0;
+  top: 0;
+}
+
+.loc__info--delta {
+  right: 0;
+  top: 0;
+}
+
+.loc__info--epsilon {
+  background-color: lighten($color-alpha, 10%);
+  border-left: rem(3px) solid $color-beta;
+  color: $color-beta;
+  flex: 1 1 auto;
+  left: 0;
+  margin-top: rem(2px);
+  top: 100%;
+
+  @include mq($from: mobile) {
+    flex: 0 0 auto;
+    margin-top: 0;
+    max-width: calc(50% - rem(20px));
+  }
+
+  &[href] {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($color-alpha, 30%);
+      color: lighten($color-beta, 10%);
+    }
+
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+
+.loc__details {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($from: mobile) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

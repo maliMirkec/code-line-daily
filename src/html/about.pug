@@ -1,0 +1,7 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "About"
+
+block content
+  include:markdown-it(html) about.md

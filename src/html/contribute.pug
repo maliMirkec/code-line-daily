@@ -1,0 +1,7 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Contribute"
+
+block content
+  include:markdown-it(html) contribute.md

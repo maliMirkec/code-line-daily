@@ -14,13 +14,13 @@ Insert the following code in the `head` section of your pages:
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="manifest" href="/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#d91a79">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#12e09f">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="Starter Project">
-    <meta name="application-name" content="Starter Project">
-    <meta name="msapplication-TileColor" content="#1ed9d9">
+    <meta name="apple-mobile-web-app-title" content="Code Line Daily">
+    <meta name="application-name" content="Code Line Daily">
+    <meta name="msapplication-TileColor" content="#12e09f">
     <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#1ed9d9">
+    <meta name="theme-color" content="#12e09f">
 
 *Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)

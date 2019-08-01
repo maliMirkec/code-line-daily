@@ -1,5 +1,5 @@
 {
-  "masterPicture": "helpers.source/gfx/svg/starter-project.svg",
+  "masterPicture": "helpers.source/gfx/svg/cld.svg",
   "temp": "helpers.source/favicons/",
   "dest": "helpers.dist/favicons/",
   "iconsPath": "/favicons/",
@@ -7,7 +7,7 @@
   "design": {
     "ios": {
       "pictureAspect": "backgroundAndMargin",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "#12e09f",
       "margin": "14%",
       "assets": {
         "ios6AndPriorIcons": false,
@@ -15,12 +15,12 @@
         "precomposedIcons": false,
         "declareOnlyDefaultIcon": true
       },
-      "appName": "Starter Project"
+      "appName": "Code Line Daily"
     },
     "desktopBrowser": {},
     "windows": {
       "pictureAspect": "noChange",
-      "backgroundColor": "#1ed9d9",
+      "backgroundColor": "#12e09f",
       "onConflict": "override",
       "assets": {
         "windows80Ie10Tile": false,
@@ -31,13 +31,13 @@
           "rectangle": false
         }
       },
-      "appName": "Starter Project"
+      "appName": "Code Line Daily"
     },
     "androidChrome": {
       "pictureAspect": "shadow",
-      "themeColor": "#1ed9d9",
+      "themeColor": "#12e09f",
       "manifest": {
-        "name": "Starter Project",
+        "name": "Code Line Daily",
         "display": "standalone",
         "orientation": "notSet",
         "onConflict": "override",
@@ -51,7 +51,7 @@
     "safariPinnedTab": {
       "pictureAspect": "blackAndWhite",
       "threshold": 35.3125,
-      "themeColor": "#d91a79"
+      "themeColor": "#12e09f"
     }
   },
   "settings": {

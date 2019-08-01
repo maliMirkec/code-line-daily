@@ -1,6 +1,6 @@
 {
-    "name": "Starter Project",
-    "short_name": "Starter Project",
+    "name": "Code Line Daily",
+    "short_name": "Code Line Daily",
     "icons": [
         {
             "src": "/favicons/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#1ed9d9",
-    "background_color": "#1ed9d9",
+    "theme_color": "#12e09f",
+    "background_color": "#12e09f",
     "display": "standalone"
 }

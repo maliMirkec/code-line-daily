@@ -91,7 +91,9 @@ exports.default = series(
     global.config.css.run ? css.cssStart : helpers.skip,
     global.config.js.run ? js.jsStartProd : helpers.skip,
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
-    global.config.fonts.run ? fonts.fontsStart : helpers.skip
+    global.config.fonts.run ? fonts.fontsStart : helpers.skip,
+    global.config.cms.run ? cms.adminStart : helpers.skip,
+    global.config.cms.run ? cms.commitStart : helpers.skip
   ),
   global.config.html.run ? html.htmlStart : helpers.skip,
   global.config.kss.run ? kss.kssStart : helpers.skip,

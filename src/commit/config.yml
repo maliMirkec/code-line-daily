@@ -2,7 +2,10 @@ backend:
   name: git-gateway
   branch: develop
 
-publish_mode: editorial_workflow
+media_folder: "gfx"
+
+media_library:
+  name: "uploadcare"
 
 logo_url: https://cld.silvestar.codes/gfx/svg/cld.svg
 

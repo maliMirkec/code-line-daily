@@ -70,8 +70,8 @@
     "run": true,
     "adminSrc": "cms",
     "adminDist": "cms",
-    "contributeSrc": "contribute",
-    "contributeDist": "contribute"
+    "commitSrc": "commit",
+    "commitDist": "commit"
   },
   "yarn": true
 }

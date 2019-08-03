@@ -9,9 +9,9 @@ function adminStart () {
 }
 
 // Will process font files, too
-function contributeStart () {
-  return src(helpers.trim(`${helpers.source()}/${global.config.cms.contributeSrc}/**/*`))
-    .pipe(dest(helpers.trim(`${helpers.dist()}/${global.config.cms.contributeDist}`)))
+function commitStart () {
+  return src(helpers.trim(`${helpers.source()}/${global.config.cms.commitSrc}/**/*`))
+    .pipe(dest(helpers.trim(`${helpers.dist()}/${global.config.cms.commitDist}`)))
 }
 
 // When font is changed, it will process font file, too
@@ -20,13 +20,13 @@ function adminListen () {
 }
 
 // When font is changed, it will process font file, too
-function contributeListen () {
-  return watch(helpers.trim(`${helpers.source()}/${global.config.cms.src}/**/*`), global.config.watchConfig, contributeStart, global.bs.reload)
+function commitListen () {
+  return watch(helpers.trim(`${helpers.source()}/${global.config.cms.src}/**/*`), global.config.watchConfig, commitStart, global.bs.reload)
 }
 
 exports.cms = {
   adminStart,
   adminListen,
-  contributeStart,
-  contributeListen
+  commitStart,
+  commitListen
 }

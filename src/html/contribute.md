@@ -5,4 +5,4 @@ If you want to contribute by adding your favorite line of code, please [use this
 Best,
 Silvestar
 
-[use this link]: https://loc.silvestar.codes/admin/
+[use this link]: https://cld.silvestar.codes/commit/

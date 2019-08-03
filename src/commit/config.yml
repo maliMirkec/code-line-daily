@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: develop
+
+publish_mode: editorial_workflow
+
+logo_url: https://cld.silvestar.codes/gfx/svg/cld.svg
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "lines"
+    label: "Lines"
+    folder: "contribute"
+    create: true
+    format: json
+    identifier_field: line
+    slug: "{{year}}-{{month}}-{{day}}-{{line}}-{{author}}"
+    fields:
+      - label: "Line of code"
+        name: "line"
+        widget: "string"
+        required: true
+      - label: "Note"
+        name: "note"
+        widget: "text"
+        required: true
+      - label: "Language"
+        name: "language"
+        widget: "string"
+        required: true
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        required: true
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: true
+      - label: "Bio"
+        name: "bio"
+        widget: "string"
+        required: false
+

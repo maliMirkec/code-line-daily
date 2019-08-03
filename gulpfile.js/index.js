@@ -22,6 +22,7 @@ const { gzip } = global.config.gzip.run ? require('./gzip') : false
 const { kss } = global.config.kss.run ? require('./kss') : false
 const { sassdoc } = global.config.sassdoc.run ? require('./sassdoc') : false
 const { jsdoc } = global.config.jsdoc.run ? require('./jsdoc') : false
+const { cms } = global.config.cms.run ? require('./cms') : false
 
 if (global.config.bump.run) {
   exports.bumpPatch = bump.patch
@@ -63,7 +64,9 @@ exports.build = series(
     global.config.css.run ? css.cssStart : helpers.skip,
     global.config.js.run ? js.jsStartProd : helpers.skip,
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
-    global.config.fonts.run ? fonts.fontsStart : helpers.skip
+    global.config.fonts.run ? fonts.fontsStart : helpers.skip,
+    global.config.cms.run ? cms.adminStart : helpers.skip,
+    global.config.cms.run ? cms.contributeStart : helpers.skip
   ),
   global.config.html.run ? html.htmlStart : helpers.skip,
   global.config.kss.run ? kss.kssStart : helpers.skip,

@@ -66,5 +66,12 @@
   "bump": {
     "run": true
   },
+  "cms": {
+    "run": true,
+    "adminSrc": "cms",
+    "adminDist": "cms",
+    "contributeSrc": "contribute",
+    "contributeDist": "contribute"
+  },
   "yarn": true
 }

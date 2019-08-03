@@ -2,17 +2,13 @@ backend:
   name: git-gateway
   branch: develop
 
-media_folder: "gfx"
+publish_mode: editorial_workflow
 
-media_library:
-  name: "uploadcare"
+media_folder: src/gfx
 
 logo_url: https://cld.silvestar.codes/gfx/svg/cld.svg
 
-slug:
-  encoding: "ascii"
-  clean_accents: true
-  sanitize_replacement: "-"
+display_url: https://cld.silvestar.codes
 
 collections:
   - name: "setup"
@@ -22,6 +18,7 @@ collections:
       label: "Data"
       file: "data/data.json"
       format: "json"
+      delete: false
       fields:
         - label: "Line of code"
           name: "line"

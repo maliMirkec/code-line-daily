@@ -12,35 +12,36 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - name: lines
-    file: data/data.json
-    create: true
-    format: json
-    identifier_field: line
-    slug: "{{year}}-{{month}}-{{day}}-{{line}}-{{author}}"
-    fields:
-      - label: "Line of code"
-        name: "line"
-        widget: "string"
-        required: true
-      - label: "Note"
-        name: "note"
-        widget: "text"
-        required: true
-      - label: "Language"
-        name: "language"
-        widget: "string"
-        required: true
-      - label: "Author"
-        name: "author"
-        widget: "string"
-        required: true
-      - label: "Email"
-        name: "email"
-        widget: "string"
-        required: true
-      - label: "Bio"
-        name: "bio"
-        widget: "string"
-        required: false
+  - name: "setup"
+    label: "Setup"
+    files:
+    - name: "data"
+      label: "Data"
+      file: "data/data.json"
+      format: "json"
+      fields:
+        - label: "Line of code"
+          name: "line"
+          widget: "string"
+          required: true
+        - label: "Note"
+          name: "note"
+          widget: "text"
+          required: true
+        - label: "Language"
+          name: "language"
+          widget: "string"
+          required: true
+        - label: "Author"
+          name: "author"
+          widget: "string"
+          required: true
+        - label: "Email"
+          name: "email"
+          widget: "string"
+          required: true
+        - label: "Bio"
+          name: "bio"
+          widget: "string"
+          required: false
 

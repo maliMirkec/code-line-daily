@@ -8,7 +8,7 @@
     "keepLargerMediaQueries": true,
     "strict": false,
     "blockJSRequests": false,
-    "renderWaitTime": 5000,
+    "renderWaitTime": 500,
     "phantomJsOptions": {
       "ssl-protocol": "any",
       "ignore-ssl-errors": true

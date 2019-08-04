@@ -5,7 +5,6 @@ backend:
     - admin
     - user
 
-publish_mode: editorial_workflow
 media_folder: "src/gfx"
 
 site_url: https://cld.silvestar.codes

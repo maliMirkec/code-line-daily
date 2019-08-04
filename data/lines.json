@@ -1,15 +1,25 @@
 {
-  "list": [{
-    "line": "all: unset",
-    "note": "Resets all properties to default.",
-    "language": "CSS",
-    "author": "Silvestar",
-    "date": "2019-08-01"
-  }, {
-    "line": "overflow: initial",
-    "note": "Sets overflow to default state.",
-    "language": "CSS",
-    "author": "Silvestar",
-    "date": "2019-08-02"
-  }]
+  "list": [
+    {
+      "line": "all: unset",
+      "note": "Resets all properties to default.",
+      "language": "CSS",
+      "author": "Silvestar",
+      "date": "2019-08-01"
+    },
+    {
+      "line": "overflow: initial",
+      "note": "Sets overflow to default state.",
+      "language": "CSS",
+      "author": "Silvestar",
+      "date": "2019-08-02"
+    },
+    {
+      "line": "wp_reset_postdata();",
+      "note": "Reset context for WordPress query.",
+      "language": "PHP",
+      "author": "Silvestar",
+      "date": "2019-08-03"
+    }
+  ]
 }

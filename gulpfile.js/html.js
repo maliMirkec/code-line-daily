@@ -20,7 +20,7 @@ const siteConfigs = [{
   path: helpers.trim(`${helpers.proot()}/data/site.json`)
 }, {
   name: 'data',
-  path: helpers.trim(`${helpers.proot()}/data/data.json`)
+  path: helpers.trim(`${helpers.proot()}/data/lines.json`)
 }]
 
 if (global.config.html.pug) {

@@ -16,7 +16,7 @@ collections:
     files:
       - name: "data"
         label: "Data"
-        file: "data/data.json"
+        file: "data/lines.json"
         format: "json"
         delete: false
         fields:
@@ -27,19 +27,22 @@ collections:
               - label: "Line of code"
                 name: "line"
                 widget: "string"
+                required: true
               - label: "Note"
                 name: "note"
                 widget: "text"
+                required: true
               - label: "Language"
                 name: "language"
                 widget: "string"
+                required: true
               - label: "Author"
                 name: "author"
                 widget: "string"
-              - label: "Email"
-                name: "email"
-                widget: "string"
-              - label: "Bio"
-                name: "bio"
-                widget: "string"
+                required: true
+              - label: "Date"
+                name: "date"
+                widget: "date"
+                format: "YYYY-MM-DD"
+                required: true
 

@@ -1,0 +1,8 @@
+{
+  "line": "wp_reset_postdata();",
+  "note": "Reset context for WordPress query.",
+  "language": "php",
+  "author": "Silvestar Bistrović",
+  "email": "me@silvestar.codes",
+  "bio": "About me."
+}

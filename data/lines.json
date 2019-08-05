@@ -20,6 +20,13 @@
       "language": "PHP",
       "author": "Silvestar",
       "date": "2019-08-03"
+    },
+    {
+      "line": "-moz-osx-font-smoothing: grayscale;",
+      "note": "Fixes font smoothness on MacOS. ",
+      "language": "CSS",
+      "author": "Silvestar ",
+      "date": "2019-08-04"
     }
   ]
 }

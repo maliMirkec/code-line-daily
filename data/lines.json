@@ -1,14 +1,14 @@
 {
   "list": [
     {
-      "line": "all: unset",
+      "line": "all: unset;",
       "note": "Resets all properties to default.",
       "language": "CSS",
       "author": "Silvestar",
       "date": "2019-08-01"
     },
     {
-      "line": "overflow: initial",
+      "line": "overflow: initial;",
       "note": "Sets overflow to default state.",
       "language": "CSS",
       "author": "Silvestar",
@@ -23,10 +23,24 @@
     },
     {
       "line": "-moz-osx-font-smoothing: grayscale;",
-      "note": "Fixes font smoothness on MacOS. ",
+      "note": "Fixes font smoothness on MacOS.",
       "language": "CSS",
-      "author": "Silvestar ",
+      "author": "Silvestar",
       "date": "2019-08-04"
+    },
+    {
+      "line": "background-repeat: round;",
+      "note": "Tiles background image.",
+      "language": "CSS",
+      "author": "Silvestar",
+      "date": "2019-08-05"
+    },
+    {
+      "line": "configs.map(config => config.path)",
+      "note": "Creates an array with returned paths.",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "date": "2019-08-06"
     }
   ]
 }

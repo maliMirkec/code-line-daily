@@ -62,25 +62,18 @@
   @include mq($from: mobile) {
     flex: 0 0 auto;
     margin-top: 0;
-    max-width: calc(50% - rem(20px));
-  }
-
-  a {
-    color: inherit;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: lighten($color-beta, 10%);
-    }
+    max-width: calc(50% - #{rem(20px)});
   }
 
   &[href] {
+    text-decoration: none;
+
     &:hover,
     &:focus,
     &:active {
       background-color: lighten($color-alpha, 30%);
       color: lighten($color-beta, 10%);
+      text-decoration: underline;
     }
 
     &:visited {

@@ -73,7 +73,6 @@
     &:active {
       background-color: lighten($color-alpha, 30%);
       color: lighten($color-beta, 10%);
-      text-decoration: underline;
     }
 
     &:visited {

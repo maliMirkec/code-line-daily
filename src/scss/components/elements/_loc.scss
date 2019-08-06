@@ -65,6 +65,16 @@
     max-width: calc(50% - rem(20px));
   }
 
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: lighten($color-beta, 10%);
+    }
+  }
+
   &[href] {
     &:hover,
     &:focus,
@@ -77,6 +87,10 @@
       color: inherit;
     }
   }
+}
+
+.loc__icon {
+  margin-left: rem(7px);
 }
 
 .loc__details {

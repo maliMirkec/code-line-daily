@@ -32,6 +32,10 @@ collections:
                 name: "note"
                 widget: "text"
                 required: true
+              - label: "Link"
+                name: "link"
+                widget: "text"
+                required: true
               - label: "Language"
                 name: "language"
                 widget: "string"

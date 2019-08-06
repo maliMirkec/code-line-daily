@@ -1,6 +1,7 @@
 {
   "line": "wp_reset_postdata();",
   "note": "Reset context for WordPress query.",
+  "link": "https://developer.wordpress.org/reference/functions/wp_reset_postdata/",
   "language": "php",
   "author": "Silvestar Bistrović",
   "email": "me@silvestar.codes",

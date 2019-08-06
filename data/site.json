@@ -22,5 +22,18 @@
       "title": "Contact",
       "href": "mailto:me@silvestar.codes?Subject=Contact[CLD]"
     }
+  ],
+  "menu2": [{
+      "title": "Twitter",
+      "href": "https://twitter.com/CodeLineDaily"
+    },
+    {
+      "title": "Facebook",
+      "href": "https://www.facebook.com/CodeLineDaily"
+    },
+    {
+      "title": "GitHub",
+      "href": "https://github.com/maliMirkec/code-line-daily"
+    }
   ]
 }

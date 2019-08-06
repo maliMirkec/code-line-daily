@@ -5,7 +5,12 @@ footer.hf
     h1.hf__title #{siteName}
   ul.hf__inner
     each menuValue, menuIndex in menu
-      li(class=currentClass)
+      li
+        a(href=menuValue.href)
+          span= menuValue.title
+  ul.hf__inner
+    each menuValue, menuIndex in menu2
+      li
         a(href=menuValue.href)
           span= menuValue.title
 .sig

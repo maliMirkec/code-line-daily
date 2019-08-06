@@ -1,7 +1,7 @@
 {
   "list": [
     {
-      "line": "all: unset;",
+      "line": "all: unset",
       "note": "Resets all properties to default.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/all",
       "language": "CSS",
@@ -9,7 +9,7 @@
       "date": "2019-08-01"
     },
     {
-      "line": "overflow: initial;",
+      "line": "overflow: initial",
       "note": "Sets overflow to default state.",
       "link": "https://css-tricks.com/almanac/properties/o/overflow/",
       "language": "CSS",
@@ -17,7 +17,7 @@
       "date": "2019-08-02"
     },
     {
-      "line": "wp_reset_postdata();",
+      "line": "wp_reset_postdata()",
       "note": "Reset context for WordPress query.",
       "link": "https://developer.wordpress.org/reference/functions/wp_reset_postdata/",
       "language": "PHP",
@@ -25,7 +25,7 @@
       "date": "2019-08-03"
     },
     {
-      "line": "-moz-osx-font-smoothing: grayscale;",
+      "line": "-moz-osx-font-smoothing: grayscale",
       "note": "Fixes font smoothness on MacOS.",
       "link": "https://responsivedesign.is/articles/font-smoothing/",
       "language": "CSS",
@@ -33,7 +33,7 @@
       "date": "2019-08-04"
     },
     {
-      "line": "background-repeat: round;",
+      "line": "background-repeat: round",
       "note": "Tiles background image.",
       "link": "https://codepen.io/thewizardjs/pen/WVEBLo",
       "language": "CSS",
@@ -47,6 +47,14 @@
       "language": "JavaScript",
       "author": "Silvestar",
       "date": "2019-08-06"
+    },
+    {
+      "line": "position: sticky",
+      "note": "Makes element sticky.",
+      "link": "https://caniuse.com/#feat=css-sticky",
+      "language": "CSS",
+      "author": "Silvestar",
+      "date": "2019-08-07"
     }
   ]
 }

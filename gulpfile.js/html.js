@@ -7,6 +7,7 @@ const data = global.config.html.pug ? require('gulp-data') : () => true
 const htmlmin = global.config.html.minify ? require('gulp-htmlmin') : () => true
 const htmllint = global.config.html.lint ? require('gulp-htmllint') : () => true
 const inlineSource = global.config.html.inline ? require('gulp-inline-source') : () => true
+const wait = require('gulp-wait')
 const fs = global.config.html.inline ? require('fs') : () => true
 
 const { helpers } = require('./helpers')
@@ -63,6 +64,7 @@ function htmlStart () {
     })))
     .pipe(gulpif(global.config.html.pug, pug(thisPugConfig)))
     .pipe(gulpif(global.config.html.lint, htmllint(thisHtmllintConfig)))
+    .pipe(wait(1000))
     .pipe(gulpif(global.config.html.inline, inlineSource(thisInlineConfig)))
     .pipe(gulpif(global.config.html.minify, htmlmin(htmlConfig.htmlminConfig)))
     .pipe(rename(htmlConfig.renameConfig))

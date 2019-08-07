@@ -30,7 +30,7 @@ collections:
         widget: "text"
       - label: "Link"
         name: "link"
-        widget: "text"
+        widget: "string"
       - label: "Language"
         name: "language"
         widget: "string"

@@ -57,7 +57,7 @@
       "date": "2019-08-07"
     },
     {
-      "line": "br { content:' ' }",
+      "line": "br { content: ' ' }",
       "note": "Prevents line break.",
       "link": "https://www.gallagherwebsitedesign.com/blog/remove-line-break-css-replace-with-space/",
       "language": "CSS",

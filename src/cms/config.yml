@@ -34,7 +34,7 @@ collections:
                 required: true
               - label: "Link"
                 name: "link"
-                widget: "text"
+                widget: "string"
                 required: true
               - label: "Language"
                 name: "language"

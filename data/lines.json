@@ -63,6 +63,14 @@
       "language": "CSS",
       "author": "Silvestar",
       "date": "2019-08-08"
+    },
+    {
+      "line": "setcookie('myCookie', time() - 3600);",
+      "note": "Deletes cookie.",
+      "link": "https://www.pontikis.net/blog/create-cookies-php-javascript",
+      "language": "PHP",
+      "author": "Silvestar",
+      "date": "2019-08-09"
     }
   ]
 }

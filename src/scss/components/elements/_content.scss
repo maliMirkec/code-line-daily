@@ -113,6 +113,12 @@ code {
   }
 }
 
+.share {
+  a + a {
+    margin-left: rem(4px);
+  }
+}
+
 table {
   border-collapse: collapse;
 

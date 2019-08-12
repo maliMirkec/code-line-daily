@@ -5,7 +5,9 @@
   "siteImg": "https://cld.silvestar.codes/gfx/jpg/cover.jpg",
   "og": {
     "twitter_id": "CodeLineDaily",
-    "twitter_creator": "malimirkeccita"
+    "twitter_creator": "malimirkeccita",
+    "fb_id": "105883960764009",
+    "fb_admins": "malimirkeccita"
   },
   "menu": [{
       "title": "Home",

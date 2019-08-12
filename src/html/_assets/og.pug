@@ -31,11 +31,11 @@ if (siteDesc)
 if (siteImg)
   meta(property="twitter:image" content=siteImg)
 
-if (theme && theme.open_graph.fb)
-  if (theme.open_graph.fb.fb_id)
-    meta(name="fb:app_id" content=theme.open_graph.fb.fb_id)
-  if (theme.open_graph.fb.fb_admins)
-    meta(name="fb:admins" content=theme.open_graph.fb.fb_admins)
+if (og && og.fb_id)
+  if (og.fb_id)
+    meta(name="fb:app_id" content=og.fb_id)
+  if (og.fb_admins)
+    meta(name="fb:admins" content=og.fb_admins)
 
 meta(property="og:locale" content="en_US")
 

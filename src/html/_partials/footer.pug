@@ -6,12 +6,12 @@ footer.hf
   ul.hf__inner
     each menuValue, menuIndex in menu
       li
-        a(href=menuValue.href)
+        a(href=encodeURIComponent(menuValue.href))
           span= menuValue.title
   ul.hf__inner
     each menuValue, menuIndex in menu2
       li
-        a(href=menuValue.href)
+        a(href=encodeURIComponent(menuValue.href))
           span= menuValue.title
 .sig
   p Powered by #[a.sig__link(href="https://starter.silvestar.codes") #[img.sig__icon(src="/gfx/svg/starter-project.svg", alt="Starter Project Icon", inline="true")] Starter Project].

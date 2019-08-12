@@ -4,4 +4,4 @@ aside.sidebar
       each menuValue, menuIndex in menu
         - var currentClass = menuValue.title == pageTitle ? 'highlight' : '';
         li(class=currentClass)
-          a(href=menuValue.href)= menuValue.title
+          a(href=encodeURIComponent(menuValue.href))= menuValue.title

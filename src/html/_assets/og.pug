@@ -1,5 +1,4 @@
 meta(property="og:type" content="website")
-meta(name="twitter:card" content="summary_large_image")
 
 if (siteName)
   meta(property="og:title" content=siteName)
@@ -14,6 +13,7 @@ if (siteImg)
   meta(property="og:image" content=siteImg)
 
 if (og && og.twitter_id)
+  meta(name="twitter:card" content="summary_large_image")
   meta(name="twitter:site" content=`@${og.twitter_id}`)
 
 if (og && og.twitter_creator)

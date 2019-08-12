@@ -20,8 +20,9 @@ collections:
         format: "json"
         delete: false
         fields:
-          - label: "List"
-            name: "list"
+          - label: "Lines"
+            label_singular: "Line"
+            name: "lines"
             widget: "list"
             fields:
               - label: "Line of code"
@@ -42,6 +43,9 @@ collections:
                 required: true
               - label: "Author"
                 name: "author"
+                widget: "string"
+              - label: "Twitter handle"
+                name: "handle"
                 widget: "string"
                 required: true
               - label: "Date"

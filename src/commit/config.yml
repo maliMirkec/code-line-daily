@@ -14,6 +14,7 @@ logo_url: https://cld.silvestar.codes/gfx/svg/cld-logo.svg
 collections:
   - name: "lines"
     label: "Lines"
+    label_singular: "Line"
     folder: "contribute"
     create: true
     delete: false

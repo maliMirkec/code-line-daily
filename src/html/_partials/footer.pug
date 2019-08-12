@@ -11,7 +11,11 @@ footer.hf
   ul.hf__inner
     each menuValue, menuIndex in menu2
       li
-        a(href=encodeURIComponent(menuValue.href))
-          span= menuValue.title
+        if(menuValue.title === "GitHub")
+          a(href=encodeURIComponent(menuValue.href), rel="me")
+            span= menuValue.title
+        else
+          a(href=encodeURIComponent(menuValue.href))
+            span= menuValue.title
 .sig
   p Powered by #[a.sig__link(href="https://starter.silvestar.codes") #[img.sig__icon(src="/gfx/svg/starter-project.svg", alt="Starter Project Icon", inline="true")] Starter Project].

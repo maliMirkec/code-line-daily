@@ -19,4 +19,16 @@ block content
       else
         span.loc__info.loc__info--epsilon= thisItem.note
       a(href="/author/silvestar.html").loc__info.loc__info--epsilon= "By: " + thisItem.author
+
+  - var shareText = encodeURIComponent("Code Line Daily:\n" + thisItem.line.trim() + "\n\n")
+  - var shareRelated = thisItem.handle ? '&related=' + thisItem.handle : ''
+  - var twitterLink = "https://twitter.com/intent/tweet?url=" + siteURL + "&text=" + shareText + "&hashtags=loc,cld,codelinedaily," + thisItem.language + "&via=" + og.twitter_id + shareRelated;
+  - var facebookLink = "https://facebook.com/sharer.php?u=" + siteURL;
+  - var redditLink = "https://www.reddit.com/submit?url=" + siteURL + "&title=" + shareText;
+
+  .share
+    p= "Share: "
+      a(href=twitterLink, target="_blank", rel="noopener") Twitter
+      a(href=facebookLink, target="_blank", rel="noopener") Facebook
+      a(href=redditLink, target="_blank", rel="noopener") Reddit
   include:markdown-it(html) index.md

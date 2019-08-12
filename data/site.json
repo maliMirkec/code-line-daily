@@ -2,6 +2,11 @@
   "siteName": "Code Line Daily",
   "siteDesc": "A line of code of the day.",
   "siteURL": "https://cld.silvestar.codes",
+  "siteImg": "https://cld.silvestar.codes/gfx/jpg/cover.jpg",
+  "og": {
+    "twitter_id": "CodeLineDaily",
+    "twitter_creator": "malimirkeccita"
+  },
   "menu": [{
       "title": "Home",
       "href": "/"

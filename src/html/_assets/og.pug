@@ -1,0 +1,113 @@
+meta(property="og:type" content="website")
+
+if (siteName)
+  meta(property="og:title" content=siteName)
+  meta(property="og:site_name" content=siteName)
+
+if (siteDesc)
+  meta(property="og:description" content=siteDesc)
+
+if (siteURL)
+  meta(property="og:url" content=siteURL)
+
+if (siteImg)
+  meta(property="og:image" content=siteImg)
+
+if (og && og.twitter_id)
+  meta(name="twitter:card" content="summary")
+  meta(name="twitter:site" content=`@${og.twitter_id}`)
+
+if (og && og.twitter_creator)
+  meta(name="twitter:creator" content=`@${og.twitter_creator}`)
+
+if (siteURL)
+  meta(property="twitter:url" content=siteURL)
+
+if (siteName)
+  meta(name="twitter:title" content=siteName)
+
+if (siteDesc)
+  meta(name="twitter:description" content=siteDesc)
+
+if (siteImg)
+  meta(property="twitter:image" content=siteImg)
+
+if (theme && theme.open_graph.fb)
+  if (theme.open_graph.fb.fb_id)
+    meta(name="fb:app_id" content=theme.open_graph.fb.fb_id)
+  if (theme.open_graph.fb.fb_admins)
+    meta(name="fb:admins" content=theme.open_graph.fb.fb_admins)
+
+meta(property="og:locale" content="en_US")
+
+//- if (isPost())
+//-   script(type="application/ld+json").
+//-     {
+//-       "@context": "https://schema.org",
+//-       "@type": "BlogPosting",
+//-       "mainEntityOfPage": {
+//-         "@type": "WebSite",
+//-         "@id": "#{config.url}"
+//-       },
+//-       "headline": "#{page.title}",
+//-       "image": [
+//-         "#{page.thumbnail.indexOf('http') !== -1 ? page.thumbnail : 'https:' + page.thumbnail}"
+//-       ],
+//-       "datePublished": "#{page.date.format()}",
+//-       "dateModified": "#{page.updated.format()}",
+//-       "author": {
+//-         "@type": "Person",
+//-         "name": "#{config.author}"
+//-       },
+//-       "publisher": {
+//-         "@type": "Organization",
+//-         "name": "Cita",
+//-         "logo": {
+//-           "@type": "ImageObject",
+//-           "url": "https://www.cita.hr/favicon/android-chrome-192x192.png"
+//-         }
+//-       },
+//-       "description": "#{page.description}"
+//-     }
+//- else if (isHome())
+//-   script(type="application/ld+json").
+//-     {
+//-       "@context": "https://schema.org",
+//-       "@type": "WebSite",
+//-       "url": "#{config.url}",
+//-       "name": "#{theme.site.short_name}",
+//-       "about": "#{theme.site.description}",
+//-       "author": {
+//-         "@type": "Person",
+//-         "name": "#{config.author}"
+//-       }
+//-     }
+//- else
+//-   script(type="application/ld+json").
+//-     {
+//-       "@context": "https://schema.org",
+//-       "@type": "BreadcrumbList",
+//-       "itemListElement": [
+//-         {
+//-           "@type": "ListItem",
+//-           "position": 1,
+//-           "item": {
+//-             "@id": "#{config.url}",
+//-             "name": "Home"
+//-           }
+//-         },
+//-         {
+//-           "@type": "ListItem",
+//-           "position": 2,
+//-           "item": {
+//-             "@id": "#{config.url + '/' + path.replace('index.html','')}",
+//-             "name": "#{title.replace(" 🤘 " + theme.site.full_name, '')}"
+//-           }
+//-         }
+//-       ]
+//-     }
+
+//- link(rel="pingback", href="https://webmention.io/www.silvestar.codes/xmlrpc")
+//- link(rel="webmention", href="https://webmention.io/www.silvestar.codes/webmention")
+
+

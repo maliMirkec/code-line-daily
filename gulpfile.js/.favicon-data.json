@@ -1,5 +1,5 @@
 {
-  "masterPicture": "helpers.source/gfx/svg/cld.svg",
+  "masterPicture": "helpers.source/gfx/svg/cld-logo.svg",
   "temp": "helpers.source/favicons/",
   "dest": "helpers.dist/favicons/",
   "iconsPath": "/favicons/",

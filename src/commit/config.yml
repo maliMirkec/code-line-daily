@@ -9,7 +9,7 @@ media_folder: "src/gfx"
 
 site_url: https://cld.silvestar.codes
 display_url: https://cld.silvestar.codes
-logo_url: https://cld.silvestar.codes/gfx/svg/cld.svg
+logo_url: https://cld.silvestar.codes/gfx/svg/cld-logo.svg
 
 collections:
   - name: "lines"

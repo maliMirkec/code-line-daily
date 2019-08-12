@@ -71,6 +71,14 @@
       "language": "PHP",
       "author": "Silvestar",
       "date": "2019-08-09"
+    },
+    {
+      "line": "const { src, dest, series, or parallel } = require('gulp')",
+      "note": "Deconstructs object.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "date": "2019-08-12"
     }
   ]
 }

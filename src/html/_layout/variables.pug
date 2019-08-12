@@ -7,6 +7,7 @@ block variables
 - var menu = locals.site.menu ? locals.site.menu : [];
 - var menu2 = locals.site.menu2 ? locals.site.menu2 : [];
 - var list = locals.data.list ? locals.data.list.filter(item => new Date(item.date) < new Date()) : [];
+- var thisItem = list.slice(-1).pop()
 
 - function formatNumber(num)
   - return num < 10 ? '0' + num : num;

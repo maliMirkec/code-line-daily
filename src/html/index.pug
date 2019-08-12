@@ -3,9 +3,7 @@ extends /_layout/layout.pug
 block variables
   - pageTitle = "Home"
 
-
 block content
-  - thisItem = list.slice(-1).pop()
   h2= siteDesc
   div.loc__item.loc__item--alpha
     h3.loc__line= thisItem.line

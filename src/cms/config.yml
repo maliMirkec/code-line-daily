@@ -22,7 +22,7 @@ collections:
         fields:
           - label: "Lines"
             label_singular: "Line"
-            name: "lines"
+            name: "list"
             widget: "list"
             fields:
               - label: "Line of code"

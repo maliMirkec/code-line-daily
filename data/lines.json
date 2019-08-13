@@ -89,6 +89,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-12"
+    },
+    {
+      "line": "* + *",
+      "note": "Universal adjacent sibling combinator aka Lobotomized Owl",
+      "link": "https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/",
+      "language": "CSS",
+      "author": "Silvestar ",
+      "handle": "malimirkeccita",
+      "date": "2019-08-13"
     }
   ]
 }

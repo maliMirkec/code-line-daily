@@ -101,7 +101,7 @@
     },
     {
       "line": "add_shortcode( 'card' , 'generate_card' )",
-      "note": "Adds a hook for a shortcode tag.",
+      "note": "Adds shortcode tag hook",
       "link": "https://codex.wordpress.org/Function_Reference/add_shortcode",
       "language": "PHP",
       "author": "Silvestar",

@@ -98,6 +98,15 @@
       "author": "Silvestar ",
       "handle": "malimirkeccita",
       "date": "2019-08-13"
+    },
+    {
+      "line": "add_shortcode( 'card' , 'generate_card' )",
+      "note": "Adds a hook for a shortcode tag.",
+      "link": "https://codex.wordpress.org/Function_Reference/add_shortcode",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-14"
     }
   ]
 }

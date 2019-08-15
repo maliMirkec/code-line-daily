@@ -107,6 +107,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-14"
+    },
+    {
+      "line": "event.preventDefault()",
+      "note": "Prevents default action.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-15"
     }
   ]
 }

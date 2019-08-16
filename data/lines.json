@@ -116,6 +116,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-15"
+    },
+    {
+      "line": "border-color: currentColor",
+      "note": "Uses current text color as border color. ",
+      "link": "https://css-tricks.com/currentcolor/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-16"
     }
   ]
 }

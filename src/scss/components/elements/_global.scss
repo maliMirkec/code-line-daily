@@ -1,0 +1,71 @@
+// Wrappers
+//
+// Wrappers are used to limit the content to certain width.
+//
+// Markup:
+// <div class="w {{ modifier_class }}">
+//   <p>This is a wrapper.</p>
+// </div>
+//
+// .w--alpha - Maximum width: 1440px
+// .w--beta - Maximum width: 900px
+//
+// Weight: 300
+//
+// Styleguide: Wrappers
+* {
+  box-sizing: border-box;
+}
+
+.w {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem(30px);
+  padding-right: rem(30px);
+
+  @include mq($until: mobile) {
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+  }
+}
+
+.w--alpha {
+  max-width: rem(1440px);
+  width: 100%;
+}
+
+.w--beta {
+  max-width: rem(960px);
+  width: 100%;
+}
+
+// Spacing
+//
+// Spacing are used for whitespace.
+//
+// Markup:
+// <div class="mt">
+//   <p>This is whitespace for margin top.</p>
+// </div>
+// <div class="pt">
+//   <p>This is whitespace for padding top.</p>
+// </div>
+//
+// Weight: 310
+//
+// Styleguide: Spacing
+.mt {
+  margin-top: rem(60px);
+
+  @include mq($until: mobile) {
+    margin-top: rem(30px);
+  }
+}
+
+.pt {
+  padding-top: rem(60px);
+
+  @include mq($until: mobile) {
+    padding-top: rem(30px);
+  }
+}

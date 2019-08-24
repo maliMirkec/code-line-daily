@@ -1,0 +1,60 @@
+// Button
+//
+// Button component.
+//
+// Markup:
+// <a class="btn {{ modifier_class }}">Button</a>
+// <button class="btn {{ modifier_class }}" type="button">Button</button>
+//
+// .btn--alpha - Outline button
+// .btn--beta - Small button
+//
+// Weight: 500
+//
+// Styleguide: Button
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: $color-primary--alpha;
+  border: 1px solid currentColor;
+  border-radius: rem(15px);
+  // box-shadow: 0 0 0 1px currentColor;
+  color: $color-secondary--alpha;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: ms(-1);
+  justify-content: center;
+  line-height: 1;
+  min-height: rem(30px);
+  padding-left: rem(21px);
+  padding-right: rem(21px);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-secondary--beta;
+    color: $color-primary--beta;
+  }
+}
+
+.btn--alpha {
+  background-color: transparent;
+  color: $color-primary--alpha;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-primary--beta;
+    color: $color-secondary--beta;
+  }
+}
+
+.btn--beta {
+  border-radius: rem(12px);
+  font-size: ms(-2);
+  min-height: rem(24px);
+  padding-left: rem(18px);
+  padding-right: rem(18px);
+}

@@ -1,0 +1,157 @@
+// Code Block
+//
+// Code Block is the main component. It contains line of code, author, date and other details.
+//
+// Markup:
+// <div class="cld {{ modifier_class }} w w--beta">
+//   <div class="cld__content">
+//     <a class="cld__inner" href="#link">
+//       <div class="cld__details cld__details--alpha">
+//         <span class="cld__detail">> Adds shortcode tag hook.</span>
+//       </div>
+//       <code class="cld__code">add_shortcode( 'card', 'generate_card' )</code>
+//     </a>
+//     <div class="cld__details cld__details--beta">
+//       <span class="cld__detail">#PHP</span>
+//       <span class="cld__detail">2019-08-09</span>
+//       <span class="cld__detail">By: <a class="btn">Silvestar</a></span>
+//     </div>
+//   </div>
+//   <div class="cld__share">
+//     <span class="cld__detail">Share:</span>
+//     <a class="btn btn--alpha" href="#twitter">Twitter</a>
+//     <a class="btn btn--alpha" href="#facebook">Facebook</a>
+//     <a class="btn btn--alpha" href="#reddit">Reddit</a>
+//   </div>
+// </div>
+//
+// .cld--alpha - Small code block
+//
+// Weight: 600
+//
+// Styleguide: CodeBlock
+
+.cld {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(10px);
+  margin-top: rem(60px);
+
+  .btn {
+    margin-left: rem(10px);
+
+    &:first-of-type:not(:last-of-type) {
+      @include mq($until: mobile) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.cld__inner,
+.cld__content {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.cld__content {
+  border: 1px solid currentColor;
+  border-radius: rem(15px);
+}
+
+.cld__inner {
+  text-decoration: none;
+}
+
+.cld__code,
+.cld__details {
+  padding-left: rem(20px);
+  padding-right: rem(7.5px);
+
+  @include mq($until: mobile) {
+    padding-left: rem(7.5px);
+  }
+}
+
+.cld__details {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: rem(50px);
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+
+.cld__details--alpha {
+  font-size: ms(0);
+}
+
+.cld__details--beta,
+.cld__share {
+  font-size: ms(-1);
+}
+
+.cld__detail,
+.cld__share {
+  align-items: baseline;
+  display: inline-flex;
+}
+
+.cld__detail {
+  &:last-of-type:not(:first-of-type),
+  .cld__share & {
+    @include mq($until: mobile) {
+      flex: 1 1 100%;
+      margin-top: rem(10px);
+      width: 100%;
+    }
+  }
+}
+
+.cld__code {
+  align-items: center;
+  background-color: $color-secondary--beta;
+  border-bottom: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  display: flex;
+  font-size: ms(1);
+  padding-bottom: rem(30px);
+  padding-top: rem(30px);
+}
+
+.cld__share {
+  flex-wrap: wrap;
+
+  .btn {
+    margin-top: rem(10px);
+  }
+}
+
+.cld--alpha {
+  .cld__details {
+    min-height: rem(33px);
+    padding-bottom: rem(6px);
+    padding-top: rem(6px);
+  }
+
+  .cld__details--alpha {
+    font-size: ms(-1);
+  }
+
+  .cld__details--beta,
+  .cld__share {
+    font-size: ms(-2);
+  }
+
+  .cld__code {
+    font-size: ms(0);
+    padding-bottom: rem(20px);
+    padding-top: rem(20px);
+  }
+
+  .btn {
+    @extend .btn--beta;
+  }
+}

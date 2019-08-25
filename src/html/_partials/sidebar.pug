@@ -1,7 +1,0 @@
-aside.sidebar
-  nav
-    ul
-      each menuValue, menuIndex in menu
-        - var currentClass = menuValue.title == pageTitle ? 'highlight' : '';
-        li(class=currentClass)
-          a(href=encodeURIComponent(menuValue.href))= menuValue.title

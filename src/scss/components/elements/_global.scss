@@ -39,33 +39,64 @@
   width: 100%;
 }
 
-// Spacing
+// Spacing Margin
 //
 // Spacing are used for whitespace.
 //
 // Markup:
-// <div class="mt">
+// <div class="{{ modifier_class }}">
 //   <p>This is whitespace for margin top.</p>
 // </div>
-// <div class="pt">
-//   <p>This is whitespace for padding top.</p>
-// </div>
+//
+// .pt--alpha - Big margin top
+// .mt--beta - Small margin top
 //
 // Weight: 310
 //
-// Styleguide: Spacing
-.mt {
-  margin-top: rem(60px);
+// Styleguide: SpacingMargin
+.mt--alpha {
+  margin-top: rem(90px);
 
   @include mq($until: mobile) {
-    margin-top: rem(30px);
+    margin-top: rem(45px);
   }
 }
 
-.pt {
-  padding-top: rem(60px);
+.mt--beta {
+  margin-top: rem(30px);
 
   @include mq($until: mobile) {
-    padding-top: rem(30px);
+    margin-top: rem(15px);
+  }
+}
+
+// Spacing Padding
+//
+// Spacing are used for whitespace.
+//
+// Markup:
+// <div class="{{ modifier_class }}">
+//   <p>This is whitespace for padding top.</p>
+// </div>
+//
+// .pt--alpha - Big padding top
+// .pt--beta - Small padding top
+//
+// Weight: 320
+//
+// Styleguide: Spacing
+.pt--alpha {
+  padding-top: rem(90px);
+
+  @include mq($until: mobile) {
+    padding-top: rem(45px);
+  }
+}
+
+.pt--beta {
+  padding-top: rem(30px);
+
+  @include mq($until: mobile) {
+    padding-top: rem(15px);
   }
 }

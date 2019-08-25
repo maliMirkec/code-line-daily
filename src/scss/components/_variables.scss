@@ -25,6 +25,15 @@ $mq--tablet: 768px;
 /// @since 1.0.0
 $mq--desktop: 960px;
 
+/// Media query definition for wide devices, used in css-locks.
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example @include css-locks(font-size, $mq--mobile, $mq--wide, $font-size--mobile, $font-size--wide);
+/// @group 1.1.Sizes
+/// @name mq--wide
+/// @since 1.0.0
+$mq--wide: 1440px;
+
 /// Default font size on mobile devices, used in css-locks.
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
@@ -88,7 +97,8 @@ $modularscale: (
 $mq-breakpoints: (
   mobile:  $mq--mobile,
   tablet:  $mq--tablet,
-  desktop: $mq--desktop
+  desktop: $mq--desktop,
+  wide: $mq--wide
 );
 
 /// Color from color palette

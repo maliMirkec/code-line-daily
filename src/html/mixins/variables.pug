@@ -8,6 +8,8 @@ block variables
 - var menu2 = locals.site.menu2 ? locals.site.menu2 : [];
 - var list = locals.data.list ? locals.data.list.filter(item => new Date(item.date) < new Date()) : [];
 - var thisItem = list.slice(-1).pop()
+- var listArchive = list.slice().reverse();
+- var listEvergreen = list.slice().filter(item => item.evergreen);
 
 - function formatNumber(num)
   - return num < 10 ? '0' + num : num;

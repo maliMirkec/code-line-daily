@@ -10,5 +10,5 @@
         each menuValue, menuIndex in menu
           - var currentClass = menuValue.title == pageTitle ? 'hf__link active' : 'hf__link';
           li.hf__item
-            a(class=currentClass, href=encodeURIComponent(menuValue.href))= menuValue.title
+            a(class=currentClass, href=menuValue.href)= menuValue.title
 

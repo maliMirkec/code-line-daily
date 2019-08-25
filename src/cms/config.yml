@@ -41,6 +41,10 @@ collections:
                 name: "language"
                 widget: "string"
                 required: true
+              - label: "Evergreen"
+                name: "evergreen"
+                widget: "boolean"
+                required: false
               - label: "Author"
                 name: "author"
                 widget: "string"

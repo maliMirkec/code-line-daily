@@ -44,13 +44,13 @@ body {
 // Styleguide: Typography.Headings
 h1,
 .t-h1 {
-  font-size: ms(4);
+  font-size: ms(3);
   font-weight: normal;
 }
 
 h2,
 .t-h2 {
-  font-size: ms(2);
+  font-size: ms(1);
   font-weight: normal;
 }
 
@@ -81,6 +81,10 @@ p,
 
 .t-xs {
   font-size: ms(-2);
+}
+
+.t-r {
+  text-align: right;
 }
 
 ::selection {

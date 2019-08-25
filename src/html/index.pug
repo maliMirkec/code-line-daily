@@ -4,30 +4,23 @@ block variables
   - pageTitle = "Home"
 
 block content
-  h2= siteDesc
-  div.loc__item.loc__item--alpha
-    h3.loc__line= thisItem.line
-    span.loc__info.loc__info--alpha.loc__info--beta.loc__info--gamma= thisItem.language
-    span.loc__info.loc__info--alpha.loc__info--beta.loc__info--delta #{formatDate(thisItem.date)}
-    .loc__details
-      if(thisItem.link)
-        a.loc__info.loc__info--epsilon(href=thisItem.link)
-          span= thisItem.note
-          span.loc__icon= "👀"
-      else
-        span.loc__info.loc__info--epsilon= thisItem.note
-      a(href="/author/silvestar.html").loc__info.loc__info--epsilon= "By: " + thisItem.author
-
-  - var shareTextPlain = encodeURIComponent("Code Line Daily: " + thisItem.line.trim())
-  - var shareTextFancy = encodeURIComponent("Code Line Daily:\n" + thisItem.line.trim() + "\n\n")
-  - var shareRelated = thisItem.handle ? '&related=' + thisItem.handle : ''
-  - var twitterLink = "https://twitter.com/intent/tweet?url=" + siteURL + "&text=" + shareTextFancy + "&hashtags=loc,cld,codelinedaily," + thisItem.language + "&via=" + og.twitter_id + shareRelated;
-  - var facebookLink = "https://facebook.com/sharer.php?u=" + siteURL;
-  - var redditLink = "https://www.reddit.com/submit?url=" + siteURL + "&title=" + shareTextPlain;
-
-  .share
-    p= "Share: "
-      a(href=twitterLink, target="_blank", rel="noopener") Twitter
-      a(href=facebookLink, target="_blank", rel="noopener") Facebook
-      a(href=redditLink, target="_blank", rel="noopener") Reddit
-  include:markdown-it(html) index.md
+  article.w.w--alpha.mt--alpha
+    h1= siteDesc
+  .w.w--beta.mt--alpha
+    +cld(thisItem, '')
+  .w.w--alpha.mt--alpha
+    h2.t-h1= "Archive"
+  .w.w--alpha.grid.mt--beta
+    each listValue, listIndex in listArchive
+      if(listIndex != 0 && listIndex < 3)
+        +cld(listValue, 'cld--alpha')
+  .w.w--alpha.mt--beta
+    a.btn.btn--alpha(href="/archive.html")= "See full archive =>"
+  .w.w--alpha.mt--alpha
+    h2.t-h1= "Evergreen"
+  .w.w--alpha.grid.mt--beta
+    each listValue, listIndex in listEvergreen
+      if(listIndex < 2)
+        +cld(listValue, 'cld--alpha')
+  .w.w--alpha.mt--beta
+    a.btn.btn--alpha(href="/evergreen.html")= "See evergreen lines =>"

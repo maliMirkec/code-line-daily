@@ -70,9 +70,34 @@
 // Weight: 410
 //
 // Styleguide: Footer
+
 .hf {
   background-color: $color-secondary--beta;
   padding: rem(15px);
+
+  a {
+    text-decoration: none;
+
+    &.active {
+      position: relative;
+
+      &:before {
+        content: '>';
+        left: rem(-18px);
+        position: absolute;
+      }
+
+      &:after {
+        content: '<';
+        position: absolute;
+        right: rem(-15px);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
 }
 
 .hf__inner {
@@ -108,15 +133,6 @@
   text-decoration: none;
 }
 
-.hf__img,
-.hf__cld {
-  width: rem(90px);
-
-  @include mq($until: mobile) {
-    width: 60px;
-  }
-}
-
 .hf__img {
   img {
     display: block;
@@ -125,14 +141,23 @@
 
 .hf__src {
   display: block;
+  height: rem(90px);
+  width: rem(90px);
+
+  @include mq($until: mobile) {
+    height: rem(60px);
+    width: rem(60px);
+  }
 }
 
 .hf__cld {
   margin-left: rem(15px);
+  width: rem(90px);
 
   @include mq($until: mobile) {
     font-size: ms(-1);
     margin-left: rem(10px);
+    width: rem(60px);
   }
 }
 

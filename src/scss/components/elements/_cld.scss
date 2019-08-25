@@ -7,7 +7,7 @@
 //   <div class="cld__content">
 //     <a class="cld__inner" href="#link">
 //       <div class="cld__details cld__details--alpha">
-//         <span class="cld__detail">> Adds shortcode tag hook.</span>
+//         <span class="cld__detail"> Adds shortcode tag hook.</span>
 //       </div>
 //       <code class="cld__code">add_shortcode( 'card', 'generate_card' )</code>
 //     </a>
@@ -35,7 +35,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: rem(10px);
-  margin-top: rem(60px);
 
   .btn {
     margin-left: rem(10px);
@@ -56,7 +55,7 @@
 }
 
 .cld__content {
-  border: 1px solid currentColor;
+  border: rem(3px) solid currentColor;
   border-radius: rem(15px);
 }
 
@@ -100,6 +99,11 @@
 }
 
 .cld__detail {
+  &:only-child:before {
+    content: '>';
+    margin-right: 0.5em;
+  }
+
   &:last-of-type:not(:first-of-type),
   .cld__share & {
     @include mq($until: mobile) {
@@ -130,6 +134,10 @@
 }
 
 .cld--alpha {
+  .cld__content {
+    border-width: 1px;
+  }
+
   .cld__details {
     min-height: rem(33px);
     padding-bottom: rem(6px);

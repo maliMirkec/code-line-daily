@@ -1,24 +1,13 @@
 extends /_layout/layout.pug
 
 block variables
-  - pageTitle = "Silvestar"
+  - pageTitle = "Posts by: Silvestar Bistrović"
 
 block content
-  include:markdown-it(html) silvestar.md
-
-  h3= "Latest lines"
-
-  ul.loc
-    each listValue, listIndex in list.reverse()
-      if(listValue.author === pageTitle)
-        li.loc__item
-          h3.loc__line= listValue.line
-          span.loc__info.loc__info--alpha.loc__info--beta.loc__info--gamma= listValue.language
-          span.loc__info.loc__info--alpha.loc__info--beta.loc__info--delta #{formatDate(listValue.date)}
-          .loc__details
-            if(listValue.link)
-              a.loc__info.loc__info--epsilon.loc__info--zeta(href=listValue.link)
-                span= listValue.note
-                span.loc__icon= "👀"
-            else
-              span.loc__info.loc__info--epsilon= listValue.note
+  article.w.w--beta.mt--alpha
+    include:markdown-it(html) silvestar.md
+  .w.w--alpha.mt--alpha
+    p.t-sm.t-r= "Sorted by: Date DESC"
+  .w.w--alpha.grid
+    each listValue, listIndex in listArchive
+      +cld(listValue, 'cld--alpha')

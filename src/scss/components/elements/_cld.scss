@@ -126,8 +126,10 @@
 .cld__code {
   @include tra;
   align-items: center;
-  background-color: $color-secondary--beta;
-  color: $color-primary--alpha;
+  background-color: $color-primary--alpha;
+  border-bottom: rem(4px) solid $color-primary--beta;
+  border-top: rem(4px) solid $color-primary--beta;
+  color: $color-secondary--beta;
   display: flex;
   font-size: ms(1);
   padding-bottom: rem(30px);
@@ -136,7 +138,7 @@
   .cld__inner:hover &,
   .cld__inner:focus &,
   .cld__inner:active & {
-    color: $color-primary--beta;
+    background-color: $color-primary--beta;
   }
 }
 
@@ -165,6 +167,7 @@
   }
 
   .cld__code {
+    border-width: rem(2px);
     font-size: ms(0);
     padding-bottom: rem(20px);
     padding-top: rem(20px);

@@ -75,17 +75,11 @@
   background-color: $color-secondary--beta;
   padding: rem(15px);
 
-  a {
+  a[href*="/"] {
     text-decoration: none;
 
     &.active {
       position: relative;
-
-      &:before {
-        content: '>';
-        left: rem(-18px);
-        position: absolute;
-      }
 
       &:after {
         content: '<';
@@ -104,26 +98,28 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .hf__skip {
+  align-items: center;
   clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(1px);
-  display: block;
+  display: flex;
   height: 1px;
+  justify-content: center;
   overflow: hidden;
   position: absolute;
+  transition: none;
   white-space: nowrap;
   width: 1px;
 
   &:focus {
+    background-color: $color-primary--alpha;
     clip: auto;
-    height: auto;
+    color: $color-secondary--alpha;
+    height: 100%;
     width: auto;
-    // background-color: $color-beta;
-    // border-color: $color-beta;
-    // color: $color-omega;
   }
 }
 

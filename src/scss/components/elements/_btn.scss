@@ -16,11 +16,11 @@
 .btn {
   align-items: center;
   appearance: none;
-  background-color: $color-primary--alpha;
-  border: 1px solid currentColor;
+  background-color: $color-primary--gamma;
+  border: rem(2px) solid currentColor;
   border-radius: rem(15px);
   // box-shadow: 0 0 0 1px currentColor;
-  color: $color-secondary--alpha;
+  color: $color-secondary--beta;
   cursor: pointer;
   display: inline-flex;
   font-size: ms(-1);
@@ -34,21 +34,14 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: $color-secondary--beta;
-    color: $color-primary--beta;
+    background-color: $color-primary--beta;
+    color: $color-secondary--beta;
   }
 }
 
 .btn--alpha {
-  background-color: transparent;
-  color: $color-primary--alpha;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $color-primary--beta;
-    color: $color-secondary--beta;
-  }
+  background-color: $color-primary--alpha;
+  color: $color-secondary--alpha;
 }
 
 .btn--beta {

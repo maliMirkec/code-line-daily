@@ -55,8 +55,10 @@
 }
 
 .cld__content {
-  border: rem(3px) solid currentColor;
+  background-color: $color-primary--gamma;
+  border: rem(4px) solid $color-primary--beta;
   border-radius: rem(15px);
+  color: $color-secondary--beta;
 }
 
 .cld__inner {
@@ -83,13 +85,20 @@
   padding-top: rem(10px);
 }
 
-.cld__details--alpha {
-  font-size: ms(0);
-}
-
-.cld__details--beta,
+.cld__details,
 .cld__share {
   font-size: ms(-1);
+}
+
+.cld__details--alpha {
+  @include tra;
+  font-size: ms(0);
+
+  .cld__inner:hover &,
+  .cld__inner:focus &,
+  .cld__inner:active & {
+    color: $color-secondary--alpha;
+  }
 }
 
 .cld__detail,
@@ -115,14 +124,20 @@
 }
 
 .cld__code {
+  @include tra;
   align-items: center;
   background-color: $color-secondary--beta;
-  border-bottom: 1px solid currentColor;
-  border-top: 1px solid currentColor;
+  color: $color-primary--alpha;
   display: flex;
   font-size: ms(1);
   padding-bottom: rem(30px);
   padding-top: rem(30px);
+
+  .cld__inner:hover &,
+  .cld__inner:focus &,
+  .cld__inner:active & {
+    color: $color-primary--beta;
+  }
 }
 
 .cld__share {
@@ -135,7 +150,7 @@
 
 .cld--alpha {
   .cld__content {
-    border-width: 1px;
+    border-width: rem(2px);
   }
 
   .cld__details {
@@ -144,11 +159,7 @@
     padding-top: rem(6px);
   }
 
-  .cld__details--alpha {
-    font-size: ms(-1);
-  }
-
-  .cld__details--beta,
+  .cld__details,
   .cld__share {
     font-size: ms(-2);
   }

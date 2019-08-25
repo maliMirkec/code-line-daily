@@ -110,7 +110,7 @@ $mq-breakpoints: (
 /// @since 1.0.0
 $color-primary--alpha: #12e09f;
 
-/// Color for text
+/// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example color: $color-primary--beta;
@@ -122,13 +122,22 @@ $color-primary--beta: #92f6d7;
 /// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example color: $color-primary--gamma;
+/// @group 1.2.Colors
+/// @name color-primary--gamma
+/// @since 1.0.0
+$color-primary--gamma: #0eaf7c;
+
+/// Color from color palette
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example color: $color-secondary--alpha;
 /// @group 1.2.Colors
 /// @name color-secondary--alpha
 /// @since 1.0.0
 $color-secondary--alpha: #041f17;
 
-/// Color for text
+/// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example color: $color-secondary--beta;

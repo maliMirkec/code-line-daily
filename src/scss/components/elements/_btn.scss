@@ -18,8 +18,7 @@
   appearance: none;
   background-color: $color-primary--gamma;
   border: rem(2px) solid currentColor;
-  border-radius: rem(15px);
-  // box-shadow: 0 0 0 1px currentColor;
+  // border-radius: rem(15px);
   color: $color-secondary--beta;
   cursor: pointer;
   display: inline-flex;
@@ -40,12 +39,14 @@
 }
 
 .btn--alpha {
-  background-color: $color-primary--alpha;
-  color: $color-secondary--alpha;
+  background-color: $color-secondary--alpha;
+  border-color: $color-primary--beta;
+  color: $color-primary--alpha;
 }
 
 .btn--beta {
-  border-radius: rem(12px);
+  border-width: 1px;
+  // border-radius: rem(12px);
   font-size: ms(-2);
   min-height: rem(24px);
   padding-left: rem(18px);

@@ -56,8 +56,8 @@
 
 .cld__content {
   background-color: $color-primary--gamma;
-  border: rem(4px) solid $color-primary--beta;
-  border-radius: rem(15px);
+  border: rem(2px) solid $color-primary--beta;
+  // border-radius: rem(15px);
   color: $color-secondary--beta;
 }
 
@@ -68,10 +68,11 @@
 .cld__code,
 .cld__details {
   padding-left: rem(20px);
-  padding-right: rem(7.5px);
+  padding-right: rem(20px);
 
   @include mq($until: mobile) {
     padding-left: rem(7.5px);
+    padding-right: rem(7.5px);
   }
 }
 
@@ -127,8 +128,8 @@
   @include tra;
   align-items: center;
   background-color: $color-primary--alpha;
-  border-bottom: rem(4px) solid $color-primary--beta;
-  border-top: rem(4px) solid $color-primary--beta;
+  border-bottom: rem(2px) solid $color-primary--beta;
+  border-top: rem(2px) solid $color-primary--beta;
   color: $color-secondary--beta;
   display: flex;
   font-size: ms(1);
@@ -152,7 +153,7 @@
 
 .cld--alpha {
   .cld__content {
-    border-width: rem(2px);
+    border-width: 1px;
   }
 
   .cld__details {
@@ -167,7 +168,7 @@
   }
 
   .cld__code {
-    border-width: rem(2px);
+    border-width: 1px;
     font-size: ms(0);
     padding-bottom: rem(20px);
     padding-top: rem(20px);

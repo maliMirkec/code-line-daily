@@ -9,7 +9,7 @@ The project is open-sourced, and you are very welcome to add your line of code, 
 - [CMS to submit the line], or
 - [GitHub to create a new pull request].
 
-And don't forget to share and follow the project with the community! Code Line Daily is available on [Twitter], [Facebook], and [IndieHackers].
+And don't forget to share and follow the project! Code Line Daily is available on [Twitter], [Facebook], and [IndieHackers].
 
 ---
 

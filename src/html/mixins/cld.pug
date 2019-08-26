@@ -13,7 +13,7 @@ mixin cld(line, modifier)
           span.cld__detail=line.note
         code.cld__code=line.line
       .cld__details.cld__details--beta
-        span.cld__detail= line.language
+        span.cld__detail= "#" + line.language
         span.cld__detail= line.date
         span.cld__detail.
           By: #[a.btn(href="/author/" + line.author.toLowerCase() + ".html", title="See author")=line.author]

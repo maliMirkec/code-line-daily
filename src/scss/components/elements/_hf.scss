@@ -1,58 +1,171 @@
 // Header
 //
 // Header is displayed at the top of the page and it consists
-// of title, logo and tagline.
+// of logo, title and menu.
 //
 // Markup:
-// <div class="header">
-//   <h1>Starter Project</h1>
-//   <svg width="500" height="500" viewBox="0 0 500 500"><defs><filter id="starter-project-a" width="105.2%" height="105.2%" x="-2.6%" y="-1.9%" filterUnits="objectBoundingBox"><feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter><linearGradient id="starter-project-b" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#BA1ADA"></stop><stop offset="100%" stop-color="#D91A79"></stop></linearGradient><linearGradient id="starter-project-c" x1="100%" x2="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#1ED9D9"></stop><stop offset="100%" stop-color="#1EBADA"></stop></linearGradient><path id="starter-project-d" d="M250 225l-150 75V100l150 75v-75h50v200h-50v-75z"></path><filter id="starter-project-e" width="103%" height="103%" x="-1.5%" y="-1.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="2"></feGaussianBlur><feOffset dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"></feComposite><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd" filter="url(#starter-project-a)" transform="translate(50 50)"><path fill="url(#starter-project-b)" d="M80 35h320v365H0V0h80v35z"></path><use fill="url(#starter-project-c)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#starter-project-d"></use><use fill="#000" filter="url(#starter-project-e)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#starter-project-d"></use></g></svg>
-//   <h5>A set of latest best practices packed in Gulp tasks</h5>
+// <div class="hf">
+//   <div class="w w--beta hf__inner">
+//     <a class="hf__skip" href="#main">Skip to main content</a>
+//     <div class="hf__logo">
+//       <span class="hf__img">
+//         <img class="hf__src" src="/gfx/svg/cld-logo.svg">
+//       </span>
+//       <span class="hf__cld">Code <br>Line <br>Daily</h1>
+//     </div>
+//     <nav class="hf__nav">
+//       <ul class="hf__list">
+//         <li class="hf__item">
+//           <a class="hf__link active" href="#home">Home</a>
+//         </li>
+//         <li class="hf__item">
+//           <a class="hf__link" href="#archive">Archive</a>
+//         </li>
+//         <li class="hf__item">
+//           <a class="hf__link" href="#evergreen">Evergreen</a>
+//         </li>
+//         <li class="hf__item">
+//           <a class="hf__link" href="#about">About</a>
+//         </li>
+//       </ul>
+//     </nav>
+//   </div>
 // </div>
 //
-// Weight: 201
+// Weight: 400
 //
 // Styleguide: Header
+
+// Footer
+//
+// Footer is displayed at the end of the page and it consists
+// of logo, title and menu.
+//
+// Markup:
+// <div class="hf">
+//   <div class="w w--beta hf__inner">
+//     <a class="hf__skip" href="#main">Skip to main content</a>
+//     <div class="hf__logo">
+//       <span class="hf__img">
+//         <img class="hf__src" src="/gfx/svg/cld-logo.svg">
+//       </span>
+//       <span class="hf__cld">Code <br>Line <br>Daily</h1>
+//     </div>
+//     <nav class="hf__nav">
+//       <ul class="hf__list">
+//         <li class="hf__item">
+//           <a class="hf__link" href="#evergreen">GitHub</a>
+//         </li>
+//         <li class="hf__item">
+//           <a class="hf__link" href="#home">Twitter</a>
+//         </li>
+//         <li class="hf__item">
+//           <a class="hf__link" href="#archive">Facebook</a>
+//         </li>
+//       </ul>
+//     </nav>
+//   </div>
+// </div>
+//
+// Weight: 410
+//
+// Styleguide: Footer
+
 .hf {
-  background-color: $color-beta;
-  background-image: linear-gradient(to bottom right, $color-beta, adjust-hue($color-beta, 10%));
-  color: $color-alpha;
-  padding: rem(10px);
+  background-color: $color-secondary--beta;
+  padding: rem(15px);
+
+  a[href*="/"] {
+    text-decoration: none;
+
+    &.active {
+      position: relative;
+
+      &:after {
+        content: '<';
+        position: absolute;
+        right: rem(-15px);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
 }
 
 .hf__inner {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hf__skip {
+  align-items: center;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(1px);
+  display: flex;
+  height: 1px;
   justify-content: center;
-  margin: 0;
-  padding: rem(10px);
+  overflow: hidden;
+  position: absolute;
+  transition: none;
+  white-space: nowrap;
+  width: 1px;
 
-  &[href] {
-    text-decoration: none;
-  }
-
-  li + li {
-    margin-left: rem(10px);
+  &:focus {
+    background-color: $color-primary--alpha;
+    clip: auto;
+    color: $color-secondary--alpha;
+    height: 100%;
+    width: auto;
   }
 }
 
 .hf__logo {
-  display: block;
-  margin-right: rem(20px);
-  max-height: rem(50px);
-  transform: skewX(-1deg);
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
 
-  svg {
+.hf__img {
+  img {
     display: block;
-    width: rem(50px);
   }
 }
 
-.hf__title {
-  flex: 0 0 auto;
+.hf__src {
+  display: block;
+  height: rem(90px);
+  width: rem(90px);
+
+  @include mq($until: mobile) {
+    height: rem(60px);
+    width: rem(60px);
+  }
+}
+
+.hf__cld {
+  margin-left: rem(15px);
+  width: rem(90px);
+
+  @include mq($until: mobile) {
+    font-size: ms(-1);
+    margin-left: rem(10px);
+    width: rem(60px);
+  }
+}
+
+.hf__list {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  transform: skewX(-1deg);
-  width: auto;
+}
+
+.hf__link {
+  // color: inherit;
+  display: flex;
+  font-size: ms(-1);
 }

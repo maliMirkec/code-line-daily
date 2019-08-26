@@ -1,6 +1,14 @@
-header.hf
-  a.hf__inner(href=siteURL)
-    span.hf__logo
-      img(src="/gfx/svg/cld-logo.svg", alt="Code Line Daily Icon", inline="true")
-    h1.hf__title #{siteName}
+.hf
+  .w.w--beta.hf__inner
+    a.hf__skip(href="#main")= "Skip to main content"
+    a.hf__logo(href=siteURL)
+      .hf__img
+        img.hf__src(src="/gfx/svg/cld-logo.svg", alt="Code Line Daily Icon", inline="true")
+      .hf__cld #{siteName}
+    nav.hf__nav
+      ul.hf__list
+        each menuValue, menuIndex in menu
+          - var currentClass = menuValue.title == pageTitle ? 'hf__link active' : 'hf__link';
+          li.hf__item
+            a(class=currentClass, href=menuValue.href)= menuValue.title
 

@@ -4,4 +4,10 @@ block variables
   - pageTitle = "About"
 
 block content
-  include:markdown-it(html) about.md
+  article.w.w--beta.mt--alpha
+    include:markdown-it(html) about.md
+    hr
+  .w.w--beta.mt--beta
+    p= "See today's best line of code:"
+  .w.w--beta.mt
+    +cld(thisItem, '')

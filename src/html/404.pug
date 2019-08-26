@@ -4,4 +4,11 @@ block variables
   - pageTitle = "Content Not Found"
 
 block content
-  include:markdown-it(html) 404.md
+  article.w.w--beta.mt--alpha
+    include:markdown-it(html) 404.md
+    hr
+  .w.w--beta.mt--beta
+    p= "See today's best line of code:"
+  .w.w--beta.mt
+    +cld(thisItem, '')
+

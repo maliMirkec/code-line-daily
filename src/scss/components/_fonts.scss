@@ -5,22 +5,18 @@
 
 // Use this if using web fonts
 body {
-  font-family: sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   line-height: $line-height;
 }
 
 .fonts-stage-1 body {
-  font-family: $font-alpha-subset, sans-serif;
+  font-family: $font-alpha-subset, monospace;
   font-style: normal;
   font-weight: 400;
 }
 
 .fonts-stage-2 body {
-  font-family: $font-alpha, sans-serif;
+  font-family: $font-alpha, monospace;
   font-style: normal;
   font-weight: 400;
-}
-
-code {
-  font-family: 'Courier New', Courier, monospace;
 }

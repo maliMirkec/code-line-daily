@@ -33,7 +33,8 @@ import FontFaceObserver from 'fontfaceobserver'
    * @name fontASubset
    * @type {Object}
    */
-  const fontASubset = new FontFaceObserver('LatoSubset')
+  const fontASubset = new FontFaceObserver('PT Mono Subset')
+  console.log('fontASubset', fontASubset)
 
   /**
    * A promise that adds 'fonts-stage-1' if {@link fontASubset}
@@ -52,7 +53,7 @@ import FontFaceObserver from 'fontfaceobserver'
      * @name fontA
      * @type {Object}
      */
-    const fontA = new FontFaceObserver('Lato')
+    const fontA = new FontFaceObserver('PT Mono')
 
     /**
      * A promise that adds 'fonts-stage-2' if

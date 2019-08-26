@@ -1,0 +1,24 @@
+mixin cld(line, modifier)
+  - var cldClass = "cld " + modifier;
+  - var shareTextPlain = encodeURIComponent("Code Line Daily: " + line.line.trim())
+  - var shareTextFancy = encodeURIComponent("Code Line Daily:\n" + line.line.trim() + "\n\n")
+  - var shareRelated = line.handle ? '&related=' + line.handle : ''
+  - var twitterLink = "https://twitter.com/intent/tweet?url=" + siteURL + "&text=" + shareTextFancy + "&hashtags=loc,cld,codelinedaily," + line.language + "&via=" + og.twitter_id + shareRelated;
+  - var facebookLink = "https://facebook.com/sharer.php?u=" + siteURL;
+  - var redditLink = "https://www.reddit.com/submit?url=" + siteURL + "&title=" + shareTextPlain;
+  div(class=cldClass)
+    .cld__content
+      a.cld__inner(href=line.link, title="Learn more", target="_blank", rel="noopener")
+        .cld__details.cld__details--alpha
+          span.cld__detail=line.note
+        code.cld__code=line.line
+      .cld__details.cld__details--beta
+        span.cld__detail= line.language
+        span.cld__detail= line.date
+        span.cld__detail.
+          By: #[a.btn(href="/author/" + line.author.toLowerCase() + ".html", title="See author")=line.author]
+    .cld__share
+      span.cld__detail= "Share:"
+      a.btn(href=twitterLink, target="_blank", rel="noopener", title="Share on Twitter") Twitter
+      a.btn(href=facebookLink, target="_blank", rel="noopener", title="Share on Facebook") Facebook
+      a.btn(href=redditLink, target="_blank", rel="noopener", title="Share on Reddit") Reddit

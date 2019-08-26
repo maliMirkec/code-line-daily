@@ -10,20 +10,29 @@ $mq--mobile: 480px;
 /// Media query definition for desktop devices, used in css-locks.
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example @include css-locks(font-size, $mq--mobile, $mq--tablet, $font-size--mobile, $font-size--tablet);
+/// @group 1.1.Sizes
+/// @name mq--tablet
+/// @since 1.0.0
+$mq--tablet: 768px;
+
+/// Media query definition for desktop devices, used in css-locks.
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example @include css-locks(font-size, $mq--mobile, $mq--desktop, $font-size--mobile, $font-size--desktop);
 /// @group 1.1.Sizes
 /// @name mq--desktop
 /// @since 1.0.0
 $mq--desktop: 960px;
 
-/// Media query definition for desktop devices, used in css-locks.
+/// Media query definition for wide devices, used in css-locks.
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
-/// @example @include css-locks(font-size, $mq--mobile, $mq--tablet, $font-size--mobile, $font-size--tablet);
+/// @example @include css-locks(font-size, $mq--mobile, $mq--wide, $font-size--mobile, $font-size--wide);
 /// @group 1.1.Sizes
-/// @name mq--tablet
+/// @name mq--wide
 /// @since 1.0.0
-$mq--tablet: 768px;
+$mq--wide: 1440px;
 
 /// Default font size on mobile devices, used in css-locks.
 /// @access public
@@ -32,7 +41,7 @@ $mq--tablet: 768px;
 /// @group 1.1.Sizes
 /// @name font-size--mobile
 /// @since 1.0.0
-$font-size--mobile: 14px;
+$font-size--mobile: 16px;
 
 /// Default font size on desktop devices, used in css-locks.
 /// @access public
@@ -41,7 +50,7 @@ $font-size--mobile: 14px;
 /// @group 1.1.Sizes
 /// @name font-size--desktop
 /// @since 1.0.0
-$font-size--desktop: 16px;
+$font-size--desktop: 20px;
 
 /// Default line-height
 /// @access public
@@ -51,6 +60,15 @@ $font-size--desktop: 16px;
 /// @name line-height
 /// @since 1.0.0
 $line-height: 1.5;
+
+/// Default letter-spacing
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example letter-spacing: $letter-spacing;
+/// @group 1.1.Sizes
+/// @name letter-spacing
+/// @since 1.0.0
+$letter-spacing: 0.02em;
 
 /// Configuration for modular scale
 /// @access public
@@ -62,7 +80,7 @@ $line-height: 1.5;
 /// @link http://www.modularscale.com/
 $modularscale: (
   base: 1rem,
-  ratio: $major-second
+  ratio: $minor-third
 );
 
 /// Configuration for media queries
@@ -79,35 +97,54 @@ $modularscale: (
 $mq-breakpoints: (
   mobile:  $mq--mobile,
   tablet:  $mq--tablet,
-  desktop: $mq--desktop
+  desktop: $mq--desktop,
+  wide: $mq--wide
 );
 
 /// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
-/// @example color: $color-alpha;
+/// @example color: $color-primary--alpha;
 /// @group 1.2.Colors
-/// @name color-alpha
+/// @name color-primary--alpha
 /// @since 1.0.0
-$color-alpha: #12e09f;
+$color-primary--alpha: #12e09f;
 
-/// Color for text
+/// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
-/// @example color: $color-beta;
+/// @example color: $color-primary--beta;
 /// @group 1.2.Colors
-/// @name color-beta
+/// @name color-primary--beta
 /// @since 1.0.0
-$color-beta: #1f1f1f;
+$color-primary--beta: #92f6d7;
 
-/// Color for text
+/// Color from color palette
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
-/// @example color: $color-gamma;
+/// @example color: $color-primary--gamma;
 /// @group 1.2.Colors
-/// @name color-gamma
+/// @name color-primary--gamma
 /// @since 1.0.0
-$color-gamma: #f1f1f1;
+$color-primary--gamma: #0eaf7c;
+
+/// Color from color palette
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example color: $color-secondary--alpha;
+/// @group 1.2.Colors
+/// @name color-secondary--alpha
+/// @since 1.0.0
+$color-secondary--alpha: #041f17;
+
+/// Color from color palette
+/// @access public
+/// @author Silvestar Bistrović <me@silvestar.codes>
+/// @example color: $color-secondary--beta;
+/// @group 1.2.Colors
+/// @name color-secondary--beta
+/// @since 1.0.0
+$color-secondary--beta: #101413;
 
 /// Transition duration
 /// @access public
@@ -127,20 +164,20 @@ $trd: 0.175s;
 /// @since 1.0.0
 $tra: cubic-bezier(0.04, 0.88, 0.74, 1.04);
 
-/// Lato
+/// PT Mono
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example font-family: $font-alpha;
 /// @group 1.4.Fonts
 /// @name font-alpha
 /// @since 1.0.0
-$font-alpha: 'Lato';
+$font-alpha: 'PT Mono';
 
-/// Lato Subset
+/// PT Mono Subset
 /// @access public
 /// @author Silvestar Bistrović <me@silvestar.codes>
 /// @example font-family: $font-alpha-subset;
 /// @group 1.4.Fonts
 /// @name font-alpha-subset
 /// @since 1.0.0
-$font-alpha-subset: 'LatoSubset';
+$font-alpha-subset: 'PT Mono Subset';

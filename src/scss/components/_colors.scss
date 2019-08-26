@@ -1,0 +1,68 @@
+// Colors
+//
+// This is a color palette for the CCI website. You shall have no other colors before these.
+//
+// Use `.c-$color` class for text color.
+//
+// Use `.bgc-$color` class for background color.
+//
+// Replace `$color` with corresponding color name.
+//
+// Example:
+// ```
+// <div class="c-primary-alpha">...</div>
+// <div class="bg-secondary-beta">...</div>
+// ```
+//
+// ---
+//
+// Colors:
+// primary-alpha: #12e09f - Primary Alpha
+// primary-beta: #92f6d7 - Primary Beta
+// secondary-alpha: #041f17 - Secondary Alpha
+// secondary-beta: #0c201a - Secondary Beta
+// secondary-gamma: #101413 - Secondary Gamma
+//
+// Weight: 100
+//
+// Styleguide: Colors
+
+.c-primary-alpha {
+  color: $color-primary--alpha;
+}
+
+.c-primary-beta {
+  color: $color-primary--beta;
+}
+
+.c-secondary--alpha {
+  color: $color-secondary--alpha;
+}
+
+.c-secondary--beta {
+  color: $color-secondary--beta;
+}
+
+.c-secondary--gamma {
+  color: $color-secondary--beta;
+}
+
+.bg-primary--alpha {
+  background-color: $color-primary--alpha;
+}
+
+.bg-primary--beta {
+  background-color: $color-primary--beta;
+}
+
+.bg-secondary-alpha {
+  background-color: $color-secondary--alpha;
+}
+
+.bg-secondary-beta {
+  background-color: $color-secondary--beta;
+}
+
+.bg-secondary-gamma {
+  background-color: $color-secondary--beta;
+}

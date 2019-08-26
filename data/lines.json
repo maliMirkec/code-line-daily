@@ -144,7 +144,7 @@
       "line": "var_dump( $variable )",
       "note": "Dumps variable.",
       "link": "https://www.php.net/manual/en/function.var-dump.php",
-      "language": "#PHP",
+      "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
       "handle": "malimirkeccita",

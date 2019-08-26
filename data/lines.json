@@ -142,11 +142,12 @@
     },
     {
       "line": "var_dump( $variable )",
-      "note": "Dumps variable. ",
+      "note": "Dumps variable.",
       "link": "https://www.php.net/manual/en/function.var-dump.php",
       "language": "#PHP",
-      "author": "Silvestar ",
-      "handle": "malimirkeccita ",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
       "date": "2019-08-26"
     }
   ]

@@ -159,6 +159,16 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-27"
+    },
+    {
+      "line": "pointer-events: none",
+      "note": "Removes clickable context.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events",
+      "language": "#CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-28"
     }
   ]
 }

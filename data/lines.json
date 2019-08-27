@@ -149,6 +149,16 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-26"
+    },
+    {
+      "line": "<wbr>",
+      "note": "Sets desired word break position.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr",
+      "language": "#CSS",
+      "evergreen": false,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-27"
     }
   ]
 }

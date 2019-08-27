@@ -37,6 +37,10 @@
     {
       "title": "GitHub",
       "href": "https://github.com/maliMirkec/code-line-daily"
+    },
+    {
+      "title": "RSS",
+      "href": "/rss.xml"
     }
   ]
 }

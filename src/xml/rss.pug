@@ -1,0 +1,13 @@
+extends /_layout/rss.pug
+
+block variables
+
+block content
+  each listValue, listIndex in listArchive
+    item
+      title= listValue.line
+      div= "https://cld.silvestar.codes/archive/"
+      guid= "https://cld.silvestar.codes/archive/"
+      description= listValue.note
+      - var uDate = new Date(listValue.date);
+      pubDate= uDate.toUTCString()

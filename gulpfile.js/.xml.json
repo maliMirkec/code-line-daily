@@ -1,0 +1,12 @@
+{
+  "pugConfig": {
+    "basedir": "",
+    "pretty": true
+  },
+  "htmlminConfig": {
+    "collapseWhitespace": true
+  },
+  "renameConfig": {
+    "extname": ".xml"
+  }
+}

@@ -169,6 +169,16 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-28"
+    },
+    {
+      "line": "const myClass = isHome() ? 'home' : 'category'",
+      "note": "Ternary operator.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
+      "language": "JS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-29"
     }
   ]
 }

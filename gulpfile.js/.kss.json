@@ -1,5 +1,5 @@
 {
-  "title": "Starter Project",
+  "title": "Code Line Daily",
   "source": "helpers.source",
   "destination": "helpers.dist/config.kss.dist/",
   "css": [

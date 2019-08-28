@@ -1,7 +1,7 @@
-# [Starter Project]
+# [Code Line Daily]
 
-![Starter Project Logo - Folder with start button](https://raw.githubusercontent.com/maliMirkec/starter-project/master/src/gfx/png/starter-project-md.png)
+![Code Line Daily Logo](https://raw.githubusercontent.com/maliMirkec/code-line-daily/master/src/gfx/png/cld.png)
 
-A set of gulp tasks that helps you develop high performant websites using latest best practices.
+A line of code of the day.
 
-[Starter Project]: https://github.com/maliMirkec/starter-project
+[Code Line Daily]: https://github.com/maliMirkec/code-line-daily

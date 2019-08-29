@@ -174,11 +174,20 @@
       "line": "const myClass = isHome() ? 'home' : 'category'",
       "note": "Ternary operator.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-      "language": "JS",
+      "language": "JavaScript",
       "evergreen": false,
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-29"
+    },
+    {
+      "line": "JSON.stringify({ item: \"value\" })",
+      "note": "Converts JS object or value to a JSON string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-02"
     }
   ]
 }

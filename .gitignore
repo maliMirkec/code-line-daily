@@ -2,4 +2,4 @@
 node_modules/
 dist/
 .netlify/
-src/gfx/cover/*
+src/gfx/cover/*.png

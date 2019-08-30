@@ -1,0 +1,15 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Covers"
+
+block content
+  article.w.w--beta.mt--alpha
+    h1= "An archive of lines of code of the day."
+  .w.w--alpha.mt--alpha
+    p.t-sm.t-r= "Sorted by: Date DESC"
+  .w.w--alpha.grid
+    each listValue, listIndex in listArchive
+      div
+        h2.t-p= listValue.line
+        img(src=siteURL + "/gfx/cover/" + listValue.date + ".png", alt="Cover for " + listValue.line)

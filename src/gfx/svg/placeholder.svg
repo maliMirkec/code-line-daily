@@ -1,0 +1,16 @@
+<svg height="204" viewBox="0 0 816 204" width="816" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="m0 0h814v204h-814z" fill="#0eaf7c" />
+    <path d="m1 1h812v202h-812z" stroke="#92f6d7" stroke-width="2" />
+    <path d="m1 52h812v100h-812z" fill="#12e09f" stroke="#92f6d7" stroke-width="2" />
+    <g fill="#101413" font-family="PTMono-Regular, PT Mono" letter-spacing=".2">
+      <text font-size="20">
+        <tspan x="20" y="31">&gt; note</tspan>
+      </text><text font-size="24">
+        <tspan x="20" y="110">line</tspan>
+      </text><text font-size="16">
+        <tspan x="20" y="184">#language</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

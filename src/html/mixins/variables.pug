@@ -2,7 +2,7 @@ block variables
 - var siteName = locals.site.siteName ? locals.site.siteName : 'Code Line Daily';
 - var siteDesc = locals.site.siteDesc ? locals.site.siteDesc : 'A line of code of the day.';
 - var siteURL = locals.site.siteURL ? locals.site.siteURL : '/';
-- var siteImg = locals.site.siteImg ? locals.site.siteImg : '/';
+//- - var siteImg = locals.site.siteImg ? locals.site.siteImg : '/';
 - var og = locals.site.og ? locals.site.og : '/';
 - var menu = locals.site.menu ? locals.site.menu : [];
 - var menu2 = locals.site.menu2 ? locals.site.menu2 : [];
@@ -10,6 +10,7 @@ block variables
 - var thisItem = list.slice(-1).pop()
 - var listArchive = list.slice().reverse();
 - var listEvergreen = list.slice().filter(item => item.evergreen);
+- var siteImg = siteURL + '/gfx/cover/' + thisItem.date + '.png'
 
 - function formatNumber(num)
   - return num < 10 ? '0' + num : num;

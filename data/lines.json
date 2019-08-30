@@ -184,7 +184,7 @@
       "line": "fs.existsSync(path)",
       "note": "Checks if file exists.",
       "link": "https://nodejs.org/api/fs.html#fs_fs_existssync_path",
-      "language": "Node.js",
+      "language": "Nodejs",
       "evergreen": false,
       "author": "Silvestar",
       "handle": "malimirkeccita",

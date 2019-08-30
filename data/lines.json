@@ -102,7 +102,7 @@
     },
     {
       "line": "* + *",
-      "note": "Universal adjacent sibling combinator aka Lobotomized Owl",
+      "note": "Universal adjacent sibling combinator aka Lobotomized Owl.",
       "link": "https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/",
       "language": "CSS",
       "evergreen": true,
@@ -112,7 +112,7 @@
     },
     {
       "line": "add_shortcode( 'card' , 'generate_card' )",
-      "note": "Adds shortcode tag hook",
+      "note": "Adds shortcode tag hook.",
       "link": "https://codex.wordpress.org/Function_Reference/add_shortcode",
       "language": "PHP",
       "evergreen": true,
@@ -151,7 +151,7 @@
       "date": "2019-08-26"
     },
     {
-      "line": "<wbr>",
+      "line": "<wbr/>",
       "note": "Sets desired word break position.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr",
       "language": "HTML",
@@ -174,11 +174,21 @@
       "line": "const myClass = isHome() ? 'home' : 'category'",
       "note": "Ternary operator.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-      "language": "JS",
+      "language": "JavaScript",
       "evergreen": false,
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-08-29"
+    },
+    {
+      "line": "fs.existsSync(path)",
+      "note": "Checks if file exists.",
+      "link": "https://nodejs.org/api/fs.html#fs_fs_existssync_path",
+      "language": "Node.js",
+      "evergreen": false,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-08-30"
     }
   ]
 }

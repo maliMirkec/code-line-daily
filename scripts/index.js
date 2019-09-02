@@ -1,5 +1,5 @@
 const sharp = require('sharp')
-const lines = require('../data/lines.json')
+const lines = require('../api/lines.json')
 
 const tagsToReplace = {
   '&': '&amp;',
@@ -40,7 +40,8 @@ if (lines && lines.list && lines.list.length) {
       const path = `./src/gfx/cover/${line.date}.png`
       let lineSvg = ''
       let noteSvg = ''
-      const lineText = line.language === 'html' ? safeTagsTeplace(line.line) : line.line
+
+      const lineText = safeTagsTeplace(line.line)
 
       if (lineText.length > 40) {
         const lineIndex = lineText.indexOf(' ', 40) + 1
@@ -92,4 +93,4 @@ if (lines && lines.list && lines.list.length) {
   })
 }
 
-console.log('Images has been created.')
+console.log('Images have been created.')

@@ -1,7 +1,7 @@
 // Returns latest line by language provided
 // Link structure: https://cld.silvestar.codes/get-line-by-lang/:lang:
 // Parameter :lang: - [required, case insensitive] Languages: HTML, CSS, JavaScript, PHP, Nodejs
-const lines = require('../data/lines.json')
+const lines = require('./lines.json')
 
 lines.list.sort((a, b) => {
   const aa = new Date(a.date)

@@ -16,7 +16,7 @@ collections:
     files:
       - name: "data"
         label: "Data"
-        file: "data/lines.json"
+        file: "api/lines.json"
         format: "json"
         delete: false
         fields:

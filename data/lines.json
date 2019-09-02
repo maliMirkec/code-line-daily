@@ -198,6 +198,24 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-02"
+    },
+    {
+      "line": "lines.find(line => new Date(line.date) <= new Date())",
+      "note": "Finds and returns first match in an array.",
+      "link": "https://www.w3schools.com/jsref/jsref_find.asp",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-03"
+    },
+    {
+      "line": "new Date()",
+      "note": "Creates current date object.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Parameters",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-04"
     }
   ]
 }

@@ -13,9 +13,3 @@
 
   # Directory with the serverless Lambda functions to deploy to AWS.
   functions = "./api/"
-
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/api/:splat:"
-  status = 301
-  force = false

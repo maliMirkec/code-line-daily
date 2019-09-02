@@ -1,4 +1,5 @@
 const sharp = require('sharp')
+const fs = require('fs')
 const lines = require('../api/lines.json')
 
 const tagsToReplace = {
@@ -75,18 +76,18 @@ if (lines && lines.list && lines.list.length) {
         noteSvg = `<tspan x="0" y="50">${line.note}</tspan>`
       }
 
-      // if (!fs.existsSync(path)) {
-      let svg = placeholder.replace('$line', lineSvg)
-      svg = svg.replace('$note', noteSvg)
-      svg = svg.replace('$language', line.language)
+      if (!fs.existsSync(path)) {
+        let svg = placeholder.replace('$line', lineSvg)
+        svg = svg.replace('$note', noteSvg)
+        svg = svg.replace('$language', line.language)
 
-      sharp(Buffer.from(svg))
-        .png()
-        .toFile(path)
-        .catch((err) => {
-          console.error(err)
-        })
-      // }
+        sharp(Buffer.from(svg))
+          .png()
+          .toFile(path)
+          .catch((err) => {
+            console.error(err)
+          })
+      }
     } catch (err) {
       console.error(err)
     }

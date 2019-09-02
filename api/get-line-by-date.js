@@ -19,7 +19,16 @@ lines.list.sort((a, b) => {
 })
 
 exports.handler = function (event, context, callback) {
-  const date = event.path.replace('/get-line-by-date/', '')
+  console.log('event.path', event.path)
+
+  const path = event.path.split('get-line-by-date')
+
+  console.log('path', path)
+
+  const date = path[1].replace('/', '')
+
+  console.log('date', date)
+
   const ddate = new Date(date)
 
   const response = lines.list.find(

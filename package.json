@@ -1,6 +1,6 @@
 {
   "name": "code-line-daily",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "A line of code of the day.",
   "main": "index.html",
   "scripts": {

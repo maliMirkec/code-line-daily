@@ -19,6 +19,8 @@ lines.list.sort((a, b) => {
 })
 
 exports.handler = function (event, context, callback) {
+  console.log(event)
+
   const lang = event.path.replace('/get-lines-by-lang/', '')
 
   const response = lines.list.filter(line => line.language.toLowerCase() === lang.split('/')[0].toLowerCase())

@@ -1,7 +1,7 @@
 // Returns latest line to the date provided
 // Link structure: https://cld.silvestar.codes/get-line-by-date/:date:
 // Parameter :date: - [required] Date in format YYYY-MM-DD
-const lines = require('../data/lines.json')
+const lines = require('./lines.json')
 
 lines.list.sort((a, b) => {
   const aa = new Date(a.date)

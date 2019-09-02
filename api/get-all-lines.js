@@ -1,6 +1,6 @@
 // Returns every line
 // Link structure: https://cld.silvestar.codes/get-all-lines
-const lines = require('../data/lines.json')
+const lines = require('./lines.json')
 
 lines.list.sort((a, b) => {
   const aa = new Date(a.date)

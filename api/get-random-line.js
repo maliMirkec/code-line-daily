@@ -1,6 +1,6 @@
 // Returns random line
 // Link structure: https://cld.silvestar.codes/get-random-line
-const lines = require('../data/lines.json')
+const lines = require('./lines.json')
 
 function randomize (min, max) {
   const mmin = Math.ceil(min)

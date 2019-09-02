@@ -21,7 +21,7 @@ const siteConfigs = [{
   path: helpers.trim(`${helpers.proot()}/data/site.json`)
 }, {
   name: 'data',
-  path: helpers.trim(`${helpers.proot()}/data/lines.json`)
+  path: helpers.trim(`${helpers.proot()}/api/lines.json`)
 }]
 
 let thisPugConfigHTML = {}

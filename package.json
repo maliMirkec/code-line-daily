@@ -4,9 +4,10 @@
   "description": "A line of code of the day.",
   "main": "index.html",
   "scripts": {
+    "redirects": "cp src/_redirects dist/_redirects",
     "dev": "node scripts/index.js && gulp dev",
     "default": "node scripts/index.js && gulp default",
-    "build": "node scripts/index.js && gulp build"
+    "build": "node scripts/index.js && gulp build && yarn redirects"
   },
   "repository": {
     "type": "git",

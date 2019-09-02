@@ -1,4 +1,5 @@
 const sharp = require('sharp')
+const fs = require('fs')
 const lines = require('../api/lines.json')
 
 const tagsToReplace = {

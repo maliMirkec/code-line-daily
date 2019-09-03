@@ -6,28 +6,28 @@ A line of code of the day.
 
 First version of an API is available!
 
-URL: [https:cld.silvestar.codes/.netlify/functions/](https:cld.silvestar.codes/.netlify/functions/)
+URL: [https:cld.silvestar.codes/api/](https:cld.silvestar.codes/api/)
 
 Methods:
 - `/get-random-line`
   - Returns random line
-  - Link structure: https://cld.silvestar.codes/.netlify/functions/get-random-line
+  - Link structure: https://cld.silvestar.codes/api/get-random-line
 - `/get-all-lines`
   - Returns every line
-  - Link structure: https://cld.silvestar.codes/.netlify/functions/get-all-lines
+  - Link structure: https://cld.silvestar.codes/api/get-all-lines
 - `/get-lines-by-lang/:lang:`
   - Returns every line by language provided
-  - Link structure: https://cld.silvestar.codes/.netlify/functions/get-lines-by-lang/:lang:
+  - Link structure: https://cld.silvestar.codes/api/get-lines-by-lang/:lang:
   - Parameter [required, case insensitive]: `:lang:`
   - Languages: `HTML`, `CSS`, `JavaScript`, `PHP`, `Nodejs`
 - `/get-line-by-lang/:lang:`
   - Returns latest line by language provided
-  - Link structure: https://cld.silvestar.codes/.netlify/functions/get-line-by-lang/:lang:
+  - Link structure: https://cld.silvestar.codes/api/get-line-by-lang/:lang:
   - Parameter [required, case insensitive]: `:lang:`
   - Languages: `HTML`, `CSS`, `JavaScript`, `PHP`, `Nodejs`
 - `/get-line-by-date/:date:`
   - Returns latest line to the date provided
-  - Link structure: https://cld.silvestar.codes/.netlify/functions/get-line-by-date/:date:
+  - Link structure: https://cld.silvestar.codes/api/get-line-by-date/:date:
   - Parameter [required] : `:date:`
   - Date format: `YYYY-MM-DD`
 

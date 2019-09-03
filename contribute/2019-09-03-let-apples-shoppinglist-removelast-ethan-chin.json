@@ -1,0 +1,10 @@
+{
+  "line": "let apples = shoppingList.removeLast()",
+  "note": "Remove the final item from an array",
+  "link": "https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html",
+  "language": "Swift",
+  "author": "Ethan Chin",
+  "handle": "EthanChinCN",
+  "email": "ethanchin.dev@gmail.com",
+  "bio": "iDev."
+}

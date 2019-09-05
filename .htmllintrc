@@ -31,7 +31,7 @@
   "indent-width": false,
   "indent-width-cont": false,
   "input-radio-req-name": true,
-  "input-req-label": true,
+  "input-req-label": false,
   "label-req-for": true,
   "lang-style": "case",
   "line-end-style": false,
@@ -49,7 +49,7 @@
   "tag-name-lowercase": true,
   "tag-name-match": true,
   "tag-req-attr": false,
-  "tag-self-close": "never",
+  "tag-self-close": false,
   "text-ignore-regex": false,
   "title-max-len": 60,
   "title-no-dup": true

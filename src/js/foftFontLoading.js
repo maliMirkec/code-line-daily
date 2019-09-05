@@ -34,7 +34,6 @@ import FontFaceObserver from 'fontfaceobserver'
    * @type {Object}
    */
   const fontASubset = new FontFaceObserver('PT Mono Subset')
-  console.log('fontASubset', fontASubset)
 
   /**
    * A promise that adds 'fonts-stage-1' if {@link fontASubset}

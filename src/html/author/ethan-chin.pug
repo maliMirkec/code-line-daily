@@ -1,15 +1,15 @@
 extends /_layout/layout.pug
 
 block variables
-  - pageTitle = "Posts by: Silvestar Bistrović"
-  - pageURL = "author/silvestar"
+  - pageTitle = "Posts by: Ethan Chin"
+  - pageURL = "author/ethan-chin"
 
 block content
   article.w.w--beta.mt--alpha
-    include:markdown-it(html) silvestar.md
+    include:markdown-it(html) ethan-chin.md
   .w.w--alpha.mt--alpha
     p.t-sm.t-r= "Sorted by: Date DESC"
   .w.w--alpha.grid
-    - var authorArchive = listArchive.filter(item => item.author === "Silvestar")
+    - var authorArchive = listArchive.filter(item => item.author === "Ethan Chin")
     each listValue, listIndex in authorArchive
       +cld(listValue, 'cld--alpha')

@@ -202,7 +202,7 @@
     {
       "line": "lines.find(line => new Date(line.date) <= new Date())",
       "note": "Finds and returns first match in an array.",
-      "link": "https://www.w3schools.com/jsref/jsref_find.asp",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
       "language": "JavaScript",
       "author": "Silvestar",
       "handle": "malimirkeccita",
@@ -219,14 +219,21 @@
     },
     {
       "line": "let apples = shoppingList.removeLast()",
-      "note": "Remove the final item from an array",
+      "note": "Removes the final item from an array.",
       "link": "https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html",
       "language": "Swift",
       "author": "Ethan Chin",
       "handle": "EthanChinCN",
-      "email": "ethanchin.dev@gmail.com",
-      "bio": "iDev.",
       "date": "2019-09-05"
+    },
+    {
+      "line": "min-height: 100vh",
+      "note": "Sets the minimum height to 100% of the height of the viewport.",
+      "link": "https://css-tricks.com/a-couple-of-use-cases-for-calc/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-06"
     }
   ]
 }

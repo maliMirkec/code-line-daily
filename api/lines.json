@@ -234,6 +234,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-06"
+    },
+    {
+      "line": "background: Salmon content-box",
+      "note": "Sets background to content-box of an element.",
+      "link": "https://css-tricks.com/nested-gradients-with-background-clip/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-09"
     }
   ]
 }

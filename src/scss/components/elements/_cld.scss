@@ -84,6 +84,7 @@
   min-height: rem(50px);
   padding-bottom: rem(10px);
   padding-top: rem(10px);
+  position: relative;
 }
 
 .cld__details,
@@ -151,6 +152,21 @@
   }
 }
 
+.cld__copy {
+  bottom: calc(100% + #{rem(5px)});
+  position: absolute;
+  right: rem(3px);
+  width: calc(69px);
+  z-index: 1;
+}
+
+.cld__input {
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: -1;
+}
+
 .cld--alpha {
   .cld__content {
     border-width: 1px;
@@ -170,11 +186,16 @@
   .cld__code {
     border-width: 1px;
     font-size: ms(0);
-    padding-bottom: rem(20px);
-    padding-top: rem(20px);
+    padding-bottom: rem(30px);
+    padding-top: rem(30px);
   }
 
   .btn {
     @extend .btn--beta;
+
+    &.cld__copy {
+      font-size: ms(-3);
+      width: calc(57px);
+    }
   }
 }

@@ -1,0 +1,60 @@
+.form-wrapper {
+  border: 1px solid currentColor;
+  padding: rem(9px) rem(30px) rem(39px);
+}
+
+.form {
+  font-size: ms(-1);
+
+  label {
+    display: block;
+    margin-bottom: rem(15px);
+  }
+
+  input[type="email"] {
+    background-color: $color-secondary--beta;
+    border: 1px double $color-primary--alpha;
+    color: $color-primary--alpha;
+    margin-bottom: rem(15px);
+    min-height: rem(51px);
+    min-width: 100%;
+    padding-left: rem(9px);
+    padding-right: rem(9px);
+  }
+
+  input[type="submit"] {
+    line-height: 1.2;
+  }
+}
+
+.form__group {
+  &:not(:last-child) {
+    margin-bottom: rem(15px);
+  }
+}
+
+.form__radio,
+.form__element {
+  display: flex;
+}
+
+.form__radio {
+  margin-top: rem(15px);
+}
+
+.form__element {
+  align-items: center;
+
+  & + & {
+    margin-left: rem(30px);
+  }
+
+  input {
+    background-color: red;
+    margin-bottom: rem(18px);
+  }
+
+  label {
+    margin-left: rem(15px);
+  }
+}

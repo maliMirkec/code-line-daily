@@ -1,0 +1,26 @@
+.w.w--beta.mt--alpha
+  .form-wrapper
+    h2.t-h2= "Subscribe to Code Line Daily newsletter"
+    #mc_embed_signup
+      form.form(action="https://gmail.us4.list-manage.com/subscribe/post?u=e599feae2e1250eeb9fd674e2&amp;id=a19cadbd6d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+        novalidate)
+        #mc_embed_signup_scroll
+          .form__group
+            label(for="mce-EMAIL")= "Email Address"
+            input(type="email" name="EMAIL" id="mce-EMAIL" value="")
+          .form__group
+            span= "Get it weekly or daily?"
+            div.form__radio
+              div.form__element
+                input(type="radio" value="Weekly" name="FREQ" id="mce-FREQ-0")
+                label(for="mce-FREQ-0")= "Weekly"
+              div.form__element
+                input(type="radio" value="Daily" name="FREQ" id="mce-FREQ-1")
+                label(for="mce-FREQ-1")= "Daily"
+          #mce-responses
+            #mce-error-response.response(style="display:none")
+            #mce-success-response.response(style="display:none")
+          .form__group(style="position: absolute; left: -5000px;" aria-hidden="true")
+            input(type="text" name="b_e599feae2e1250eeb9fd674e2_a19cadbd6d" tabindex="-1" value="")
+          .form__group
+            input.btn(type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe")

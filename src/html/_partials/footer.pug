@@ -1,6 +1,5 @@
 .hf
   .w.w--beta.hf__inner
-    a.hf__skip(href="#main")= "Skip to main content"
     a.hf__logo(href="/")
       .hf__img
         img.hf__src(src="/gfx/svg/cld-logo.svg", alt="Code Line Daily Icon", inline="true")
@@ -10,7 +9,10 @@
         each menuValue, menuIndex in menu2
           - var currentClass = menuValue.title == pageTitle ? 'hf__link active' : 'hf__link';
           li.hf__item
-            a(class=currentClass, href=menuValue.href)= menuValue.title
+            if (menuValue.title === "Twitter")
+              a(class=currentClass, href=menuValue.href, rel="me")= menuValue.title
+            else
+              a(class=currentClass, href=menuValue.href)= menuValue.title
 
 .sig
   p Powered by #[a.sig__link(href="https://starter.silvestar.codes") #[img.sig__icon(src="/gfx/svg/starter-project.svg", alt="Starter Project Icon", inline="true")] Starter Project].

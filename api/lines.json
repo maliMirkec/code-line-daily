@@ -234,6 +234,33 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-06"
+    },
+    {
+      "line": "background: Salmon content-box",
+      "note": "Sets background to content-box of an element.",
+      "link": "https://css-tricks.com/nested-gradients-with-background-clip/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-09"
+    },
+    {
+      "line": "text-decoration: wavy overline Salmon;",
+      "note": "Sets wavy text decoration over the text.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration#Examples",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-10"
+    },
+    {
+      "line": "text-decoration-thickness: .125em",
+      "note": "Sets text decoration thickness.",
+      "link": "https://css-tricks.com/styling-links-with-real-underlines/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-11"
     }
   ]
 }

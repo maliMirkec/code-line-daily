@@ -261,6 +261,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-11"
+    },
+    {
+      "line": "new Promise(resolve => resolve()})",
+      "note": "Creates a new promise that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-12"
     }
   ]
 }

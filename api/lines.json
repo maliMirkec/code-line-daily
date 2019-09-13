@@ -282,7 +282,7 @@
     },
     {
       "line": "articles.some(article => article.published)",
-      "note": "Returns true or false if least one element in the array passes the test.",
+      "note": "Returns true or false if at least one element in the array passes the test.",
       "link": "https://medium.com/poka-techblog/simplify-your-javascript-use-some-and-find-f9fb9826ddfd",
       "language": "JavaScript",
       "author": "Silvestar",

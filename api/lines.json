@@ -270,6 +270,24 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-12"
+    },
+    {
+      "line": "articles.every(article => article.published)",
+      "note": "Returns true or false if all elements in the array pass the test.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-13"
+    },
+    {
+      "line": "articles.some(article => article.published)",
+      "note": "Returns true or false if least one element in the array passes the test.",
+      "link": "https://medium.com/poka-techblog/simplify-your-javascript-use-some-and-find-f9fb9826ddfd",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-16"
     }
   ]
 }

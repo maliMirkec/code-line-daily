@@ -8,6 +8,7 @@
 //
 // .btn--alpha - Outline button
 // .btn--beta - Small button
+// .btn--gamma - Small button
 //
 // Weight: 500
 //
@@ -51,4 +52,13 @@
   min-height: rem(24px);
   padding-left: rem(18px);
   padding-right: rem(18px);
+}
+
+.btn--gamma {
+  border-width: 1px;
+  // border-radius: rem(12px);
+  font-size: ms(-1);
+  min-height: rem(54px);
+  padding-left: rem(24px);
+  padding-right: rem(24px);
 }

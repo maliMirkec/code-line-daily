@@ -288,6 +288,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-16"
+    },
+    {
+      "line": "$parent.contains($child) ",
+      "note": "Checks if an element contains a child node.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Node/contains",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-17"
     }
   ]
 }

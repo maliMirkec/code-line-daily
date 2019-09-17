@@ -297,6 +297,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-17"
+    },
+    {
+      "line": "$myElem.classList.contains('my-class')",
+      "note": "Checks if an element contains a class.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#Methods",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-18"
     }
   ]
 }

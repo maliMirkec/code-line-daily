@@ -315,6 +315,16 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-19"
+    },
+    {
+      "line": "string.replace(/$/g, '')",
+      "note": "It removes all $ (dollar) characters from the string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-20"
     }
   ]
 }

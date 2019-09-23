@@ -325,6 +325,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-20"
+    },
+    {
+      "line": "wp_list_pluck($menu, 'object_id')",
+      "note": "Plucks a particular field from each object in a list.",
+      "link": "https://codex.wordpress.org/Function_Reference/wp_list_pluck",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-23"
     }
   ]
 }

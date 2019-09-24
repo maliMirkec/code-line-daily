@@ -343,6 +343,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-24"
+    },
+    {
+      "line": "get_template_directory()",
+      "note": "Returns directory of the current theme.",
+      "link": "https://developer.wordpress.org/reference/functions/get_template_directory/",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-25"
     }
   ]
 }

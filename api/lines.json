@@ -334,6 +334,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-23"
+    },
+    {
+      "line": "in_category('Blog')",
+      "note": "Returns true if the current post is in the category.",
+      "link": "https://developer.wordpress.org/reference/functions/in_category/",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-24"
     }
   ]
 }

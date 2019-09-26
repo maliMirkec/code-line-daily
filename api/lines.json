@@ -352,6 +352,24 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-25"
+    },
+    {
+      "line": "strtolower($text)",
+      "note": "Converts a string to lowercase.",
+      "link": "https://www.php.net/manual/en/function.strtolower.php",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-26"
+    },
+    {
+      "line": "strtoupper($text)",
+      "note": "Converts a string to uppercase.",
+      "link": "https://www.php.net/manual/en/function.strtoupper.php",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-09-26"
     }
   ]
 }

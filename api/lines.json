@@ -379,6 +379,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-09-30"
+    },
+    {
+      "line": "get_term_by('term_taxonomy_id', $post_id)",
+      "note": "Returns all terms by “Term” field and data.https://codex.wordpress.org/Function_Reference/get_term_by",
+      "link": "https://codex.wordpress.org/Function_Reference/get_term_by",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-01"
     }
   ]
 }

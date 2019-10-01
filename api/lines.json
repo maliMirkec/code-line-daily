@@ -382,8 +382,17 @@
     },
     {
       "line": "get_term_by('term_taxonomy_id', $post_id)",
-      "note": "Returns all terms by “Term” field and data.https://codex.wordpress.org/Function_Reference/get_term_by",
-      "link": "https://codex.wordpress.org/Function_Reference/get_term_by",
+      "note": "Returns all terms by “Term” field and data.",
+      "link": "https://developer.wordpress.org/reference/functions/get_term_by/",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-01"
+    },
+    {
+      "line": "get_the_terms($post_id, 'taxonomy')",
+      "note": "Returns all terms of the taxonomy for the given post.",
+      "link": "https://developer.wordpress.org/reference/functions/get_the_terms/",
       "language": "PHP",
       "author": "Silvestar",
       "handle": "malimirkeccita",

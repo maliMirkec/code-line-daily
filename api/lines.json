@@ -397,6 +397,15 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-10-02"
+    },
+    {
+      "line": "break-inside: avoid-column",
+      "note": "Prevents the content to break to a new column.",
+      "link": "https://css-tricks.com/almanac/properties/b/break-inside/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-03"
     }
   ]
 }

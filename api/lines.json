@@ -406,6 +406,16 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-10-03"
+    },
+    {
+      "line": "column-count: 2",
+      "note": "Breaks the content into columns.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-count",
+      "language": "CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-04"
     }
   ]
 }

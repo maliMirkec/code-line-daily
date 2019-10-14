@@ -428,7 +428,7 @@
       "date": "2019-10-14"
     },
     {
-      "line": "str_replace('$', '€' , $str)",
+      "line": "str_replace('$', '€', $str)",
       "note": "Replaces all targeted symbols with the replacement symbol.",
       "link": "https://www.php.net/str_replace",
       "language": "PHP",

@@ -77,7 +77,7 @@ if (lines && lines.list && lines.list.length) {
       }
 
       if (!fs.existsSync(path)) {
-        let svg = placeholder.replace('$line', lineSvg)
+        let svg = placeholder.replace('$line', lineSvg.replace("'$'", '"$"').replace("'€'", '"€"'))
         svg = svg.replace('$note', noteSvg)
         svg = svg.replace('$language', line.language)
 

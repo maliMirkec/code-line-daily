@@ -416,6 +416,54 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-10-04"
+    },
+    {
+      "line": "const greeting = `Hello ${myVar}!`",
+      "note": "Interpolates string with the variable.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-14"
+    },
+    {
+      "line": "str_replace('$', '€' , $str)",
+      "note": "Replaces all targeted symbols with the replacement symbol.",
+      "link": "https://www.php.net/str_replace",
+      "language": "PHP",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-15"
+    },
+    {
+      "line": "window.history.pushState({ state: 1 }, 'My state', '#myHash')",
+      "note": "Adds a state to the browsers history.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/History/pushState",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-16"
+    },
+    {
+      "line": "window.onpopstate = () => {}",
+      "note": "Sets EventHandler for processing popstate events on the window.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-17"
+    },
+    {
+      "line": "location.reload(true)",
+      "note": "Forces reloading the current page from the server.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/location#Example_2_Force_reloading_the_current_page_from_the_server",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-18"
     }
   ]
 }

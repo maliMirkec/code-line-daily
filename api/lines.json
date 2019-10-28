@@ -510,6 +510,54 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-10-25"
+    },
+    {
+      "line": "div:last-child",
+      "note": "Targets the last div element among group of siblings.",
+      "link": "https://css-tricks.com/almanac/selectors/l/last-child/",
+      "language": "CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-28"
+    },
+    {
+      "line": "div:last-of-type",
+      "note": "Targets the last div element of its own type among group of siblings.",
+      "link": "https://css-tricks.com/almanac/selectors/l/last-of-type/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-29"
+    },
+    {
+      "line": "div:first-child",
+      "note": "Targets the first div element among group of siblings.",
+      "link": "https://css-tricks.com/almanac/selectors/f/first-child/",
+      "language": "CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-30"
+    },
+    {
+      "line": "div:first-of-type",
+      "note": "Targets the first div element of its own type among group of siblings.",
+      "link": "https://css-tricks.com/almanac/selectors/f/first-of-type/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-10-31"
+    },
+    {
+      "line": "div:only-child",
+      "note": "Targets div element without any siblings.",
+      "link": "https://css-tricks.com/almanac/selectors/o/only-child/",
+      "language": "CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-01"
     }
   ]
 }

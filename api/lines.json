@@ -570,7 +570,7 @@
       "date": "2019-11-04"
     },
     {
-      "line": "window.requestAnimationFrame(() => {...});",
+      "line": "window.requestAnimationFrame(() => {...})",
       "note": "Tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame",
       "language": "JavaScript",

@@ -558,6 +558,53 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-11-01"
+    },
+    {
+      "line": "window.addEventListener('scroll', () => {...})",
+      "note": "Sets scroll event listener.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-04"
+    },
+    {
+      "line": "window.requestAnimationFrame(() => {...});",
+      "note": "Tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-05"
+    },
+    {
+      "line": "get_template_directory()",
+      "note": "Returns the WordPress current theme directory.",
+      "link": "https://developer.wordpress.org/reference/functions/get_template_directory/",
+      "language": "PHP",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-06"
+    },
+    {
+      "line": "get_template_directory_uri()",
+      "note": "Returns the WordPress theme directory URI.",
+      "link": "https://developer.wordpress.org/reference/functions/get_template_directory_uri/",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-07"
+    },
+    {
+      "line": "wp_get_upload_dir()",
+      "note": "Returns WordPress uploads directory information.",
+      "link": "https://developer.wordpress.org/reference/functions/wp_get_upload_dir/",
+      "language": "PHP",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-08"
     }
   ]
 }

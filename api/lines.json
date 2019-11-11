@@ -605,6 +605,120 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-11-08"
+    },
+    {
+      "line": "document.body",
+      "note": "Returns the body of the <body> or <frameset> node of the current document.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Document/body",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-11"
+    },
+    {
+      "line": "$myElem.getBoundingClientRect()",
+      "note": "Returns the size of an element and its position relative to the viewport.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-12"
+    },
+    {
+      "line": "window.scrollY",
+      "note": "Returns the number of pixels that the document is currently scrolled vertically.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-13"
+    },
+    {
+      "line": "window.scrollX",
+      "note": "Returns the number of pixels that the document is currently scrolled horizontally.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-14"
+    },
+    {
+      "line": "window.innerHeight",
+      "note": "Returns viewport's height in pixels.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-15"
+    },
+    {
+      "line": "window.innerHeight",
+      "note": "Returns viewport's width in pixels.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-18"
+    },
+    {
+      "line": "$myElem.getAttribute('aria-hidden')",
+      "note": "Gets aria-hidden attribute from the element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-19"
+    },
+    {
+      "line": "$myElem.setAttribute('aria-hidden', 'true')",
+      "note": "Sets aria-hidden attribute to true.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-20"
+    },
+    {
+      "line": "myArray.push(myElem)",
+      "note": "Adds new elements to the end of an array. Returns a new array length.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-21"
+    },
+    {
+      "line": "myArray.pop()",
+      "note": "Gets and removes the last element from an array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-22"
+    },
+    {
+      "line": "myArray.shift()",
+      "note": "Gets and removes the first element from an array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-25"
+    },
+    {
+      "line": "myArray.unshift(myElem)",
+      "note": "Adds new elements to the beginning of an array. Returns a new array length.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-26"
     }
   ]
 }

@@ -655,7 +655,7 @@
       "date": "2019-11-15"
     },
     {
-      "line": "window.innerHeight",
+      "line": "window.innerWidth",
       "note": "Returns viewport's width in pixels.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth",
       "language": "JavaScript",

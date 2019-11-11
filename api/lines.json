@@ -608,7 +608,7 @@
     },
     {
       "line": "document.body",
-      "note": "Returns the body of the <body> or <frameset> node of the current document.",
+      "note": "Returns the body of the body or frameset node of the current document.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Document/body",
       "language": "JavaScript",
       "evergreen": true,

@@ -719,6 +719,33 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-11-26"
+    },
+    {
+      "line": "forloop.last",
+      "note": "Checks if it is the last iteration of the loop.",
+      "link": "https://help.shopify.com/en/themes/liquid/objects/for-loops#forloop-last",
+      "language": "Liquid",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-27"
+    },
+    {
+      "line": "{{ myVar | json }}",
+      "note": "Converts a string variable into JSON format.",
+      "link": "https://help.shopify.com/en/themes/liquid/filters/additional-filters#json",
+      "language": "Liquid",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-28"
+    },
+    {
+      "line": "{{ 1999 | money }}",
+      "note": "Converts a number variable into money format.",
+      "link": "https://help.shopify.com/en/themes/liquid/filters/money-filters#money",
+      "language": "Liquid",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-11-29"
     }
   ]
 }

@@ -746,6 +746,52 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-11-29"
+    },
+    {
+      "line": "span:not(:last-child) {}",
+      "note": "Targets all span elements that are not last child.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+      "language": "CSS",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-02"
+    },
+    {
+      "line": "span:not(:last-of-type) {}",
+      "note": "Targets all span elements that are not last child and type span.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-03"
+    },
+    {
+      "line": "span:not(:first-child) {}",
+      "note": "Targets all span elements that are not first child.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-04"
+    },
+    {
+      "line": "span:not(:first-of-type) {}",
+      "note": "Targets all span elements that are not first child and type span.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-05"
+    },
+    {
+      "line": "span:not(:only-child) {}",
+      "note": "Targets all span elements that are the only child.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-06"
     }
   ]
 }

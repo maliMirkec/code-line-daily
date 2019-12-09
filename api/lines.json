@@ -814,7 +814,7 @@
       "date": "2019-12-10"
     },
     {
-      "line": "<meta name=\"referrer\" content=\"no-referrer\"",
+      "line": "<meta name=\"referrer\" content=\"no-referrer\">",
       "note": "Omits the Referrer header entirely.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
       "language": "HTML",

@@ -51,8 +51,13 @@ if (lines && lines.list && lines.list.length) {
           const lineSvg1 = lineText.slice(0, lineIndex)
           const lineSvg2 = lineText.slice(lineIndex, 1000)
 
-          lineSvg += `<tspan x="0" y="60">${lineSvg1}</tspan>`
-          lineSvg += `<tspan x="0" y="140">${lineSvg2}</tspan>`
+          if (lineSvg1.length >= 50) {
+            lineSvg += `<tspan x="0" y="60" font-size="23">${lineSvg1}</tspan>`
+            lineSvg += `<tspan x="0" y="140" font-size="23">${lineSvg2}</tspan>`
+          } else {
+            lineSvg += `<tspan x="0" y="60">${lineSvg1}</tspan>`
+            lineSvg += `<tspan x="0" y="140">${lineSvg2}</tspan>`
+          }
         } else {
           lineSvg = `<tspan x="0" y="100">${lineText}</tspan>`
         }
@@ -60,8 +65,8 @@ if (lines && lines.list && lines.list.length) {
         lineSvg = `<tspan x="0" y="100">${lineText}</tspan>`
       }
 
-      if (line.note.length > 70) {
-        const noteIndex = line.note.indexOf(' ', 40) + 1
+      if (line.note.length > 60) {
+        const noteIndex = line.note.indexOf(' ', 60) + 1
 
         if (noteIndex > 0) {
           const noteSvg1 = line.note.slice(0, noteIndex)

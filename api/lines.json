@@ -792,6 +792,55 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-12-06"
+    },
+    {
+      "line": "<!DOCTYPE html>",
+      "note": "Sets doctype declaration to make browsers parse the document equally.",
+      "link": "https://www.w3.org/QA/2002/04/valid-dtd-list.html",
+      "language": "HTML",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-09"
+    },
+    {
+      "line": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "note": "Controls the viewport's size and scale.",
+      "link": "https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag",
+      "language": "HTML",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-10"
+    },
+    {
+      "line": "<meta name=\"referrer\" content=\"no-referrer\"",
+      "note": "Omits the Referrer header entirely.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
+      "language": "HTML",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-11"
+    },
+    {
+      "line": "<meta charset=\"UTF-8\">",
+      "note": "Sets UTF-8 character encoding.",
+      "link": "https://bitsofco.de/meta-charset/",
+      "language": "HTML",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-12"
+    },
+    {
+      "line": "<link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS Feed\" href=\"/rss\">",
+      "note": "Points to RSS feed and helps people and machines find the feed.",
+      "link": "https://developer.mozilla.org/en-US/docs/Archive/RSS/Getting_Started/Syndicating",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-13"
     }
   ]
 }

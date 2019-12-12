@@ -77,7 +77,7 @@ function jsStart () {
 
 // Will move SW file
 function swStart () {
-  return src(helpers.trim(`${helpers.source()}/${global.config.js.dist}/sw*.js`))
+  return src(helpers.trim(`${helpers.dist()}/${global.config.js.dist}/sw*.js`))
     .pipe(dest(helpers.trim(`${helpers.dist()}`)))
 }
 

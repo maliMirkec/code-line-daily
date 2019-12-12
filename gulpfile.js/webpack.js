@@ -1,12 +1,12 @@
-const { helpers } = require('./helpers')
 const path = require('path')
+const { helpers } = require('./helpers')
 
 module.exports = {
   mode: 'production',
   entry: {
     index: helpers.parse('helpers.source/config.js.src/index.js'),
-    deferredStyles: helpers.parse('helpers.source/config.js.src/deferredStyles.js'),
-    foftFontLoading: helpers.parse('helpers.source/config.js.src/foftFontLoading.js')
+    foftFontLoading: helpers.parse('helpers.source/config.js.src/foftFontLoading.js'),
+    sw: helpers.parse('helpers.source/config.js.src/sw.js')
   },
   output: {
     path: path.resolve(`${__dirname}/${helpers.parse('helpers.dist/config.js.dist/')}`),

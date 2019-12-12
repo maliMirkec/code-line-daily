@@ -75,6 +75,12 @@ function jsStart () {
     .pipe(gulpif(global.config.sync.run, global.bs.stream()))
 }
 
+// Will move SW file
+function swStart () {
+  return src(helpers.trim(`${helpers.source()}/${global.config.js.dist}/sw*.js`))
+    .pipe(dest(helpers.trim(`${helpers.dist()}`)))
+}
+
 // When JS file is changed, it will process JS file, too
 function jsListen () {
   return watch(helpers.trim(`${helpers.source()}/${global.config.js.src}/*.js`), global.config.watchConfig, jsStart, global.bs.reload)
@@ -82,6 +88,7 @@ function jsListen () {
 
 exports.js = {
   jsStart,
+  swStart,
   jsStartDev,
   jsStartProd,
   jsListen

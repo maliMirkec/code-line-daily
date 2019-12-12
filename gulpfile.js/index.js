@@ -43,6 +43,7 @@ exports.dev = series(
   parallel(
     global.config.css.run ? css.cssStart : helpers.skip,
     global.config.js.run ? js.jsStartDev : helpers.skip,
+    global.config.js.run ? js.swStart : helpers.skip,
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
     global.config.fonts.run ? fonts.fontsStart : helpers.skip
   ),
@@ -65,6 +66,7 @@ exports.build = series(
     global.config.favicon.run ? favicon.faviconStart : helpers.skip,
     global.config.css.run ? css.cssStart : helpers.skip,
     global.config.js.run ? js.jsStartProd : helpers.skip,
+    global.config.js.run ? js.swStart : helpers.skip,
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
     global.config.fonts.run ? fonts.fontsStart : helpers.skip,
     global.config.cms.run ? cms.adminStart : helpers.skip,
@@ -93,6 +95,7 @@ exports.default = series(
     global.config.favicon.run ? favicon.faviconStart : helpers.skip,
     global.config.css.run ? css.cssStart : helpers.skip,
     global.config.js.run ? js.jsStartProd : helpers.skip,
+    global.config.js.run ? js.swStart : helpers.skip,
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
     global.config.fonts.run ? fonts.fontsStart : helpers.skip,
     global.config.cms.run ? cms.adminStart : helpers.skip,

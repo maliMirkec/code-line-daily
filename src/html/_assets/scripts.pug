@@ -1,1 +1,10 @@
 script(src="/js/index.min.js")
+
+script.
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/js/sw.min.js');
+    });
+  }

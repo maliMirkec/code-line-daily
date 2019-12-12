@@ -10,8 +10,8 @@ mixin cld(line, modifier)
     .cld__content
       a.cld__inner(href=line.link, title="Learn more", target="_blank", rel="noopener")
         .cld__details.cld__details--alpha
-          span.cld__detail=line.note
-        code.cld__code=line.line
+          span.cld__detail #{line.note}
+        code.cld__code #{line.line}
       .cld__details.cld__details--beta
         span.cld__detail= "#" + line.language
         span.cld__detail= line.date

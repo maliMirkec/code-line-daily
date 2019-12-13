@@ -46,13 +46,14 @@ exports.dev = series(
     global.config.gfx.run ? gfx.gfxStart : helpers.skip,
     global.config.fonts.run ? fonts.fontsStart : helpers.skip
   ),
-  global.config.js.run ? js.swStart : helpers.skip,
   global.config.html.run ? html.htmlStart : helpers.skip,
   global.config.html.run ? html.xmlStart : helpers.skip,
+  global.config.js.run ? js.swStart : helpers.skip,
   parallel(
     global.config.sync.run ? sync.syncStart : helpers.skip,
     global.config.css.run ? css.cssListen : helpers.skip,
     global.config.js.run ? js.jsListen : helpers.skip,
+    global.config.js.run ? js.swListen : helpers.skip,
     global.config.gfx.run ? gfx.gfxListen : helpers.skip,
     global.config.fonts.run ? fonts.fontsListen : helpers.skip,
     global.config.html.run ? html.htmlListen : helpers.skip,
@@ -71,13 +72,13 @@ exports.build = series(
     global.config.cms.run ? cms.adminStart : helpers.skip,
     global.config.cms.run ? cms.commitStart : helpers.skip
   ),
-  global.config.js.run ? js.swStart : helpers.skip,
   global.config.html.run ? html.htmlStart : helpers.skip,
   global.config.html.run ? html.xmlStart : helpers.skip,
   global.config.kss.run ? kss.kssStart : helpers.skip,
   global.config.sassdoc.run ? sassdoc.sassdocStart : helpers.skip,
   global.config.jsdoc.run ? jsdoc.jsdocStart : helpers.skip,
   global.config.sync.run ? sync.syncStart : helpers.skip,
+  global.config.js.run ? js.swStart : helpers.skip,
   parallel(
     global.config.critical.run ? critical.criticalStart : helpers.skip,
     global.config.critical.run && global.config.css.minify
@@ -100,16 +101,17 @@ exports.default = series(
     global.config.cms.run ? cms.adminStart : helpers.skip,
     global.config.cms.run ? cms.commitStart : helpers.skip
   ),
-  global.config.js.run ? js.swStart : helpers.skip,
   global.config.html.run ? html.htmlStart : helpers.skip,
   global.config.html.run ? html.xmlStart : helpers.skip,
   global.config.kss.run ? kss.kssStart : helpers.skip,
   global.config.sassdoc.run ? sassdoc.sassdocStart : helpers.skip,
   global.config.jsdoc.run ? jsdoc.jsdocStart : helpers.skip,
+  global.config.js.run ? js.swStart : helpers.skip,
   parallel(
     global.config.sync.run ? sync.syncStart : helpers.skip,
     global.config.css.run ? css.cssListen : helpers.skip,
     global.config.js.run ? js.jsListen : helpers.skip,
+    global.config.js.run ? js.swListen : helpers.skip,
     global.config.gfx.run ? gfx.gfxListen : helpers.skip,
     global.config.fonts.run ? fonts.fontsListen : helpers.skip,
     global.config.html.run ? html.htmlListen : helpers.skip,
@@ -125,3 +127,5 @@ exports.default = series(
     global.config.jsdoc.run ? jsdoc.jsdocListen : helpers.skip
   )
 )
+
+exports.sw = js.swStart

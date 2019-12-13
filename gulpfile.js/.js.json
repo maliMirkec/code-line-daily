@@ -25,5 +25,17 @@
   },
   "renameConfig": {
     "suffix": ".min"
+  },
+  "swConfig": {
+    "globDirectory": "helpers.dist/",
+    "globPatterns": [
+      "**/*.{html,webmanifest,css,eot,svg,ttf,woff,woff2,png,js,ico,jpg}"
+    ],
+    "globIgnores": [
+      "docs/**/*",
+      "gfx/cover/**/*"
+    ],
+    "swDest": "helpers.dist/sw.js",
+    "swSrc": "helpers.source/sw/sw.js"
   }
 }

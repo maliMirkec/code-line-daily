@@ -51,13 +51,16 @@ if (lines && lines.list && lines.list.length) {
           const lineSvg1 = lineText.slice(0, lineIndex)
           const lineSvg2 = lineText.slice(lineIndex, 1000)
 
-          if (lineSvg1.length >= 50) {
+          if (lineSvg1.length >= 42) {
             lineSvg += `<tspan x="0" y="60" font-size="23">${lineSvg1}</tspan>`
             lineSvg += `<tspan x="0" y="140" font-size="23">${lineSvg2}</tspan>`
           } else {
             lineSvg += `<tspan x="0" y="60">${lineSvg1}</tspan>`
             lineSvg += `<tspan x="0" y="140">${lineSvg2}</tspan>`
           }
+        } else if (lineText.length >= 42) {
+          console.log(lineText, lineText.length >= 42)
+          lineSvg += `<tspan x="0" y="100" font-size="23">${lineText}</tspan>`
         } else {
           lineSvg = `<tspan x="0" y="100">${lineText}</tspan>`
         }

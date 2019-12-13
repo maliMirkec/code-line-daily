@@ -6,6 +6,7 @@ const sourcemaps = global.config.js.sourcemaps ? require('gulp-sourcemaps') : ()
 const rename = global.config.js.uglify ? require('gulp-rename') : () => true
 const webpack = require('webpack')
 const gulpWebpack = require('webpack-stream')
+const workbox = require('workbox-build')
 
 const { helpers } = require('./helpers')
 
@@ -75,10 +76,28 @@ function jsStart () {
     .pipe(gulpif(global.config.sync.run, global.bs.stream()))
 }
 
-// Will move SW file
+// Will process SW file
 function swStart () {
-  return src(helpers.trim(`${helpers.dist()}/${global.config.js.dist}/sw*.js`))
-    .pipe(dest(helpers.trim(`${helpers.dist()}`)))
+  return workbox
+    .generateSW({
+      cacheId: `${+new Date()}`,
+      globDirectory: helpers.parse(jsConfig.swConfig.globDirectory),
+      globPatterns: jsConfig.swConfig.globPatterns,
+      globIgnores: jsConfig.swConfig.globIgnores,
+      swDest: helpers.parse(jsConfig.swConfig.swDest),
+      clientsClaim: true,
+      skipWaiting: true,
+      cleanupOutdatedCaches: true
+    })
+    .then(({ warnings }) => {
+      // In case there are any warnings from workbox-build, log them.
+      // for (const warning of warnings) {
+      //   console.warn(warning)
+      // }
+      console.info('Service worker generation completed.')
+    }).catch((error) => {
+      console.warn('Service worker generation failed:', error)
+    })
 }
 
 // When JS file is changed, it will process JS file, too
@@ -86,10 +105,16 @@ function jsListen () {
   return watch(helpers.trim(`${helpers.source()}/${global.config.js.src}/*.js`), global.config.watchConfig, jsStart, global.bs.reload)
 }
 
+// When JS file is changed, it will process JS file, too
+function swListen () {
+  return watch(helpers.trim(`${helpers.source()}/${jsConfig.swConfig.swSrc}`), global.config.watchConfig, swStart, global.bs.reload)
+}
+
 exports.js = {
   jsStart,
   swStart,
   jsStartDev,
   jsStartProd,
-  jsListen
+  jsListen,
+  swListen
 }

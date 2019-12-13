@@ -1,7 +1,7 @@
 [build]
   base = "./"
   publish = "./dist/"
-  command = "yarn build"
+  command = "rm -rf ./src/gfx/cover/* && yarn build"
   functions = "./api/"
 
 [[redirects]]

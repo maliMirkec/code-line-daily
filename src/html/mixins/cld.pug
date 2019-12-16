@@ -6,6 +6,7 @@ mixin cld(line, modifier)
   - var twitterLink = "https://twitter.com/intent/tweet?url=" + siteURL + "&text=" + shareTextFancy + "&hashtags=loc,cld,codelinedaily," + line.language + "&via=" + og.twitter_id + shareRelated;
   - var facebookLink = "https://facebook.com/sharer.php?u=" + siteURL;
   - var redditLink = "https://www.reddit.com/submit?url=" + siteURL + "&title=" + shareTextPlain;
+  - var cldId = line.language + Math.random().toString(36).substring(7);
   div(class=cldClass)
     .cld__content
       a.cld__inner(href=line.link, title="Learn more", target="_blank", rel="noopener")
@@ -18,7 +19,8 @@ mixin cld(line, modifier)
         span.cld__detail.
           By: #[a.btn(href="/author/" + line.author.toLowerCase().replace(' ', '-') + ".html", title="See author")=line.author]
         button.cld__copy.btn.btn--alpha.btn--beta(onclick="copyToClipboard(this)")= "Copy"
-        input.cld__input(type="text", value=line.line)
+        label.visually-hidden(for=cldId)= "Copy command"
+        input.cld__input(type="text", value=line.line, id=cldId)
     .cld__share
       span.cld__detail= "Share:"
       a.btn(href=twitterLink, target="_blank", rel="noopener", title="Share on Twitter") Twitter

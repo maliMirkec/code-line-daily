@@ -14,33 +14,41 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`)
 }
 
+workbox.core.setCacheNameDetails({
+  prefix: 'cld',
+  suffix: 'v1',
+  precache: 'precache',
+  runtime: 'runtime'
+})
+
 workbox.precaching.precacheAndRoute([])
 
-// serve all js files with NetworkFirst strategy
+// Serve all html files with StaleWhileRevalidate strategy
+workbox.routing.registerRoute(
+  /\.html$/,
+  new workbox.strategies.NetworkFirst()
+)
+
+// Serve all css files with StaleWhileRevalidate strategy
 workbox.routing.registerRoute(
   /\.js$/,
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'js-cache'
-  })
+  new workbox.strategies.StaleWhileRevalidate()
 )
 
-// serve all css files with StaleWhileRevalidate strategy
+// Serve all css files with StaleWhileRevalidate strategy
 workbox.routing.registerRoute(
   /\.css$/,
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'css-cache'
-  })
+  new workbox.strategies.StaleWhileRevalidate()
 )
 
-// serve all image files with CacheFirst strategy
+// Serve all other assets with CacheFirst strategy
 workbox.routing.registerRoute(
-  /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+  /\.(?:png|jpg|jpeg|svg|gif|webp|ico|webmanifest|eot,ttf,woff,woff2)$/,
   new workbox.strategies.CacheFirst({
-    cacheName: 'image-cache',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 20,
-        maxAgeSeconds: 7 * 24 * 60 * 60
+        maxAgeSeconds: 30 * 24 * 60 * 60
       })
     ]
   })

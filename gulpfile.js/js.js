@@ -6,7 +6,7 @@ const sourcemaps = global.config.js.sourcemaps ? require('gulp-sourcemaps') : ()
 const rename = global.config.js.uglify ? require('gulp-rename') : () => true
 const webpack = require('webpack')
 const gulpWebpack = require('webpack-stream')
-const workbox = require('workbox-build')
+const { injectManifest } = require('workbox-build')
 
 const { helpers } = require('./helpers')
 
@@ -78,23 +78,24 @@ function jsStart () {
 
 // Will process SW file
 function swStart () {
-  return workbox
-    .generateSW({
-      cacheId: `${+new Date()}`,
-      globDirectory: helpers.parse(jsConfig.swConfig.globDirectory),
-      globPatterns: jsConfig.swConfig.globPatterns,
-      globIgnores: jsConfig.swConfig.globIgnores,
-      swDest: helpers.parse(jsConfig.swConfig.swDest),
-      clientsClaim: true,
-      skipWaiting: true,
-      cleanupOutdatedCaches: true
-    })
-    .then(({ warnings }) => {
-      // In case there are any warnings from workbox-build, log them.
-      // for (const warning of warnings) {
-      //   console.warn(warning)
-      // }
+  return injectManifest({
+    // cacheId: `${+new Date()}`,
+    globDirectory: helpers.parse(jsConfig.swConfig.globDirectory),
+    globPatterns: jsConfig.swConfig.globPatterns,
+    globIgnores: jsConfig.swConfig.globIgnores,
+    swSrc: helpers.parse(jsConfig.swConfig.swSrc),
+    swDest: helpers.parse(jsConfig.swConfig.swDest)
+    // clientsClaim: true,
+    // skipWaiting: true,
+    // cleanupOutdatedCaches: false
+  })
+    .then(({ count, size }) => {
+    // In case there are any warnings from workbox-build, log them.
+    // for (const warning of warnings) {
+    //   console.warn(warning)
+    // }
       console.info('Service worker generation completed.')
+      console.log(`Generated ${helpers.parse(jsConfig.swConfig.swDest)}, which will precache ${count} files, totaling ${size} bytes.`)
     }).catch((error) => {
       console.warn('Service worker generation failed:', error)
     })

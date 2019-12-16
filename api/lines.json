@@ -887,6 +887,42 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-12-20"
+    },
+    {
+      "line": "Math.min()",
+      "note": "Returns the lowest of zero or more numbers.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-23"
+    },
+    {
+      "line": "Math.max()",
+      "note": "Returns the largest of zero or more numbers.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-27"
+    },
+    {
+      "line": "Math.floor()",
+      "note": "Returns the largest integer less than or equal to a given number.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-30"
+    },
+    {
+      "line": "Math.ceil()",
+      "note": "Returns rounded number up to the next largest whole number or integer.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-31"
     }
   ]
 }

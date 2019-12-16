@@ -19,8 +19,8 @@ mixin cld(line, modifier)
         span.cld__detail.
           By: #[a.btn(href="/author/" + line.author.toLowerCase().replace(' ', '-') + ".html", title="See author")=line.author]
         button.cld__copy.btn.btn--alpha.btn--beta(onclick="copyToClipboard(this)")= "Copy"
-        label.visually-hidden(for=cldId)= "Copy command"
         input.cld__input(type="text", value=line.line, id=cldId)
+        label.visually-hidden(for=cldId)= "Copy command"
     .cld__share
       span.cld__detail= "Share:"
       a.btn(href=twitterLink, target="_blank", rel="noopener", title="Share on Twitter") Twitter

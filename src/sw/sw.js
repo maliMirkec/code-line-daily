@@ -16,7 +16,7 @@ if (workbox) {
 
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1',
+  suffix: 'v1.0',
   precache: 'precache',
   runtime: 'runtime'
 })

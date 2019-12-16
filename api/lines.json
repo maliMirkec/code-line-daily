@@ -841,6 +841,52 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2019-12-13"
+    },
+    {
+      "line": "Math.random()",
+      "note": "Returns a floating-point random number in the range 0–1.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-16"
+    },
+    {
+      "line": "Math.sqrt()",
+      "note": "Returns the square root of a number.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-17"
+    },
+    {
+      "line": "Math.pow()",
+      "note": "Returns the base to the exponent power.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-18"
+    },
+    {
+      "line": "Math.trunc()",
+      "note": "Returns the integer part of a number by removing any fractional digits.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-19"
+    },
+    {
+      "line": "Math.round()",
+      "note": "Returns the value of a number rounded to the nearest integer.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2019-12-20"
     }
   ]
 }

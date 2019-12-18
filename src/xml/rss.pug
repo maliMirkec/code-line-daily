@@ -3,13 +3,20 @@ extends /_layout/rss.pug
 block variables
 
 block content
+  - var checkLinks = [];
   each listValue, listIndex in listArchive
     item
-      title= listValue.line
+      title "<![CDATA[!{listValue.line.replace(/&/g, '&#x26;').replace(/</g, '&#x3C;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}]]>"
       div= "https://cld.silvestar.codes/archive/"
-      guid= "https://cld.silvestar.codes/archive/"
-      description= listValue.note
-      author= listValue.author
+      - var link = listValue.link;
+      if checkLinks.indexOf(link) === -1
+        - checkLinks.push(listValue.link)
+      else
+        - link += '#' + Math.random()
+      guid= "https://cld.silvestar.codes/archive/?url=" + link
+      description= "<![CDATA[" + listValue.note + "]]>"
+      if (listValue.email)
+        author= listValue.email + " (" + listValue.author + ")"
       category= listValue.language
       - var uDate = new Date(listValue.date);
       pubDate= uDate.toUTCString()

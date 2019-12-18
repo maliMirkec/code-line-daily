@@ -1,9 +1,3 @@
-// constants
-// const CACHE_NAME = 'sb-cache-v1.4'
-
-// const FILES_TO_CACHE = [
-// ]
-
 // load workbox
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js')
 
@@ -16,7 +10,7 @@ if (workbox) {
 
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1.0',
+  suffix: 'v1.1',
   precache: 'precache',
   runtime: 'runtime'
 })

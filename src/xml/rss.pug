@@ -14,8 +14,8 @@ block content
       else
         - link += '#' + Math.random();
       guid= "https://cld.silvestar.codes/archive/?url=" + link
-      - var img = '<img src="https://cld.silvestar.codes/gfx/' + listValue.date + '.png" alt="Cover image" />';
-      description <![CDATA[ !{listValue.note} !{img.replace(/&/g, "&#x26;").replace(/</g, "&#x3C;")} ]]>
+      description <![CDATA[ !{listValue.note} ]]>
+      enclosure(url="https://cld.silvestar.codes/gfx/" + listValue.date + ".png" length="12345" type="image/png")
       if (listValue.email)
         author= listValue.email + " (" + listValue.author + ")"
       category= listValue.language

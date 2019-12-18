@@ -6,15 +6,16 @@ block content
   - var checkLinks = [];
   each listValue, listIndex in listArchive
     item
-      title "<![CDATA[!{listValue.line.replace(/&/g, '&#x26;').replace(/</g, '&#x3C;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}]]>"
+      title <![CDATA[ !{listValue.line.replace(/&/g, '&#x26;').replace(/</g, '&#x3C;')} ]]>
       div= "https://cld.silvestar.codes/archive/"
       - var link = listValue.link;
       if checkLinks.indexOf(link) === -1
         - checkLinks.push(listValue.link)
       else
-        - link += '#' + Math.random()
+        - link += '#' + Math.random();
       guid= "https://cld.silvestar.codes/archive/?url=" + link
-      description= "<![CDATA[" + listValue.note + "]]>"
+      - var img = '<img src="https://cld.silvestar.codes/gfx/' + listValue.date + '.png" alt="Cover image" />';
+      description <![CDATA[ !{listValue.note} !{img.replace(/&/g, "&#x26;").replace(/</g, "&#x3C;")} ]]>
       if (listValue.email)
         author= listValue.email + " (" + listValue.author + ")"
       category= listValue.language

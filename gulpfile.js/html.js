@@ -115,6 +115,7 @@ function xmlStart () {
     .pipe(gulpif(global.config.xml.minify, htmlmin(xmlConfig.htmlminConfig)))
     .pipe(replace('div', 'link'))
     .pipe(replace('></atom:link', '/'))
+    .pipe(replace('></enclosure', '/'))
     .pipe(replace('lastbuilddate', 'lastBuildDate'))
     .pipe(replace('pubdate', 'pubDate'))
     .pipe(replace('&lt;![CDATA[', '<![CDATA['))

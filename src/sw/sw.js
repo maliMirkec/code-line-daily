@@ -10,7 +10,7 @@ if (workbox) {
 
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1.2',
+  suffix: 'v1.3',
   precache: 'precache',
   runtime: 'runtime'
 })
@@ -40,7 +40,7 @@ workbox.routing.registerRoute(
   /\.(?:png|jpg|jpeg|svg|gif|webp|ico|webmanifest|eot,ttf,woff,woff2)$/,
   new workbox.strategies.CacheFirst({
     plugins: [
-      new workbox.expiration.StaleWhileRevalidate({
+      new workbox.expiration.Plugin({
         maxEntries: 20,
         maxAgeSeconds: 30 * 24 * 60 * 60
       })

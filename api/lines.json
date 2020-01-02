@@ -7,7 +7,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-01"
     },
@@ -18,7 +17,6 @@
       "language": "CSS",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-02"
     },
@@ -29,7 +27,6 @@
       "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-03"
     },
@@ -40,7 +37,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-04"
     },
@@ -51,7 +47,6 @@
       "language": "CSS",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-05"
     },
@@ -62,7 +57,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-06"
     },
@@ -73,7 +67,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-07"
     },
@@ -84,7 +77,6 @@
       "language": "CSS",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-08"
     },
@@ -95,7 +87,6 @@
       "language": "PHP",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-09"
     },
@@ -106,7 +97,6 @@
       "language": "JavaScript",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-12"
     },
@@ -117,7 +107,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-13"
     },
@@ -128,7 +117,6 @@
       "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-14"
     },
@@ -139,7 +127,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-15"
     },
@@ -150,7 +137,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-16"
     },
@@ -161,7 +147,6 @@
       "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-26"
     },
@@ -172,7 +157,6 @@
       "language": "HTML",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-27"
     },
@@ -183,7 +167,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-28"
     },
@@ -194,7 +177,6 @@
       "language": "JavaScript",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-29"
     },
@@ -205,7 +187,6 @@
       "language": "Nodejs",
       "evergreen": false,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-08-30"
     },
@@ -215,7 +196,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-02"
     },
@@ -225,7 +205,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-03"
     },
@@ -235,7 +214,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Parameters",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-04"
     },
@@ -245,7 +223,6 @@
       "link": "https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html",
       "language": "Swift",
       "author": "Ethan Chin",
-      "email": "ethanchin.dev@gmail.com",
       "handle": "EthanChinCN",
       "date": "2019-09-05"
     },
@@ -255,7 +232,6 @@
       "link": "https://css-tricks.com/a-couple-of-use-cases-for-calc/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-06"
     },
@@ -265,7 +241,6 @@
       "link": "https://css-tricks.com/nested-gradients-with-background-clip/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-09"
     },
@@ -275,7 +250,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration#Examples",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-10"
     },
@@ -285,7 +259,6 @@
       "link": "https://css-tricks.com/styling-links-with-real-underlines/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-11"
     },
@@ -295,7 +268,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-12"
     },
@@ -305,7 +277,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-13"
     },
@@ -315,7 +286,6 @@
       "link": "https://medium.com/poka-techblog/simplify-your-javascript-use-some-and-find-f9fb9826ddfd",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-16"
     },
@@ -325,7 +295,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Node/contains",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-17"
     },
@@ -335,7 +304,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#Methods",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-18"
     },
@@ -345,7 +313,6 @@
       "link": "https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback",
       "language": "Nodejs",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-19"
     },
@@ -356,7 +323,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-20"
     },
@@ -366,7 +332,6 @@
       "link": "https://codex.wordpress.org/Function_Reference/wp_list_pluck",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-23"
     },
@@ -376,7 +341,6 @@
       "link": "https://developer.wordpress.org/reference/functions/in_category/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-24"
     },
@@ -386,7 +350,6 @@
       "link": "https://developer.wordpress.org/reference/functions/get_template_directory/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-25"
     },
@@ -396,7 +359,6 @@
       "link": "https://www.php.net/manual/en/function.strtolower.php",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-26"
     },
@@ -406,7 +368,6 @@
       "link": "https://www.php.net/manual/en/function.strtoupper.php",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-27"
     },
@@ -416,7 +377,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-09-30"
     },
@@ -426,7 +386,6 @@
       "link": "https://developer.wordpress.org/reference/functions/get_term_by/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-01"
     },
@@ -436,7 +395,6 @@
       "link": "https://developer.wordpress.org/reference/functions/get_the_terms/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-02"
     },
@@ -446,7 +404,6 @@
       "link": "https://css-tricks.com/almanac/properties/b/break-inside/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-03"
     },
@@ -457,7 +414,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-04"
     },
@@ -468,7 +424,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-14"
     },
@@ -479,7 +434,6 @@
       "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-15"
     },
@@ -490,7 +444,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-16"
     },
@@ -500,7 +453,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-17"
     },
@@ -510,7 +462,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/location#Example_2_Force_reloading_the_current_page_from_the_server",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-18"
     },
@@ -520,7 +471,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-21"
     },
@@ -530,7 +480,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-22"
     },
@@ -541,7 +490,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-23"
     },
@@ -551,7 +499,6 @@
       "link": "https://css-tricks.com/almanac/selectors/p/placeholder/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-24"
     },
@@ -561,7 +508,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:empty",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-25"
     },
@@ -572,7 +518,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-28"
     },
@@ -582,7 +527,6 @@
       "link": "https://css-tricks.com/almanac/selectors/l/last-of-type/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-29"
     },
@@ -593,7 +537,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-30"
     },
@@ -603,7 +546,6 @@
       "link": "https://css-tricks.com/almanac/selectors/f/first-of-type/",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-10-31"
     },
@@ -614,7 +556,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-01"
     },
@@ -625,7 +566,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-04"
     },
@@ -635,7 +575,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-05"
     },
@@ -646,7 +585,6 @@
       "language": "PHP",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-06"
     },
@@ -656,7 +594,6 @@
       "link": "https://developer.wordpress.org/reference/functions/get_template_directory_uri/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-07"
     },
@@ -666,7 +603,6 @@
       "link": "https://developer.wordpress.org/reference/functions/wp_get_upload_dir/",
       "language": "PHP",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-08"
     },
@@ -677,7 +613,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-11"
     },
@@ -688,7 +623,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-12"
     },
@@ -698,7 +632,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-13"
     },
@@ -708,7 +641,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-14"
     },
@@ -719,7 +651,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-15"
     },
@@ -730,7 +661,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-18"
     },
@@ -741,7 +671,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-19"
     },
@@ -751,7 +680,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-20"
     },
@@ -762,7 +690,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-21"
     },
@@ -772,7 +699,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-22"
     },
@@ -782,7 +708,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-25"
     },
@@ -792,7 +717,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-26"
     },
@@ -802,7 +726,6 @@
       "link": "https://help.shopify.com/en/themes/liquid/objects/for-loops#forloop-last",
       "language": "Liquid",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-27"
     },
@@ -812,7 +735,6 @@
       "link": "https://help.shopify.com/en/themes/liquid/filters/additional-filters#json",
       "language": "Liquid",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-28"
     },
@@ -822,7 +744,6 @@
       "link": "https://help.shopify.com/en/themes/liquid/filters/money-filters#money",
       "language": "Liquid",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-11-29"
     },
@@ -833,7 +754,6 @@
       "language": "CSS",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-02"
     },
@@ -843,7 +763,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-03"
     },
@@ -853,7 +772,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-04"
     },
@@ -863,7 +781,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-05"
     },
@@ -873,7 +790,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:not",
       "language": "CSS",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-06"
     },
@@ -884,7 +800,6 @@
       "language": "HTML",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-09"
     },
@@ -895,7 +810,6 @@
       "language": "HTML",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-10"
     },
@@ -906,7 +820,6 @@
       "language": "HTML",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-11"
     },
@@ -917,7 +830,6 @@
       "language": "HTML",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-12"
     },
@@ -927,7 +839,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Archive/RSS/Getting_Started/Syndicating",
       "language": "HTML",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-13"
     },
@@ -938,7 +849,6 @@
       "language": "JavaScript",
       "evergreen": true,
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-16"
     },
@@ -948,7 +858,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-17"
     },
@@ -958,7 +867,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-18"
     },
@@ -968,7 +876,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-19"
     },
@@ -978,7 +885,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-20"
     },
@@ -988,7 +894,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-23"
     },
@@ -998,7 +903,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-27"
     },
@@ -1008,7 +912,6 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-30"
     },
@@ -1018,9 +921,81 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil",
       "language": "JavaScript",
       "author": "Silvestar",
-      "email": "me@silvestar.codes",
       "handle": "malimirkeccita",
       "date": "2019-12-31"
+    },
+    {
+      "line": "isNaN(myVar)",
+      "note": "Checks if a value is NaN or not.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-02"
+    },
+    {
+      "line": "Number.isNaN(myVar)",
+      "note": "ECMAScript 2015 version for checking if a value is NaN or not.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN",
+      "language": "JavaScript",
+      "evergreen": true,
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-03"
+    },
+    {
+      "line": "encodeURIComponent(myVar)",
+      "note": "Returns encoded URI component string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-07"
+    },
+    {
+      "line": "encodeURI(myVar)",
+      "note": "Returns encoded URI string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-08"
+    },
+    {
+      "line": "decodeURIComponent(myVar)",
+      "note": "Returns decoded Uniform Resource Identifier (URI) component string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-09"
+    },
+    {
+      "line": "decodeURI(myVar)",
+      "note": "Returns decoded Uniform Resource Identifier (URI) string.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-10"
+    },
+    {
+      "line": "eval(myExp)",
+      "note": "Evaluates JavaScript code represented as a string. Use at your own risk.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-13"
+    },
+    {
+      "line": "uneval(myObj)",
+      "note": "Creates a string representation of the source code of an Object. Use at your own risk.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-14"
     }
   ]
 }

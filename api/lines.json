@@ -996,6 +996,33 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-01-14"
+    },
+    {
+      "line": "myVar.join(' ');",
+      "note": "Returns a new string by concatenating array items with spaces.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-16"
+    },
+    {
+      "line": "myVar.split(' ');",
+      "note": "Splits string into array elements by spaces.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-17"
+    },
+    {
+      "line": "myVar.length",
+      "note": "Returns the number of elements in that array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-20"
     }
   ]
 }

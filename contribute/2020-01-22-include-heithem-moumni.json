@@ -1,0 +1,10 @@
+{
+  "line": "myArray.includes(item)",
+  "note": "Determines whether an array includes a certain value among its entries, returning true or false as appropriate.",
+  "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+  "language": "JavaScript",
+  "author": "Heithem Moumni",
+  "handle": "heithemmoumni",
+  "email": "moumniheithem@gmail.com",
+  "bio": "A lover of accessability, Docker, JavaScript, IA, DevJoke Connoisseur."
+}

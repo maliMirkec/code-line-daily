@@ -1,0 +1,15 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Posts by: Heithem Moumni"
+  - pageURL = "author/heithem-moumni"
+
+block content
+  article.w.w--beta.mt--alpha
+    include:markdown-it(html) heithem-moumni.md
+  .w.w--alpha.mt--alpha
+    p.t-sm.t-r= "Sorted by: Date DESC"
+  .w.w--alpha.grid
+    - var authorArchive = listArchive.filter(item => item.author === "Heithem Moumni")
+    each listValue, listIndex in authorArchive
+      +cld(listValue, 'cld--alpha')

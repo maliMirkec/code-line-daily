@@ -1023,6 +1023,24 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-01-20"
+    },
+    {
+      "line": "myArray.entries()",
+      "note": "Returns a new Array Iterator object that contains the key/value pairs for each index in the array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries",
+      "language": "JavaScript",
+      "author": "Heithem Moumni",
+      "handle": "heithemmoumni",
+      "date": "2020-01-23"
+    },
+    {
+      "line": "myArray.includes(item)",
+      "note": "Determines whether an array includes a certain value among its entries, returning true or false as appropriate.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+      "language": "JavaScript",
+      "author": "Heithem Moumni",
+      "handle": "heithemmoumni",
+      "date": "2020-01-24"
     }
   ]
 }

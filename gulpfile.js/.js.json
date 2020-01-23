@@ -33,7 +33,12 @@
     ],
     "globIgnores": [
       "docs/**/*",
-      "gfx/cover/**/*"
+      "mixins/**/*",
+      "gfx/cover/**/*",
+      "cms/**/*",
+      "css/kss.*",
+      "*.critical.css",
+      "favicons/*.{png,jpg,svg}"
     ],
     "swDest": "helpers.dist/sw.js",
     "swSrc": "helpers.source/sw/sw.js"

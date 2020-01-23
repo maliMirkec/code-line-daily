@@ -8,40 +8,82 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`)
 }
 
+workbox.setConfig({ debug: true })
+
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1.3',
+  suffix: 'v1.5',
   precache: 'precache',
   runtime: 'runtime'
 })
+
+workbox.core.skipWaiting()
+
+workbox.core.clientsClaim()
+
+workbox.precaching.cleanupOutdatedCaches()
 
 workbox.precaching.precacheAndRoute([])
 
 // Serve all html files with StaleWhileRevalidate strategy
 workbox.routing.registerRoute(
   /\.html$/,
-  new workbox.strategies.NetworkFirst()
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'html-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 60 * 60
+      }),
+      new workbox.broadcastUpdate.Plugin({
+        channelName: 'html-updates'
+      })
+    ]
+  })
 )
 
 // Serve all css files with StaleWhileRevalidate strategy
 workbox.routing.registerRoute(
   /\.js$/,
-  new workbox.strategies.StaleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'js-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 60 * 60
+      }),
+      new workbox.broadcastUpdate.Plugin({
+        channelName: 'js-updates'
+      })
+    ]
+  })
 )
 
 // Serve all css files with StaleWhileRevalidate strategy
 workbox.routing.registerRoute(
   /\.css$/,
-  new workbox.strategies.StaleWhileRevalidate()
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'css-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 60 * 60
+      }),
+      new workbox.broadcastUpdate.Plugin({
+        channelName: 'css-updates'
+      })
+    ]
+  })
 )
 
 // Serve all other assets with CacheFirst strategy
 workbox.routing.registerRoute(
   /\.(?:png|jpg|jpeg|svg|gif|webp|ico|webmanifest|eot,ttf,woff,woff2)$/,
   new workbox.strategies.CacheFirst({
+    cacheName: 'asset-cache',
     plugins: [
       new workbox.expiration.Plugin({
-        maxEntries: 20,
+        maxEntries: 30,
         maxAgeSeconds: 30 * 24 * 60 * 60
       })
     ]

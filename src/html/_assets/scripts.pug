@@ -1,15 +1,17 @@
 script(src="/js/index.min.js")
 
-script.
-  // Check that service workers are supported
+script(type="module").
+  // register service worker
+  import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs'
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
+    const wb = new Workbox('/sw.js');
+    wb.addEventListener('installed', event => {
+      if (event.isUpdate) {
+        const $swButton = document.createElement('div')
+        $swButton.className = 'banner banner--beta banner--omega';
+        $swButton.innerHTML = `<p><span>The content has been updated. To see the latest changes, refresh the page, please.</span></p><button class="btn" type="button" onclick="window.location.reload()"><span>Refresh</span></button>`;
+        document.body.appendChild($swButton)
+      }
     });
+    wb.register();
   }

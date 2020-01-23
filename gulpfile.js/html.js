@@ -116,14 +116,14 @@ function lineListen () {
 
 // When Critical CSS file is changed, it will process HTML, too
 function htmlListenCritical (cb) {
-  watch([helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), helpers.trim(`!${helpers.source()}/${global.config.html.src}/_**/*.pug`), helpers.trim(`!${helpers.source()}/${global.config.html.src}/**/_**/*.pug`)], global.config.watchConfig, htmlStart)
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, htmlStart)
 
   cb()
 }
 
 // When Critical CSS file is changed, it will process HTML, too
 function lineListenCritical (cb) {
-  watch(helpers.trim(`${helpers.source()}/${global.config.html.src}/_layout/line.pug`), global.config.watchConfig, lineStart)
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, lineStart)
 
   cb()
 }

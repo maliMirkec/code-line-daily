@@ -12,7 +12,7 @@ workbox.setConfig({ debug: true })
 
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1.6',
+  suffix: 'v1.7',
   precache: 'precache',
   runtime: 'runtime'
 })

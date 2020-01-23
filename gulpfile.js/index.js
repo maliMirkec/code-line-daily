@@ -85,7 +85,6 @@ exports.build = series(
       ? critical.criticalListenMinify
       : helpers.skip,
     global.config.html.run && global.config.critical.run ? html.htmlListenCritical : helpers.skip,
-    global.config.html.run && global.config.critical.run ? html.lineListenCritical : helpers.skip,
     global.config.critical.run ? helpers.kill : helpers.skip
   ),
   global.config.gzip.run ? gzip.gzipStart : helpers.skip
@@ -118,7 +117,6 @@ exports.default = series(
     global.config.html.run ? html.lineListen : helpers.skip,
     global.config.html.run ? html.xmlListen : helpers.skip,
     global.config.html.run && global.config.critical.run ? html.htmlListenCritical : helpers.skip,
-    global.config.html.run && global.config.critical.run ? html.lineListenCritical : helpers.skip,
     global.config.critical.run ? critical.criticalStart : helpers.skip,
     global.config.critical.run ? critical.criticalListen : helpers.skip,
     global.config.critical.run && global.config.css.minify

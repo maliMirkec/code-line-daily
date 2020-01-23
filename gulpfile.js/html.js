@@ -1,5 +1,5 @@
 const {
-  src, dest, watch, series
+  src, dest, watch, series, parallel
 } = require('gulp')
 const gulpif = require('gulp-if')
 const rename = require('gulp-rename')
@@ -119,14 +119,7 @@ function lineListen () {
 
 // When Critical CSS file is changed, it will process HTML, too
 function htmlListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(htmlStart, js.swStart))
-
-  cb()
-}
-
-// When Critical CSS file is changed, it will process HTML, too
-function lineListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(lineStart, js.swStart))
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(parallel(htmlStart, lineStart), js.swStart))
 
   cb()
 }
@@ -182,6 +175,5 @@ exports.html = {
   htmlListen,
   lineListen,
   xmlListen,
-  htmlListenCritical,
-  lineListenCritical
+  htmlListenCritical
 }

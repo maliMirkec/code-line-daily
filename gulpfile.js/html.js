@@ -1,6 +1,4 @@
-const {
-  src, dest, watch, series, parallel
-} = require('gulp')
+const { src, dest, watch } = require('gulp')
 const gulpif = require('gulp-if')
 const rename = require('gulp-rename')
 const path = require('path')
@@ -14,7 +12,6 @@ const wait = require('gulp-wait')
 const fs = global.config.html.inline ? require('fs') : () => true
 
 const { helpers } = require('./helpers')
-const { js } = require('./js')
 
 const htmlConfig = require('./.html.json')
 const xmlConfig = require('./.xml.json')
@@ -119,7 +116,14 @@ function lineListen () {
 
 // When Critical CSS file is changed, it will process HTML, too
 function htmlListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(parallel(htmlStart, lineStart), js.swStart))
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, htmlStart)
+
+  cb()
+}
+
+// When Critical CSS file is changed, it will process HTML, too
+function lineListenCritical (cb) {
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, lineStart)
 
   cb()
 }
@@ -163,17 +167,12 @@ function xmlStart () {
     .pipe(gulpif(global.config.sync.run, global.bs.stream()))
 }
 
-// When Pug, md, or config file is changed, it will process Pug file, too
-function xmlListen () {
-  return watch([...siteConfigs.map(siteConfig => siteConfig.path), helpers.trim(`${helpers.source()}/${global.config.xml.src}/**/*.pug`)], global.config.watchConfig, xmlStart)
-}
-
 exports.html = {
   htmlStart,
   lineStart,
   xmlStart,
   htmlListen,
   lineListen,
-  xmlListen,
-  htmlListenCritical
+  htmlListenCritical,
+  lineListenCritical
 }

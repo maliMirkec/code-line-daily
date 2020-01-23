@@ -4,7 +4,9 @@
   "description": "A line of code of the day.",
   "main": "index.html",
   "scripts": {
-    "build": "node scripts/index.js"
+    "dev": "node scripts/index.js",
+    "default": "node scripts/index.js && gulp default && gulp sw",
+    "build": "node scripts/index.js && gulp build && gulp sw"
   },
   "repository": {
     "type": "git",

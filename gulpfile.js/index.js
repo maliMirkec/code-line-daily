@@ -58,8 +58,7 @@ exports.dev = series(
     global.config.html.run ? html.htmlListen : helpers.skip,
     global.config.html.run ? html.lineListen : helpers.skip,
     global.config.html.run ? html.xmlListen : helpers.skip
-  ),
-  global.config.js.run ? js.swStart : helpers.skip
+  )
 )
 
 exports.build = series(
@@ -89,7 +88,6 @@ exports.build = series(
     global.config.html.run && global.config.critical.run ? html.lineListenCritical : helpers.skip,
     global.config.critical.run ? helpers.kill : helpers.skip
   ),
-  global.config.js.run ? js.swStart : helpers.skip,
   global.config.gzip.run ? gzip.gzipStart : helpers.skip
 )
 
@@ -129,8 +127,7 @@ exports.default = series(
     global.config.kss.run ? kss.kssListen : helpers.skip,
     global.config.sassdoc.run ? sassdoc.sassdocListen : helpers.skip,
     global.config.jsdoc.run ? jsdoc.jsdocListen : helpers.skip
-  ),
-  global.config.js.run ? js.swStart : helpers.skip
+  )
 )
 
 exports.sw = js.swStart

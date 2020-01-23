@@ -1,4 +1,6 @@
-const { src, dest, watch } = require('gulp')
+const {
+  src, dest, watch, series
+} = require('gulp')
 const gulpif = require('gulp-if')
 const rename = require('gulp-rename')
 const path = require('path')
@@ -12,6 +14,7 @@ const wait = require('gulp-wait')
 const fs = global.config.html.inline ? require('fs') : () => true
 
 const { helpers } = require('./helpers')
+const { js } = require('./js')
 
 const htmlConfig = require('./.html.json')
 const xmlConfig = require('./.xml.json')
@@ -116,14 +119,14 @@ function lineListen () {
 
 // When Critical CSS file is changed, it will process HTML, too
 function htmlListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, htmlStart)
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(htmlStart, js.swStart))
 
   cb()
 }
 
 // When Critical CSS file is changed, it will process HTML, too
 function lineListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, lineStart)
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, series(lineStart, js.swStart))
 
   cb()
 }

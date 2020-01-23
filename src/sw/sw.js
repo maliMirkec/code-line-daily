@@ -12,7 +12,7 @@ workbox.setConfig({ debug: true })
 
 workbox.core.setCacheNameDetails({
   prefix: 'cld',
-  suffix: 'v1.5',
+  suffix: 'v1.6',
   precache: 'precache',
   runtime: 'runtime'
 })
@@ -29,7 +29,7 @@ workbox.precaching.precacheAndRoute([])
 workbox.routing.registerRoute(
   /\.html$/,
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'html-cache',
+    cacheName: 'cld-html-cache',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 20,
@@ -46,7 +46,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   /\.js$/,
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'js-cache',
+    cacheName: 'cld-js-cache',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 20,
@@ -63,7 +63,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   /\.css$/,
   new workbox.strategies.StaleWhileRevalidate({
-    cacheName: 'css-cache',
+    cacheName: 'cld-css-cache',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 20,
@@ -80,7 +80,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   /\.(?:png|jpg|jpeg|svg|gif|webp|ico|webmanifest|eot,ttf,woff,woff2)$/,
   new workbox.strategies.CacheFirst({
-    cacheName: 'asset-cache',
+    cacheName: 'cld-asset-cache',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 30,

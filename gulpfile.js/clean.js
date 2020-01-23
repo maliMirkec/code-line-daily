@@ -8,6 +8,12 @@ function cleanStart () {
   return del(helpers.dist())
 }
 
+// Will delete dist folder
+function cleanLines () {
+  return del(helpers.trim(`${helpers.dist()}/${global.config.html.dist}/line/`))
+}
+
 exports.clean = {
-  cleanStart
+  cleanStart,
+  cleanLines
 }

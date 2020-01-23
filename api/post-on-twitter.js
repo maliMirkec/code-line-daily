@@ -38,7 +38,7 @@ ${lline.line}
 
 ${lline.note}
 
-See more lines here: https://cld.silvestar.codes/?cache=${Math.random().toString(36)}
+See more lines here: https://cld.silvestar.codes/line/${line.date}
 #loc #cld #codelinedaily #${lline.language}`
   }
 

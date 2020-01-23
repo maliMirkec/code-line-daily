@@ -74,14 +74,56 @@ function htmlStart () {
     .pipe(gulpif(global.config.sync.run, global.bs.stream()))
 }
 
+// Will dynamically create page for each line
+function lineStart (cb) {
+  const lineSrc = helpers.trim(`${helpers.source()}/${global.config.html.src}/_layout/line.pug`)
+  const siteConfig = siteConfigs.find(sc => sc.name === 'site')
+  const dataConfig = siteConfigs.find(sc => sc.name === 'data')
+  const dataLines = JSON.parse(fs.readFileSync(dataConfig.path))
+
+  dataLines.list.map((dataLine, index, array) => src(lineSrc)
+    .pipe(gulpif(global.config.html.pug, data(() => ({
+      site: JSON.parse(fs.readFileSync(siteConfig.path)),
+      line: dataLine,
+      previous: array[index - 1] ? array[index - 1] : false,
+      next: array[index + 1] ? array[index + 1] : false
+    }))))
+    .pipe(gulpif(global.config.html.pug, pug(thisPugConfigHTML)))
+    .pipe(gulpif(global.config.html.lint, htmllint(thisHtmllintConfig)))
+    .pipe(wait(1000))
+    .pipe(gulpif(global.config.html.inline, inlineSource(thisInlineConfigHTML)))
+    .pipe(gulpif(global.config.html.minify, htmlmin(htmlConfig.htmlminConfig)))
+    .pipe(rename({
+      dirname: helpers.proot(),
+      basename: dataLine.date,
+      extname: htmlConfig.renameConfig.extname
+    }))
+    .pipe(dest(helpers.trim(`${helpers.dist()}/${global.config.html.dist}/line/`)))
+    .pipe(gulpif(global.config.sync.run, global.bs.stream())))
+
+  cb()
+}
+
 // When Pug, md, or config file is changed, it will process Pug file, too
 function htmlListen () {
-  return watch([...siteConfigs.map(siteConfig => siteConfig.path), helpers.trim(`${helpers.source()}/${global.config.html.src}/**/*.pug`), helpers.trim(`${helpers.source()}/${global.config.html.src}/**/*.md`)], global.config.watchConfig, htmlStart)
+  return watch([...siteConfigs.map(siteConfig => siteConfig.path), helpers.trim(`${helpers.source()}/${global.config.html.src}/**/*.pug`), helpers.trim(`${helpers.source()}/${global.config.html.src}/**/*.md`), helpers.trim(`!${helpers.source()}/${global.config.html.src}/_**/*.pug`), helpers.trim(`!${helpers.source()}/${global.config.html.src}/**/_**/*.pug`)], global.config.watchConfig, htmlStart)
+}
+
+// When Pug, md, or config file is changed, it will process Pug file, too
+function lineListen () {
+  return watch(helpers.trim(`${helpers.source()}/${global.config.html.src}/_layout/line.pug`), global.config.watchConfig, lineStart)
 }
 
 // When Critical CSS file is changed, it will process HTML, too
 function htmlListenCritical (cb) {
   watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, htmlStart)
+
+  cb()
+}
+
+// When Critical CSS file is changed, it will process HTML, too
+function lineListenCritical (cb) {
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, lineStart)
 
   cb()
 }
@@ -125,15 +167,12 @@ function xmlStart () {
     .pipe(gulpif(global.config.sync.run, global.bs.stream()))
 }
 
-// When Pug, md, or config file is changed, it will process Pug file, too
-function xmlListen () {
-  return watch([...siteConfigs.map(siteConfig => siteConfig.path), helpers.trim(`${helpers.source()}/${global.config.xml.src}/**/*.pug`)], global.config.watchConfig, xmlStart)
-}
-
 exports.html = {
   htmlStart,
+  lineStart,
   xmlStart,
   htmlListen,
-  xmlListen,
-  htmlListenCritical
+  lineListen,
+  htmlListenCritical,
+  lineListenCritical
 }

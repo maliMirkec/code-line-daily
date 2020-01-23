@@ -77,8 +77,8 @@ function jsStart () {
 }
 
 // Will process SW file
-function swStart () {
-  return injectManifest({
+function swStart (cb) {
+  injectManifest({
     globDirectory: helpers.parse(jsConfig.swConfig.globDirectory),
     globPatterns: jsConfig.swConfig.globPatterns,
     globIgnores: jsConfig.swConfig.globIgnores.map(ignore => helpers.parse(ignore)),
@@ -91,6 +91,8 @@ function swStart () {
     }).catch((error) => {
       console.warn('Service worker generation failed:', error)
     })
+
+  cb()
 }
 
 // When JS file is changed, it will process JS file, too
@@ -103,11 +105,19 @@ function swListen () {
   return watch(helpers.trim(`${helpers.source()}/${jsConfig.swConfig.swSrc}`), global.config.watchConfig, swStart, global.bs.reload)
 }
 
+// When Critical CSS file is changed, it will process HTML, too
+function swListenCritical (cb) {
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, swStart)
+
+  cb()
+}
+
 exports.js = {
   jsStart,
   swStart,
   jsStartDev,
   jsStartProd,
   jsListen,
-  swListen
+  swListen,
+  swListenCritical
 }

@@ -1,0 +1,10 @@
+{
+  "line": "myArray.entries()",
+  "note": "Returns a new Array Iterator object that contains the key/value pairs for each index in the array.",
+  "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap",
+  "language": "JavaScript",
+  "author": "Heithem Moumni",
+  "handle": "heithemmoumni",
+  "email": "moumniheithem@gmail.com",
+  "bio": "A lover of accessability, Docker, JavaScript, IA, DevJoke Connoisseur."
+}

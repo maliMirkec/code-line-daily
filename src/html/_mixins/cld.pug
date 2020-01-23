@@ -1,4 +1,4 @@
-mixin cld(line, modifier)
+mixin cld(line, modifier, linked = true)
   - var cldClass = "cld " + modifier;
   - var shareTextPlain = encodeURIComponent("Code Line Daily: " + line.line.trim())
   - var shareTextFancy = encodeURIComponent("Code Line Daily:\n" + line.line.trim() + "\n\n")
@@ -15,7 +15,10 @@ mixin cld(line, modifier)
         code.cld__code #{line.line}
       .cld__details.cld__details--beta
         span.cld__detail= "#" + line.language
-        span.cld__detail= line.date
+        if (linked)
+          a.cld__detail(href="/line/" + line.date + ".html")= line.date
+        else
+          span.cld__detail= line.date
         span.cld__detail.
           By: #[a.btn(href="/author/" + line.author.toLowerCase().replace(' ', '-') + ".html", title="See author")=line.author]
         button.cld__copy.btn.btn--alpha.btn--beta(onclick="copyToClipboard(this)")= "Copy"

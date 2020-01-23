@@ -1,0 +1,19 @@
+block variables
+- var siteName = locals.site.siteName ? locals.site.siteName : 'Code Line Daily';
+- var siteDesc = locals.site.siteDesc ? locals.site.siteDesc : 'A line of code of the day.';
+- var siteURL = locals.site.siteURL ? locals.site.siteURL : '/';
+//- - var siteImg = locals.site.siteImg ? locals.site.siteImg : '/';
+- var og = locals.site.og ? locals.site.og : '/';
+- var menu = locals.site.menu ? locals.site.menu : [];
+- var menu2 = locals.site.menu2 ? locals.site.menu2 : [];
+- var thisItem = locals.line
+- var siteImg = siteURL + '/gfx/cover/' + thisItem.date + '.png'
+- var previousItem = locals.previous
+- var nextItem = locals && locals.next && new Date(locals.next.date) < new Date() ? locals.next : false;
+
+- function formatNumber(num)
+  - return num < 10 ? '0' + num : num;
+
+- function formatDate(date)
+  - var d = new Date(date);
+  - return d.getFullYear() + '-' + formatNumber(d.getMonth() + 1) + '-' + formatNumber(d.getDate());

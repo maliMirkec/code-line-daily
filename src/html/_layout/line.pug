@@ -1,0 +1,28 @@
+include /_variables/line.pug
+include /_mixins/cld.pug
+
+block variables
+- pageTitle = "A Line of Code of " + thisItem.date
+- pageURL = "line/" + thisItem.date
+
+doctype
+html(lang="en")
+  include /_partials/head.pug
+  body
+    include /_partials/header.pug
+    main.main#main
+      .content
+        block content
+          article.w.w--alpha.mt--alpha
+            h1= siteDesc
+          .w.w--beta.mt--alpha
+            +cld(thisItem, '', false)
+          .w.w--beta.w--omega.mt--alpha
+            if (previousItem)
+              a.btn.btn--alpha.btn--beta(href="/line/" + previousItem.date + ".html")= "<= Previous"
+            if (nextItem)
+              a.btn.btn--alpha.btn--beta(href="/line/" + nextItem.date + ".html")= "Next =>"
+    include /_partials/footer.pug
+    include /_assets/deferred-styles.pug
+    include /_assets/foft-font-loading.pug
+    include /_assets/scripts.pug

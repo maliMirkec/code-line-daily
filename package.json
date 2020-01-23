@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "node scripts/index.js && gulp dev",
-    "default": "node scripts/index.js && gulp default",
-    "build": "node scripts/index.js && gulp build"
+    "default": "node scripts/index.js && gulp default && gulp sw",
+    "build": "node scripts/index.js && gulp build && gulp sw"
   },
   "repository": {
     "type": "git",

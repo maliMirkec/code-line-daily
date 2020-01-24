@@ -38,7 +38,7 @@ ${lline.line}
 
 ${lline.note}
 
-See more lines here: https://cld.silvestar.codes/line/${line.date}
+See more lines here: https://cld.silvestar.codes/line/${lline.date}
 #loc #cld #codelinedaily #${lline.language}`
   }
 

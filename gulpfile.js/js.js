@@ -1,115 +1,109 @@
-const { src, dest, watch } = require('gulp')
-const gulpif = require('gulp-if')
-const eslint = global.config.js.lint ? require('gulp-eslint') : () => true
-const standard = global.config.js.lint ? require('gulp-standard') : () => true
-const sourcemaps = global.config.js.sourcemaps ? require('gulp-sourcemaps') : () => true
-const rename = global.config.js.uglify ? require('gulp-rename') : () => true
-const webpack = require('webpack')
-const gulpWebpack = require('webpack-stream')
-const { injectManifest } = require('workbox-build')
+const { src, dest, watch } = require('gulp');
+const gulpif = require('gulp-if');
+const eslint = global.config.js.lint ? require('gulp-eslint') : () => true;
+const sourcemaps = global.config.js.sourcemaps ? require('gulp-sourcemaps') : () => true;
+const rename = global.config.js.uglify ? require('gulp-rename') : () => true;
+const webpack = require('webpack');
+const gulpWebpack = require('webpack-stream');
+const { injectManifest } = require('workbox-build');
 
-const { helpers } = require('./helpers')
+const { helpers } = require('./helpers');
 
-const jsConfig = require('./.js.json')
-const webpackConfig = require('./webpack.js')
+const jsConfig = require('./.js.json');
+const webpackConfig = require('./webpack.js');
 
 // gulp-if fix
 if (!global.config.css.sourcemaps) {
-  sourcemaps.init = () => true
-  sourcemaps.write = () => true
+  sourcemaps.init = () => true;
+  sourcemaps.write = () => true;
 }
 
 const thisEslintConfig = (global.config.js.lint)
-  ? Object.assign({}, jsConfig.eslintConfig, {
-    configFile: helpers.parse(jsConfig.eslintConfig.configFile)
-  })
-  : {}
+  ? ({ ...jsConfig.eslintConfig, configFile: helpers.parse(jsConfig.eslintConfig.configFile) })
+  : {};
 
 if (!global.config.js.lint) {
-  standard.reporter = () => true
-  eslint.format = () => true
-  eslint.failAfterError = () => true
-  eslint.result = () => true
+  eslint.format = () => true;
+  eslint.failAfterError = () => true;
+  eslint.result = () => true;
 }
 
-webpackConfig.devtool = (global.config.js.sourcemaps) ? 'sourcemaps' : ''
+webpackConfig.devtool = (global.config.js.sourcemaps) ? 'sourcemaps' : '';
 
-function jsStartDev (cb) {
-  webpackConfig.mode = 'development'
+function jsStartDev(cb) {
+  webpackConfig.mode = 'development';
 
-  jsStart()
+  jsStart();
 
-  cb()
+  cb();
 }
 
-function jsStartProd (cb) {
-  webpackConfig.mode = (global.config.js.uglify) ? 'production' : 'development'
+function jsStartProd(cb) {
+  webpackConfig.mode = (global.config.js.uglify) ? 'production' : 'development';
 
-  jsStart()
+  jsStart();
 
-  cb()
+  cb();
 }
 
 // Will process JS files
-function jsStart () {
+function jsStart() {
   return src(helpers.trim(`${helpers.source()}/${global.config.js.src}/*.js`))
     .pipe(gulpif(global.config.js.sourcemaps, sourcemaps.init()))
-    .pipe(gulpif(global.config.js.lint, standard()))
-    .pipe(gulpif(global.config.js.lint, standard.reporter('default', jsConfig.standardConfig)))
     .pipe(gulpif(global.config.js.lint, eslint(thisEslintConfig)))
     .pipe(gulpif(global.config.js.lint, eslint.format()))
     .pipe(gulpif(global.config.js.lint, eslint.failAfterError()))
     .pipe(gulpif(global.config.js.lint, eslint.result((result) => {
-      console.log(`[JS] ESLint complete: ${result.filePath}`)
-      console.log(`[JS] Messages: ${result.messages.length}`)
-      console.warn(`[JS] Warnings: ${result.warningCount}`)
-      console.error(`[JS] Errors: ${result.errorCount}`)
+      console.log(`[JS] ESLint complete: ${result.filePath}`);
+      console.log(`[JS] Messages: ${result.messages.length}`);
+      console.warn(`[JS] Warnings: ${result.warningCount}`);
+      console.error(`[JS] Errors: ${result.errorCount}`);
     })))
     .pipe(
       gulpWebpack(webpackConfig),
-      webpack
+      webpack,
     )
     .pipe(dest(helpers.trim(`${helpers.dist()}/${global.config.js.dist}`)))
     .pipe(gulpif(global.config.js.uglify, rename(jsConfig.renameConfig)))
     .pipe(gulpif(global.config.js.sourcemaps, sourcemaps.write(helpers.trim(`${helpers.source()}/${global.config.js.dist}`))))
     .pipe(dest(helpers.trim(`${helpers.dist()}/${global.config.js.dist}`)))
-    .pipe(gulpif(global.config.sync.run, global.bs.stream()))
+    .pipe(gulpif(global.config.sync.run, global.bs.stream()));
 }
 
 // Will process SW file
-function swStart (cb) {
+function swStart(cb) {
   injectManifest({
     globDirectory: helpers.parse(jsConfig.swConfig.globDirectory),
     globPatterns: jsConfig.swConfig.globPatterns,
-    globIgnores: jsConfig.swConfig.globIgnores.map(ignore => helpers.parse(ignore)),
+    globIgnores: jsConfig.swConfig.globIgnores.map((ignore) => helpers.parse(ignore)),
     swSrc: helpers.parse(jsConfig.swConfig.swSrc),
-    swDest: helpers.parse(jsConfig.swConfig.swDest)
+    swDest: helpers.parse(jsConfig.swConfig.swDest),
   })
     .then(({ count, size }) => {
-      console.info('Service worker generation completed.')
-      console.log(`Generated ${helpers.parse(jsConfig.swConfig.swDest)}, which will precache ${count} files, totaling ${size} bytes.`)
+      console.info('Service worker generation completed.');
+      console.log(`Generated ${helpers.parse(jsConfig.swConfig.swDest)}, which will precache ${count} files, totaling ${size} bytes.`);
     }).catch((error) => {
-      console.warn('Service worker generation failed:', error)
-    })
+      console.warn('Service worker generation failed:', error);
+    });
 
-  cb()
+  cb();
 }
 
 // When JS file is changed, it will process JS file, too
-function jsListen () {
-  return watch(helpers.trim(`${helpers.source()}/${global.config.js.src}/*.js`), global.config.watchConfig, jsStart, global.bs.reload)
+function jsListen() {
+  return watch(helpers.trim(`${helpers.source()}/${global.config.js.src}/*.js`), global.config.watchConfig, jsStart, global.bs.reload);
 }
 
 // When JS file is changed, it will process JS file, too
-function swListen () {
-  return watch(helpers.trim(`${helpers.source()}/${jsConfig.swConfig.swSrc}`), global.config.watchConfig, swStart, global.bs.reload)
+function swListen() {
+  return watch(helpers.trim(`${helpers.source()}/${jsConfig.swConfig.swSrc}`), global.config.watchConfig, swStart, global.bs.reload);
 }
 
 // When Critical CSS file is changed, it will process HTML, too
-function swListenCritical (cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, swStart)
+function swListenCritical(cb) {
+  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, swStart);
 
-  cb()
+  cb();
 }
 
 exports.js = {
@@ -119,5 +113,5 @@ exports.js = {
   jsStartProd,
   jsListen,
   swListen,
-  swListenCritical
-}
+  swListenCritical,
+};

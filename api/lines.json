@@ -1041,6 +1041,51 @@
       "author": "Heithem Moumni",
       "handle": "heithemmoumni",
       "date": "2020-01-24"
+    },
+    {
+      "line": "transition-delay: 250ms;",
+      "note": "Defines a length of time to delay the start of a transition.",
+      "link": "https://css-tricks.com/almanac/properties/t/transition-delay/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-27"
+    },
+    {
+      "line": "transition-duration: 3000ms;",
+      "note": "Defines the duration of a transition.",
+      "link": "https://css-tricks.com/almanac/properties/t/transition-duration/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-28"
+    },
+    {
+      "line": "transition-property: opacity;",
+      "note": "Defines what properties you want to apply a transition effect to.",
+      "link": "https://css-tricks.com/almanac/properties/t/transition-property/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-29"
+    },
+    {
+      "line": "transition-timing-function: ease-in-out;",
+      "note": "Defines a function that describes how a transition's speed will proceed over its duration.",
+      "link": "https://css-tricks.com/almanac/properties/t/transition-timing-function/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-30"
+    },
+    {
+      "line": "transition: opacity 3000ms ease-in-out 250ms;",
+      "note": "Creates a transition on opacity that lasts for 3s, is delayed for .25s, and is eased in and out.",
+      "link": "https://css-tricks.com/almanac/properties/t/transition/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-01-31"
     }
   ]
 }

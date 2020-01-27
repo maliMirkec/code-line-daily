@@ -1,6 +1,6 @@
 {
   "name": "code-line-daily",
-  "version": "0.1.45",
+  "version": "0.1.46",
   "description": "A line of code of the day.",
   "main": "index.html",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://cld.silvestar.codes",
   "dependencies": {
+    "babel-eslint": "^10.0.3",
     "fontfaceobserver": "^2.1.0",
     "gulp-data": "^1.3.1",
     "gulp-replace": "^1.0.0",

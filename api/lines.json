@@ -1086,6 +1086,96 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-01-31"
+    },
+    {
+      "line": "filter: sepia(50%)",
+      "note": "Applies sepia effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-03"
+    },
+    {
+      "line": "filter: blur(10px)",
+      "note": "Applies blur effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-04"
+    },
+    {
+      "line": "filter: contrast(50%)",
+      "note": "Applies contrast effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-05"
+    },
+    {
+      "line": "filter: grayscale(50%)",
+      "note": "Applies grayscale effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-06"
+    },
+    {
+      "line": "filter: hue-rotate(90deg)",
+      "note": "Applies hue rotation effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-07"
+    },
+    {
+      "line": "filter: brightness(0.5)",
+      "note": "Applies brightness effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-10"
+    },
+    {
+      "line": "filter: invert(50%)",
+      "note": "Applies invert effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-11"
+    },
+    {
+      "line": "filter: opacity(50%)",
+      "note": "Applies opacity effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-12"
+    },
+    {
+      "line": "filter: saturate(50%)",
+      "note": "Applies saturate effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-13"
+    },
+    {
+      "line": "filter: drop-shadow(10px 10px 10px black)",
+      "note": "Applies drop shadow effect to an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-14"
     }
   ]
 }

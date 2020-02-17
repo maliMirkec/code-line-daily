@@ -78,10 +78,10 @@ exports.build = series(
   global.config.sync.run && global.config.critical.run ? sync.syncStart : helpers.skip,
   global.config.critical.run ? critical.criticalStart : helpers.skip,
   global.config.sync.run && global.config.critical.run ? sync.syncStop : helpers.skip,
-  global.config.html.run ? html.lineStart : helpers.skip,
   global.config.html.run
     && global.config.html.pug
     && global.config.critical.run ? html.htmlStart : helpers.skip,
+  global.config.html.run ? html.lineStart : helpers.skip,
   global.config.js.run && global.config.critical.run ? js.swStart : helpers.skip,
   global.config.gzip.run ? gzip.gzipStart : helpers.skip,
   helpers.killNow,

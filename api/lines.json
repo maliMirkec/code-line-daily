@@ -1176,6 +1176,51 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-02-14"
+    },
+    {
+      "line": "<a href=\"/files/file.pdf\" download>Download PDF</a>",
+      "note": "Allows the user to save the linked URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-17"
+    },
+    {
+      "line": "a[aria-current=\"page\"] {}",
+      "note": "Targets active navigation items (if any present).",
+      "link": "https://css-tricks.com/a-complete-guide-to-links-and-buttons/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-18"
+    },
+    {
+      "line": "<a href=\"/\" aria-current=\"page\">Home</a>",
+      "note": "Tells screen readers which page is current page.",
+      "link": "https://css-tricks.com/a-complete-guide-to-links-and-buttons/",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-19"
+    },
+    {
+      "line": "a[href$=\".pdf\"] {}",
+      "note": "Targets links to pdf documents.",
+      "link": "https://css-tricks.com/a-complete-guide-to-links-and-buttons/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-20"
+    },
+    {
+      "line": "a[href*=\"google.com\"] {}",
+      "note": "Targets all links containing google.com href.",
+      "link": "https://css-tricks.com/a-complete-guide-to-links-and-buttons/",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-21"
     }
   ]
 }

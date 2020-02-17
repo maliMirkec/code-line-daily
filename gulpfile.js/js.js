@@ -82,11 +82,11 @@ function swStart(cb) {
     .then(({ count, size }) => {
       console.info('Service worker generation completed.');
       console.log(`Generated ${helpers.parse(jsConfig.swConfig.swDest)}, which will precache ${count} files, totaling ${size} bytes.`);
+      cb();
     }).catch((error) => {
       console.warn('Service worker generation failed:', error);
+      cb();
     });
-
-  cb();
 }
 
 // When JS file is changed, it will process JS file, too
@@ -99,13 +99,6 @@ function swListen() {
   return watch(helpers.trim(`${helpers.source()}/${jsConfig.swConfig.swSrc}`), global.config.watchConfig, swStart, global.bs.reload);
 }
 
-// When Critical CSS file is changed, it will process HTML, too
-function swListenCritical(cb) {
-  watch(helpers.trim(`${helpers.dist()}/${global.config.css.dist}/*.critical.min.css`), global.config.watchConfig, swStart);
-
-  cb();
-}
-
 exports.js = {
   jsStart,
   swStart,
@@ -113,5 +106,4 @@ exports.js = {
   jsStartProd,
   jsListen,
   swListen,
-  swListenCritical,
 };

@@ -1,17 +1,20 @@
-[{
-  "src": "style.css",
-  "settings": {
-    "out": "style.critical.css",
-    "url": "http://localhost:8080/",
-    "width": 1920,
-    "height": 2000,
-    "keepLargerMediaQueries": true,
-    "strict": false,
-    "blockJSRequests": false,
-    "renderWaitTime": 2000,
-    "phantomJsOptions": {
-      "ssl-protocol": "any",
-      "ignore-ssl-errors": true
+{
+  "temp": "helpers.source/critical/",
+  "configs": [{
+    "src": "style.css",
+    "settings": {
+      "out": "style.critical.css",
+      "url": "http://localhost:8083/",
+      "width": 1920,
+      "height": 2000,
+      "keepLargerMediaQueries": true,
+      "strict": false,
+      "blockJSRequests": false,
+      "renderWaitTime": 2000,
+      "phantomJsOptions": {
+        "ssl-protocol": "any",
+        "ignore-ssl-errors": true
+      }
     }
-  }
-}]
+  }]
+}

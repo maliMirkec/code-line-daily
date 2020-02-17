@@ -11,23 +11,40 @@ script(type="module").
       document.body.appendChild($swButton)
     }
     const wb = new Workbox('/sw.js');
+    wb.addEventListener('installed', event => {
+      if (!event.isUpdate) {
+        displayMessage()
+      }
+    });
     wb.addEventListener('activated', (event) => {
       if (!event.isUpdate) {
         console.log('Service Worker has been installed successfully.')
+      } else {
+        displayMessage()
       }
-    });
-    wb.addEventListener('waiting', (event) => {
-      displayMessage()
     });
     wb.addEventListener('message', (event) => {
       if (event.data.type === 'CACHE_UPDATED') {
         displayMessage()
       }
     });
-    wb.addEventListener('installed', event => {
-      if (event.isUpdate) {
+    wb.addEventListener('waiting', (event) => {
+      displayMessage()
+    });
+    wb.addEventListener('externalinstalled', (event) => {
+      if (!event.isUpdate) {
         displayMessage()
       }
+    });
+    wb.addEventListener('externalactivated', (event) => {
+      if (!event.isUpdate) {
+        console.log('Service Worker has been installed successfully.')
+      } else {
+        displayMessage()
+      }
+    });
+    wb.addEventListener('externalwaiting', (event) => {
+      displayMessage()
     });
     wb.register();
   }

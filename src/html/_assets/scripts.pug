@@ -2,15 +2,31 @@ script(src="/js/index.min.js")
 
 script(type="module").
   // register service worker
-  import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs'
+  import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-window.prod.mjs';
   if ('serviceWorker' in navigator) {
+    const displayMessage = () => {
+      const $swButton = document.createElement('div')
+      $swButton.className = 'banner banner--beta banner--omega';
+      $swButton.innerHTML = '<p><span>The content has been updated. To see the latest changes, refresh the page, please.</span></p><button class="btn" type="button" onclick="window.location.reload()"><span>Refresh</span></button>';
+      document.body.appendChild($swButton)
+    }
     const wb = new Workbox('/sw.js');
+    wb.addEventListener('activated', (event) => {
+      if (!event.isUpdate) {
+        console.log('Service Worker has been installed successfully.')
+      }
+    });
+    wb.addEventListener('waiting', (event) => {
+      displayMessage()
+    });
+    wb.addEventListener('message', (event) => {
+      if (event.data.type === 'CACHE_UPDATED') {
+        displayMessage()
+      }
+    });
     wb.addEventListener('installed', event => {
       if (event.isUpdate) {
-        const $swButton = document.createElement('div')
-        $swButton.className = 'message';
-        $swButton.innerHTML = '<p>The content has been updated. To see the latest changes, refresh the page, please.</p><button class="btn btn--alpha" type="button" onclick="window.location.reload()">Refresh</button>';
-        document.body.appendChild($swButton)
+        displayMessage()
       }
     });
     wb.register();

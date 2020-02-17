@@ -6,8 +6,8 @@ script(type="module").
   if ('serviceWorker' in navigator) {
     const displayMessage = () => {
       const $swButton = document.createElement('div')
-      $swButton.className = 'banner banner--beta banner--omega';
-      $swButton.innerHTML = '<p><span>The content has been updated. To see the latest changes, refresh the page, please.</span></p><button class="btn" type="button" onclick="window.location.reload()"><span>Refresh</span></button>';
+      $swButton.className = 'message';
+      $swButton.innerHTML = '<p>The content has been updated. To see the latest changes, refresh the page, please.</p><button class="btn btn--alpha" type="button" onclick="window.location.reload()">Refresh</button>';
       document.body.appendChild($swButton)
     }
     const wb = new Workbox('/sw.js');

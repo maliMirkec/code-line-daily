@@ -3,3 +3,6 @@ node_modules/
 dist/
 .netlify/
 src/gfx/cover/*.png
+
+# Local Netlify folder
+.netlify

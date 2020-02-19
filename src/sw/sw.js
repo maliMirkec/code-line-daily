@@ -11,7 +11,7 @@ if (workbox) {
 // workbox.setConfig({ debug: true })
 
 workbox.core.setCacheNameDetails({
-  prefix: 'sb',
+  prefix: 'cld',
   suffix: 'v1.9',
   precache: 'precache',
   runtime: 'runtime',

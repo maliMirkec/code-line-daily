@@ -1221,6 +1221,69 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-02-21"
+    },
+    {
+      "line": "animation-name: jump",
+      "note": "Sets the animation name to 'jump'.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-24"
+    },
+    {
+      "line": "animation-duration: 1s",
+      "note": "Sets the duration of the animation to 1 second.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-25"
+    },
+    {
+      "line": "animation-timing-function: linear",
+      "note": "Sets the linear animation timing function.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-26"
+    },
+    {
+      "line": "animation-delay: 100ms",
+      "note": "Sets the animation delay to 100 milliseconds.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-27"
+    },
+    {
+      "line": "animation-iteration-count: infinite",
+      "note": "Sets the infinite animation iteration count.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-28"
+    },
+    {
+      "line": "animation-fill-mode: forwards",
+      "note": "Sets the animation fill mode to final state.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-02-28"
+    },
+    {
+      "line": "animation-play-state: pause",
+      "note": "Pauses the current animation.",
+      "link": "https://css-tricks.com/almanac/properties/a/animation/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-02"
     }
   ]
 }

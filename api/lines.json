@@ -1284,6 +1284,102 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-03-02"
+    }, {
+      "line": "<a href=\"https://www.silvestar.codes/\">Link</a>",
+      "note": "An anchor element with absolute URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_absolute_URL",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-03"
+    }, {
+      "line": "<a href=\"//www.silvestar.codes/\">Link</a>",
+      "note": "An anchor element with scheme-relative URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_relative_URLs",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-04"
+    }, {
+      "line": "<a href=\"/archive/\">Link</a>",
+      "note": "An anchor element with origin-relative URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_relative_URLs",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-05"
+    }, {
+      "line": "<a href=\"./about/\">Link</a>",
+      "note": "An anchor element with directory-relative URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_relative_URLs",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-06"
+    }, {
+      "line": "<a href=\"#main\">Link</a>",
+      "note": "An anchor element with page section link.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-09"
+    }, {
+      "line": "<a href=\"mailto:me@silvestar.codes\">Mail</a>",
+      "note": "An anchor element with email link.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_email_address",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-10"
+    }, {
+      "line": "<a href=\"tel:+385.123.456.789\">Phone</a>",
+      "note": "An anchor element with phone link.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_telephone_numbers",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-11"
+    }, {
+      "line": "<a href=\"image.png\" download>Phone</a>",
+      "note": "An anchor element with download link.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#download",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-12"
+    }, {
+      "line": "<a href=\"https://www.silvestar.codes/\" target=\"_self\">Link</a>",
+      "note": "An anchor element opening in the current browsing context.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-13"
+    }, {
+      "line": "<a href=\"https://www.silvestar.codes/\" target=\"_blank\">Link</a>",
+      "note": "An anchor element opening in the new tab or window.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-16"
+    }, {
+      "line": "<a href=\"https://www.silvestar.codes/\" target=\"_parent\">Link</a>",
+      "note": "An anchor element opening in the parent browsing context (if any exists).",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-17"
+    }, {
+      "line": "<a href=\"https://www.silvestar.codes/\" target=\"_top\">Link</a>",
+      "note": "An anchor element opening in the topmost browsing context (if any exists).",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-18"
     }
   ]
 }

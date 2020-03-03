@@ -2,7 +2,7 @@
   base = "./"
   publish = "./dist/"
   command = "rm -rf ./src/gfx/cover/* && yarn build"
-  functions = "./api/"
+  functions = "./api-build/"
 
 [[redirects]]
   from = "/api/*"

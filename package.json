@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "node scripts/index.js",
-    "default": "node scripts/index.js && gulp default",
-    "build": "node scripts/index.js && gulp build"
+    "default": "node scripts/index.js && gulp default && netlify-lambda build api",
+    "build": "node scripts/index.js && gulp build && netlify-lambda build api"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,13 @@
   "dependencies": {
     "babel-eslint": "^10.0.3",
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "fontfaceobserver": "^2.1.0",
     "gulp-data": "^1.3.1",
     "gulp-replace": "^1.0.0",
+    "netlify-lambda": "^1.6.3",
     "penthouse": "^2.2.2",
     "serverless-http": "^2.3.2",
     "sharp": "^0.24.1",

@@ -1,8 +1,8 @@
 [build]
-  base = "./"
-  publish = "./dist/"
-  command = "rm -rf ./src/gfx/cover/* && yarn build"
-  functions = "./api-build/"
+  # base = "./"
+  publish = "dist"
+  command = "rm -rf ./src/gfx/cover/* && npm run build"
+  functions = "api-build"
 
 [[redirects]]
   from = "/api/*"

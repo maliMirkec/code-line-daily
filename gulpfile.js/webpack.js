@@ -1,8 +1,11 @@
 const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 const { helpers } = require('./helpers')
 
 module.exports = {
   mode: 'production',
+  target: 'node',
+  externals: [nodeExternals()],
   entry: {
     index: helpers.parse('helpers.source/config.js.src/index.js'),
     foftFontLoading: helpers.parse('helpers.source/config.js.src/foftFontLoading.js')

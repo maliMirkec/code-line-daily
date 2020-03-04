@@ -135,24 +135,18 @@ See more lines here: https://cld.silvestar.codes/line/${lline.date}
 
         res.json(cbBody || []);
       } else {
-        console.log(paramsUpdated);
-        res.json(paramsUpdated || []);
+        client.post('statuses/update', paramsUpdated)
+          .then((tweet) => {
+            cbBody = {
+              message: 'Tweet posted successfully.',
+              tweet,
+            };
 
-        // client.post('statuses/update', paramsUpdated)
-        //   .then((tweet) => {
-        //     cbBody = {
-        //       message: 'Tweet posted successfully.',
-        //       tweet,
-        //     };
-
-        //     callback(null, {
-        //       statusCode: 200,
-        //       body: JSON.stringify(tweet || []),
-        //     });
-        //   })
-        //   .catch((error) => {
-        //     throw error;
-        //   });
+            res.json(tweet || []);
+          })
+          .catch((error) => {
+            throw error;
+          });
       }
     })
     .catch((error) => {

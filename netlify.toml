@@ -6,13 +6,6 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/cld/:splat"
+  to = "/.netlify/functions/:splat"
   status = 200
   force = true
-  headers = {Access-Control-Allow-Origin = "*"}
-
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"

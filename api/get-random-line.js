@@ -13,6 +13,6 @@ exports.handler = function (event, context, callback) {
 
   callback(null, {
     statusCode: 200,
-    body: lines.list[rand]
+    body: JSON.stringify(lines.list[rand])
   })
 }

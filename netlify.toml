@@ -2,7 +2,7 @@
   # base = "./"
   publish = "dist"
   command = "rm -rf ./src/gfx/cover/* && npm run build"
-  functions = "api-build"
+  functions = "api"
 
 [[redirects]]
   from = "/api/*"

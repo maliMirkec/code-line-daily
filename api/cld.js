@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const Twitter = require('twitter');
 
 const lines = require('./lines.json');
 
@@ -82,6 +83,81 @@ router.get('/get-random-line', (req, res) => {
   const rand = randomize(0, lines.list.length - 1);
 
   res.json(lines.list[rand]);
+});
+
+// Posts the latest line on Twitter
+// Link structure: https://cld.silvestar.codes/post-on-twitter:
+router.get('/post-on-twitter', (req, res) => {
+  const ddate = new Date();
+
+  const lline = lines.list.find(
+    (line) => new Date(line.date) <= ddate,
+  );
+
+  const client = new Twitter({
+    consumer_key: process.env.CONSUMER_API_KEY,
+    consumer_secret: process.env.CONSUMER_API_SECRET_KEY,
+    access_token_key: process.env.ACCESS_TOKEN_KEY,
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET,
+  });
+
+  const paramsUpdated = {
+    status: `Did you know of this line of code:
+${lline.line}
+
+${lline.note}
+
+See more lines here: https://cld.silvestar.codes/line/${lline.date}
+#loc #cld #codelinedaily #${lline.language}`,
+  };
+
+  const paramsTimeline = {
+    screen_name: 'CodeLineDaily',
+    count: 10,
+  };
+
+  client.get('statuses/user_timeline', paramsTimeline)
+    .then((tweets) => {
+      let foundTweet = false;
+      let cbBody = {};
+
+      tweets.forEach((tweet) => {
+        if (tweet.text.indexOf(lline.line) !== -1) {
+          foundTweet = tweet;
+        }
+      });
+
+      if (foundTweet) {
+        cbBody = {
+          message: 'Tweet already posted.',
+          tweet: foundTweet,
+        };
+
+        res.json(cbBody || []);
+      } else {
+        console.log(paramsUpdated);
+        res.json(paramsUpdated || []);
+
+        // client.post('statuses/update', paramsUpdated)
+        //   .then((tweet) => {
+        //     cbBody = {
+        //       message: 'Tweet posted successfully.',
+        //       tweet,
+        //     };
+
+        //     callback(null, {
+        //       statusCode: 200,
+        //       body: JSON.stringify(tweet || []),
+        //     });
+        //   })
+        //   .catch((error) => {
+        //     throw error;
+        //   });
+      }
+    })
+    .catch((error) => {
+      throw error;
+    });
 });
 
 router.use(cors());

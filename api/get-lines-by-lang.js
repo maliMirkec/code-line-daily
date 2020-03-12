@@ -26,6 +26,9 @@ exports.handler = function (event, context, callback) {
   const response = lines.list.filter(line => line.language.toLowerCase() === lang.split('/')[0].oLowerCase())
 
   callback(null, {
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
     statusCode: 200,
     body: JSON.stringify(response)
   })

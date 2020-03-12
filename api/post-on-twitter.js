@@ -66,6 +66,9 @@ See more lines here: https://cld.silvestar.codes/line/${lline.date}
         };
 
         callback(null, {
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+          },
           statusCode: 200,
           body: JSON.stringify(cbBody || []),
         });
@@ -78,6 +81,9 @@ See more lines here: https://cld.silvestar.codes/line/${lline.date}
             };
 
             callback(null, {
+              headers: {
+                'Access-Control-Allow-Origin': '*'
+              },
               statusCode: 200,
               body: JSON.stringify(tweet || []),
             });

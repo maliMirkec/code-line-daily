@@ -33,10 +33,10 @@ Methods:
 
 # ToDo
 
+- Progressive web app ✅
+- Browser extension ✅
 - README
 - CONTRIBUTE
-- Progressive web app
-- Browser extension
 - Newsletter
 - Sorting
 - Categories

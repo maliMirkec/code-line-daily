@@ -1380,6 +1380,65 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-03-18"
+
+
+
+    }, {
+      "line": "@media (prefers-color-scheme: dark) { ... }",
+      "note": "Checks if the user prefers a dark theme.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-23"
+    }, {
+      "line": "@media (prefers-color-scheme: light) { ... }",
+      "note": "Checks if the user prefers a light theme.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-24"
+    }, {
+      "line": "@media (prefers-reduced-motion: reduce) { ... }",
+      "note": "Checks if the user prefers less animations.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-25"
+    }, {
+      "line": "@media (display-mode: fullscreen) { ... }",
+      "note": "Checks if an application's display mode is fullscreen.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-26"
+    }, {
+      "line": "@media (display-mode: standalone) { ... }",
+      "note": "Checks if an application's display mode is standalone.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-27"
+    }, {
+      "line": "@media (display-mode: minimal-ui) { ... }",
+      "note": "Checks if an application's display mode is like standalone, but with minimal UI controls.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-30"
+    }, {
+      "line": "@media (display-mode: browser) { ... }",
+      "note": "Checks if an application's display mode is browser.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-03-31"
     }
   ]
 }

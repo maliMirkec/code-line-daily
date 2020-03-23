@@ -1380,9 +1380,6 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-03-18"
-
-
-
     }, {
       "line": "@media (prefers-color-scheme: dark) { ... }",
       "note": "Checks if the user prefers a dark theme.",

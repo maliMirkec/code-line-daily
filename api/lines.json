@@ -1436,6 +1436,22 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-03-31"
+    }, {
+      "line": "@import 'custom.css';",
+      "note": "Imports CSS rules from another CSS file.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@import",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-02"
+    }, {
+      "line": "::selection { ... }",
+      "note": "Targets parts of the document that have been highlighted by user.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/::selection",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-03"
     }
   ]
 }

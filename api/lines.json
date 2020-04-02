@@ -1452,7 +1452,6 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-03"
-    }
     }, {
       "line": ":root { ... }",
       "note": "Targets the root element of the current document, usually HTML tag.",

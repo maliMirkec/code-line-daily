@@ -1460,6 +1460,14 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-06"
+    }, {
+      "line": "myArr.flat(Infinity)",
+      "note": "Flattens nested arrays recursively.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-07"
     }
   ]
 }

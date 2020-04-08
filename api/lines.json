@@ -1468,6 +1468,62 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-07"
+    }, {
+      "line": "myArr.keys()",
+      "note": "Returns keys of the array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-09"
+    }, {
+      "line": "myArr.values()",
+      "note": "Returns values of the array.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-10"
+    }, {
+      "line": "myArr.indexOf(myStr)",
+      "note": "Returns the index of the first match, otherwise returns -1.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-13"
+    }, {
+      "line": "myArr.indexOf(myStr, 2)",
+      "note": "Returns the index of the first match starting with second index from the start, otherwise returns -1.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-14"
+    }, {
+      "line": "myArr.lastIndexOf(myStr)",
+      "note": "Returns the index of the last match, otherwise returns -1.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-15"
+    }, {
+      "line": "myArr.lastIndexOf(myStr, 2)",
+      "note": "Returns the index of the last match starting with the second index from the end, otherwise returns -1.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-16"
+    }, {
+      "line": "a:visited { ... }",
+      "note": "Targets links that has been visited.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/:visited",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-17"
     }
   ]
 }

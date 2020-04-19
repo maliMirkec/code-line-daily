@@ -1524,6 +1524,14 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-17"
+    }, {
+      "line": "import module from 'ext-module'",
+      "note": "Imports bindings which are exported by another module.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-20"
     }
   ]
 }

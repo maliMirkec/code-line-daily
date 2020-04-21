@@ -1532,6 +1532,38 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-20"
+    }, {
+      "line": "import { module } from 'ext-module'",
+      "note": "Imports bindings which are exported by another module.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-21"
+    }, {
+      "line": "import { module as myModule } from 'ext-module'",
+      "note": "Imports bindings which are exported by another module.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-22"
+    }, {
+      "line": "import 'ext-module'",
+      "note": "Imports bindings which are exported by another module.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-23"
+    }, {
+      "line": "var promise = import('ext-module')",
+      "note": "Imports bindings which are exported by another module.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-24"
     }
   ]
 }

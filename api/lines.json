@@ -1564,6 +1564,22 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-24"
+    }, {
+      "line": "$myElem.innerHTML",
+      "note": "Gets the HTML markup of an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-27"
+    }, {
+      "line": "$myElem.innerHTML = '...'",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML",
+      "language": "JavaScript",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-04-28"
     }
   ]
 }

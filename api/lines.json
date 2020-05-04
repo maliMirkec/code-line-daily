@@ -1580,6 +1580,14 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-04-28"
+    }, {
+      "line": "<input type='password'>",
+      "note": "Provides a way for the user to securely enter a password.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-05"
     }
   ]
 }

@@ -81,7 +81,7 @@
       "date": "2019-08-08"
     },
     {
-      "line": "setcookie('myCookie', time() - 3600);",
+      "line": "setcookie('myCookie', time() - 3600)",
       "note": "Deletes cookie.",
       "link": "https://www.pontikis.net/blog/create-cookies-php-javascript",
       "language": "PHP",
@@ -245,7 +245,7 @@
       "date": "2019-09-09"
     },
     {
-      "line": "text-decoration: wavy overline Salmon;",
+      "line": "text-decoration: wavy overline Salmon",
       "note": "Sets wavy text decoration over the text.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration#Examples",
       "language": "CSS",
@@ -998,7 +998,7 @@
       "date": "2020-01-14"
     },
     {
-      "line": "myVar.join(' ');",
+      "line": "myVar.join(' ')",
       "note": "Returns a new string by concatenating array items with spaces.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
       "language": "JavaScript",
@@ -1007,7 +1007,7 @@
       "date": "2020-01-16"
     },
     {
-      "line": "myVar.split(' ');",
+      "line": "myVar.split(' ')",
       "note": "Splits string into array elements by spaces.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
       "language": "JavaScript",
@@ -1043,7 +1043,7 @@
       "date": "2020-01-24"
     },
     {
-      "line": "transition-delay: 250ms;",
+      "line": "transition-delay: 250ms",
       "note": "Defines a length of time to delay the start of a transition.",
       "link": "https://css-tricks.com/almanac/properties/t/transition-delay/",
       "language": "CSS",
@@ -1052,7 +1052,7 @@
       "date": "2020-01-27"
     },
     {
-      "line": "transition-duration: 3000ms;",
+      "line": "transition-duration: 3000ms",
       "note": "Defines the duration of a transition.",
       "link": "https://css-tricks.com/almanac/properties/t/transition-duration/",
       "language": "CSS",
@@ -1061,7 +1061,7 @@
       "date": "2020-01-28"
     },
     {
-      "line": "transition-property: opacity;",
+      "line": "transition-property: opacity",
       "note": "Defines what properties you want to apply a transition effect to.",
       "link": "https://css-tricks.com/almanac/properties/t/transition-property/",
       "language": "CSS",
@@ -1070,7 +1070,7 @@
       "date": "2020-01-29"
     },
     {
-      "line": "transition-timing-function: ease-in-out;",
+      "line": "transition-timing-function: ease-in-out",
       "note": "Defines a function that describes how a transition's speed will proceed over its duration.",
       "link": "https://css-tricks.com/almanac/properties/t/transition-timing-function/",
       "language": "CSS",
@@ -1079,7 +1079,7 @@
       "date": "2020-01-30"
     },
     {
-      "line": "transition: opacity 3000ms ease-in-out 250ms;",
+      "line": "transition: opacity 3000ms ease-in-out 250ms",
       "note": "Creates a transition on opacity that lasts for 3s, is delayed for .25s, and is eased in and out.",
       "link": "https://css-tricks.com/almanac/properties/t/transition/",
       "language": "CSS",
@@ -1437,7 +1437,7 @@
       "handle": "malimirkeccita",
       "date": "2020-03-31"
     }, {
-      "line": "@import 'custom.css';",
+      "line": "@import 'custom.css'",
       "note": "Imports CSS rules from another CSS file.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@import",
       "language": "CSS",
@@ -1588,6 +1588,313 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-05-05"
+    }
+
+
+    , {
+      "line": "<input type='submit' value='Submit'>",
+      "note": "Submits a form.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-11"
+    }, {
+      "line": "<input type='reset' value='Reset'>",
+      "note": "Resets a form to default values.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-12"
+    }, {
+      "line": "<input type='button' value='My button'>",
+      "note": "Represents a form button that could be programmed to perform a custom action.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-13"
+    }, {
+      "line": "<input type='checkbox' value='My value'>",
+      "note": "Represents clickable boxes.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-14"
+    }, {
+      "line": "<input type='radio' value='My value'>",
+      "note": "Represents multiple clickable options.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-15"
+    }, {
+      "line": "<input type='hidden' value='My value'>",
+      "note": "Hides the input, but sends the data.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-18"
+    }, {
+      "line": "<input type='text'>",
+      "note": "Creates basic single-line text field.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-19"
+    }, {
+      "line": "<input type='email'>",
+      "note": "Allows users to enter an e-mail address.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-20"
+    }, {
+      "line": "<input type='email' mutliple>",
+      "note": "Allows users to enter a list of e-mail addresses.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-21"
+    }, {
+      "line": "<input type='search'>",
+      "note": "Allows users to enter a search query.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-22"
+    }, {
+      "line": "<input type='url'>",
+      "note": "Allows users to enter a URL.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-25"
+    }, {
+      "line": "<input type='file'>",
+      "note": "Allows users to choose files from their computer.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-26"
+    }, {
+      "line": "<input type='number'>",
+      "note": "Allows users to enter a number.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-27"
+    }, {
+      "line": "<input type='range' min='1' max='365'>",
+      "note": "Allows users to choose a value from predefined range.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-28"
+    }, {
+      "line": "<input type='tel'>",
+      "note": "Allows users to enter a telephone number.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-05-29"
+    }, {
+      "line": "<input type='time'>",
+      "note": "Allows users to enter a time.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-01"
+    }, {
+      "line": "<input type='month'>",
+      "note": "Allows users to enter a month and year.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-02"
+    }, {
+      "line": "<input type='week'>",
+      "note": "Allows users to enter a week and year.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-03"
+    }, {
+      "line": "<input type='date'>",
+      "note": "Allows users to enter a date.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-04"
+    }, {
+      "line": "<input type='datetime-local'>",
+      "note": "Allows users to enter a date and time.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-05"
+    }, {
+      "line": "<input type='color'>",
+      "note": "Allows users to choose a color (#rrggbb format).",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-08"
+    }, {
+      "line": "<input type='image' src='path/to/submit-button.png' alt='Submit'>",
+      "note": "Creates graphical submit button in a form of an image.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-09"
+    }, {
+      "line": "list-style: disc",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-10"
+    }, {
+      "line": "list-style: circle",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-11"
+    }, {
+      "line": "list-style: square",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-12"
+    }, {
+      "line": "list-style: decimal",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-15"
+    }, {
+      "line": "list-style: decimal-leading-zero",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-16"
+    }, {
+      "line": "list-style: upper-roman",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-17"
+    }, {
+      "line": "list-style: lower-roman",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-18"
+    }, {
+      "line": "list-style: lower-greek",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-19"
+    }, {
+      "line": "list-style: upper-alpha",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-22"
+    }, {
+      "line": "list-style: lower-latin",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-23"
+    }, {
+      "line": "list-style: mongolian",
+      "note": "Sets the HTML markup of an element.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-0",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-24"
+    }, {
+      "line": "<ol start='5'>",
+      "note": "Starts ordered list from defined number.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-1",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-25"
+    }, {
+      "line": "<ol reversed>",
+      "note": "Displays orders list with reverse order.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-3",
+      "language": "HTML",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-26"
+    }, {
+      "line": "list-style-position: inside",
+      "note": "Places list markers inside the box.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-8",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-29"
+    }, {
+      "line": "list-style-position: outside",
+      "note": "Places list markers outside the box.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-8",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-06-30"
+    }, {
+      "line": "li::marker {}",
+      "note": "Targets list marker.",
+      "link": "https://css-tricks.com/list-style-recipes/#article-header-id-6",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-01"
     }
   ]
 }

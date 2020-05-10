@@ -1588,10 +1588,7 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-05-05"
-    }
-
-
-    , {
+    }, {
       "line": "<input type='submit' value='Submit'>",
       "note": "Submits a form.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit",

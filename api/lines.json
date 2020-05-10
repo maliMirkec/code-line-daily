@@ -1582,7 +1582,7 @@
       "date": "2020-04-28"
     }, {
       "line": "<input type='password'>",
-      "note": "Provides a way for the user to securely enter a password.",
+      "note": "Provides a way for the user to enter a password securely.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password",
       "language": "HTML",
       "author": "Silvestar",
@@ -1694,7 +1694,7 @@
       "date": "2020-05-27"
     }, {
       "line": "<input type='range' min='1' max='365'>",
-      "note": "Allows users to choose a value from predefined range.",
+      "note": "Allows users to choose a value from a predefined range.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range",
       "language": "HTML",
       "author": "Silvestar",
@@ -1758,7 +1758,7 @@
       "date": "2020-06-08"
     }, {
       "line": "<input type='image' src='path/to/submit-button.png' alt='Submit'>",
-      "note": "Creates graphical submit button in a form of an image.",
+      "note": "Creates a graphical submit button in the form of an image.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image",
       "language": "HTML",
       "author": "Silvestar",

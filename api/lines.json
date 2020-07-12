@@ -1892,6 +1892,86 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-07-01"
+    }, {
+      "line": "display: block",
+      "note": "Sets current element as a block type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-13"
+    }, {
+      "line": "display: inline-block",
+      "note": "Sets current element as an inline block type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-14"
+    }, {
+      "line": "display: inline",
+      "note": "Sets current element as an inline type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-15"
+    }, {
+      "line": "display: flex",
+      "note": "Sets current element as a flex type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-16"
+    }, {
+      "line": "display: inline-flex",
+      "note": "Sets current element as an inline flex type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-17"
+    }, {
+      "line": "display: grid",
+      "note": "Sets current element as a grid type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-20"
+    }, {
+      "line": "display: inline-grid",
+      "note": "Sets current element as an inline grid type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-21"
+    }, {
+      "line": "display: table",
+      "note": "Sets current element as a table type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-22"
+    }, {
+      "line": "display: inline-table",
+      "note": "Sets current element as an inline table type.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-23"
+    }, {
+      "line": "display: contents",
+      "note": "Replaces current element's box by their child and  pseudo-boxes.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-24"
     }
   ]
 }

@@ -10,7 +10,8 @@ block variables
 - var thisItem = list.slice(-1).pop()
 - var listArchive = list.slice().reverse();
 - var listEvergreen = list.slice().filter(item => item.evergreen);
-- var siteImg = siteURL + '/gfx/cover/' + thisItem.date + '.png'
+- var hash = new Date().getTime();
+- var siteImg = siteURL + '/gfx/cover/' + thisItem.date + '.png?' + hash;
 
 - function formatNumber(num)
   - return num < 10 ? '0' + num : num;

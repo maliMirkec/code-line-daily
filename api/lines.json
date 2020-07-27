@@ -1972,6 +1972,90 @@
       "author": "Silvestar",
       "handle": "malimirkeccita",
       "date": "2020-07-24"
+    },
+
+
+
+    {
+      "line": "place-items: center",
+      "note": "Centers items inside grid item.",
+      "link": "https://web.dev/one-line-layouts/#01.-super-centered:-place-items:-center",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-28"
+    }, {
+      "line": "flex: 0 1 150px",
+      "note": "Makes the flex item stretched on desktop and not streched on mobile, with 150px of base width.",
+      "link": "https://web.dev/one-line-layouts/#02.-the-deconstructed-pancake:-flex:-lessgrowgreater-lessshrinkgreater-lessbasewidthgreater",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-29"
+    }, {
+      "line": "minmax(150px, 25%)",
+      "note": "Sets the minimum and maximum width of the grid item.",
+      "link": "https://web.dev/one-line-layouts/#03.-sidebar-says:-grid-template-columns:-minmax(lessmingreater-lessmaxgreater)-...)",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-30"
+    }, {
+      "line": "grid-template-rows: auto 1fr auto",
+      "note": "Makes sticky footer and does not wrap grid items when the screen size changes.",
+      "link": "https://web.dev/one-line-layouts/#04.-pancake-stack:-grid-template-rows:-auto-1fr-auto",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-07-31"
+    }, {
+      "line": "grid-template: auto 1fr auto / auto 1fr auto",
+      "note": "Creates a classic layout: header, left sidebar, content, right sidebar, and footer.",
+      "link": "https://web.dev/one-line-layouts/#05.-classic-holy-grail-layout:-grid-template:-auto-1fr-auto-auto-1fr-auto",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-03"
+    }, {
+      "line": "grid-template-columns: repeat(12, 1fr)",
+      "note": "Creates a 12-span grid.",
+      "link": "https://web.dev/one-line-layouts/#06.-12-span-grid:-grid-template-columns:-repeat(12-1fr)",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-04"
+    }, {
+      "line": "grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))",
+      "note": "Creates responsive layout with automatically-placed and flexible grid items.",
+      "link": "https://web.dev/one-line-layouts/#07.-ram-(repeat-auto-minmax):-grid-template-columns(auto-fit-minmax(lessbasegreater-1fr))",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-05"
+    }, {
+      "line": "justify-content: space-between",
+      "note": "Places the first and last items to the edges, with the remaining space evenly distributed between the items.",
+      "link": "https://web.dev/one-line-layouts/#08.-line-up:-justify-content:-space-between",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-06"
+    }, {
+      "line": "width: clamp(23ch, 50%, 46ch)",
+      "note": "Sets an absolute min and max size, and the actual size of the element.",
+      "link": "https://web.dev/one-line-layouts/#09.-clamping-my-style:-clamp(lessmingreater-lessactualgreater-lessmaxgreater)",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-07"
+    }, {
+      "line": "aspect-ratio: 16 / 9",
+      "note": "Forces an element to respect the aspect ratio.",
+      "link": "https://web.dev/one-line-layouts/#10.-respect-for-aspect:-aspect-ratio:-lesswidthgreater-lessheightgreater",
+      "language": "CSS",
+      "author": "Silvestar",
+      "handle": "malimirkeccita",
+      "date": "2020-08-08"
     }
   ]
 }

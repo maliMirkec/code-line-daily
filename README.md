@@ -2,6 +2,10 @@
 
 A line of code of the day.
 
+## Supporters
+
+[![Stargazers repo roster for @maliMirkec/code-line-daily](https://reporoster.com/stars/maliMirkec/code-line-daily)](https://github.com/maliMirkec/code-line-daily/stargazers)
+
 ## API
 
 First version of an API is available!

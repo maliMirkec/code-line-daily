@@ -7,7 +7,7 @@ if (siteDesc)
   meta(property="og:description" content=siteDesc)
 
 if (siteURL)
-  meta(property="og:url" content=siteURL)
+  meta(property="og:url" content=siteURL + "/" + pageURL)
 
 if (siteImg)
   meta(property="og:image" content=siteImg)
@@ -20,7 +20,7 @@ if (og && og.twitter_creator)
   meta(name="twitter:creator" content=`@${og.twitter_creator}`)
 
 if (siteURL)
-  meta(property="twitter:url" content=siteURL)
+  meta(property="twitter:url" content=siteURL + "/" + pageURL)
 
 if (siteName)
   meta(name="twitter:title" content=siteName)

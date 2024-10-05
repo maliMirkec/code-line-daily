@@ -1,0 +1,14 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Privacy"
+  - pageURL = "privacy"
+
+block content
+  article.w.w--beta.mt--alpha
+    include:markdown-it(html) privacy.md
+    hr
+  .w.w--beta.mt--beta
+    p= "Today's best line of code is:"
+  .w.w--beta.mt
+    +cld(thisItem, '')

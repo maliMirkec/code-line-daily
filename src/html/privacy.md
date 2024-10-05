@@ -7,6 +7,7 @@ At https://cld.silvestar.codes/ (the “Site”), we are committed to protecting
 ## No Data Collection
 
 We do not collect, store, or process any personal data from visitors to this Site. This means:
+
 	•	We do not use cookies or other tracking mechanisms.
 	•	We do not request, store, or process any personally identifiable information (e.g., names, email addresses).
 	•	We do not track users’ behavior or actions on the Site.
